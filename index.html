@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenClaw Mission Control</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    .logo { font-size: 52px; }
+    h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+    .sub { color: #64748b; font-size: 14px; }
+    .agents {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .agent-card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 20px 28px;
+      text-align: center;
+      min-width: 160px;
+    }
+    .agent-emoji { font-size: 32px; margin-bottom: 8px; }
+    .agent-name { font-weight: 600; font-size: 16px; }
+    .agent-status {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 4px;
+    }
+    .agent-status.idle { color: #6366f1; }
+    .agent-status.working { color: #22c55e; }
+    .build-note {
+      margin-top: 8px;
+      padding: 12px 24px;
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 8px;
+      font-size: 12px;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">🎛️</div>
+  <h1>OpenClaw Mission Control</h1>
+  <p class="sub">Multi-workspace dashboard · Under construction</p>
+
+  <div class="agents" id="agents">
+    <div class="agent-card">
+      <div class="agent-emoji">🌙</div>
+      <div class="agent-name">Ranni</div>
+      <div class="agent-status idle" id="status-ranni">Loading...</div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-emoji">🏢</div>
+      <div class="agent-name">Company</div>
+      <div class="agent-status idle" id="status-company">Loading...</div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-emoji">📈</div>
+      <div class="agent-name">Melina</div>
+      <div class="agent-status idle" id="status-melina">Loading...</div>
+    </div>
+  </div>
+
+  <div class="build-note">Full dashboard coming soon · Data synced via git push</div>
+
+  <script>
+    const workspaces = ['ranni', 'company', 'melina'];
+    async function loadAgents() {
+      for (const ws of workspaces) {
+        try {
+          const r = await fetch(`./data/${ws}/agent.json?t=${Date.now()}`);
+          const d = await r.json();
+          const el = document.getElementById(`status-${ws}`);
+          if (el) {
+            el.textContent = d.status || 'idle';
+            el.className = `agent-status ${d.status === 'working' ? 'working' : 'idle'}`;
+          }
+        } catch(e) {}
+      }
+    }
+    loadAgents();
+    setInterval(loadAgents, 60000);
+  </script>
+</body>
+</html>
