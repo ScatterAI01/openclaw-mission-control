@@ -12,9 +12,9 @@
     {"id":"63a8e98c-f8c4-4cde-8c92-8588c6f30383","name":"weekly-full-report","schedule":"0 21 * * 5","tz":"UTC","enabled":true,"nextRun":"2026-03-06T21:00:00.000Z"},
     {"id":"1b30f750-ab3f-4122-adb6-fd5ef6d6c961","name":"quarterly-thesis-rewrite","schedule":"0 12 1 1,4,7,10 *","tz":"UTC","enabled":true,"nextRun":"2026-04-01T12:00:00.000Z"},
     {"id":"66069f9a-e731-4c20-92e4-9d3adba8eb2e","name":"monthly-narrative-check","schedule":"0 12 1 * *","tz":"UTC","enabled":true,"nextRun":"2026-04-01T12:00:00.000Z"},
-    {"id":"b7efd369-c2a9-4854-a9f5-4 a9f5-753ba3119f52","name":"monthly-macro-update","schedule":"0 13 1 * *","tz":"UTC","enabled":true,"nextRun":"2026-04-01T13:00:00.000Z"},
+    {"id":"b7efd369-c2a9-4854-a9f5-753ba3119f52","name":"monthly-macro-update","schedule":"0 13 1 * *","tz":"UTC","enabled":true,"nextRun":"2026-04-01T13:00:00.000Z"},
     {"id":"0ced2fc4-481b-4251-8675-87151c6dd483","name":"report-validator-BBAI-4week","schedule":"at 2026-03-30T14:00:00.000Z","tz":"UTC","enabled":true,"nextRun":"2026-03-30T14:00:00.000Z"},
     {"id":"00e80035-aaf7-4b13-9688-e10b1737be6c","name":"report-validator-30day-batch","schedule":"at 2026-04-01T14:00:00.000Z","tz":"UTC","enabled":true,"nextRun":"2026-04-01T14:00:00.000Z"},
-    {"id":"2c44fa93-0a5d-4b8f-4c0d-4cde-8c92-8588c6f30383","name":"report-validator-NVDA-BA-3month","schedule":"at 2026-06-01T13:00:00.000Z","tz":"UTC","enabled":true,"nextRun":"2026-06-01T13:00:00.000Z"}
+    {"id":"2c44fa93-0a5d-4b8f-8e84-b37777cab04d","name":"report-validator-NVDA-BA-3month","schedule":"at 2026-06-01T13:00:00.000Z","tz":"UTC","enabled":true,"nextRun":"2026-06-01T13:00:00.000Z"}
   ]
 }
