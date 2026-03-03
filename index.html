@@ -5,96 +5,867 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenClaw Mission Control</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --bg2: #111118;
+      --bg3: #1a1a24;
+      --border: #252535;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --accent-ranni: #a78bfa;
+      --accent-company: #38bdf8;
+      --accent-melina: #34d399;
+      --danger: #f87171;
+      --warning: #fbbf24;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0a0a0a;
-      color: #e2e8f0;
-      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+      font-size: 14px;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 220px;
+      min-width: 220px;
+      background: var(--bg2);
+      border-right: 1px solid var(--border);
       display: flex;
       flex-direction: column;
+      padding: 16px 0;
+      overflow-y: auto;
+    }
+
+    .sidebar-logo {
+      padding: 0 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 12px;
+    }
+    .sidebar-logo span { font-size: 20px; }
+    .sidebar-logo h2 { font-size: 14px; font-weight: 600; letter-spacing: -0.3px; }
+    .sidebar-logo small { font-size: 11px; color: var(--muted); display: block; }
+
+    .ws-switcher {
+      padding: 0 12px;
+      margin-bottom: 16px;
+    }
+    .ws-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; padding: 0 4px; }
+    .ws-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 7px 10px;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      text-align: left;
+      transition: all 0.15s;
+      margin-bottom: 2px;
+    }
+    .ws-btn:hover { background: var(--bg3); color: var(--text); }
+    .ws-btn.active { color: var(--text); font-weight: 500; }
+    .ws-btn.active[data-ws="ranni"] { background: #2d1f4e; }
+    .ws-btn.active[data-ws="company"] { background: #0c2d40; }
+    .ws-btn.active[data-ws="melina"] { background: #0c2d22; }
+    .ws-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .ws-dot.ranni { background: var(--accent-ranni); }
+    .ws-dot.company { background: var(--accent-company); }
+    .ws-dot.melina { background: var(--accent-melina); }
+
+    .nav-section { padding: 0 12px; margin-top: 8px; }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      width: 100%;
+      padding: 7px 10px;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      text-align: left;
+      transition: all 0.15s;
+      margin-bottom: 1px;
+    }
+    .nav-item:hover { background: var(--bg3); color: var(--text); }
+    .nav-item.active { background: var(--bg3); color: var(--text); font-weight: 500; }
+    .nav-icon { width: 16px; text-align: center; font-size: 14px; }
+
+    .sidebar-footer {
+      margin-top: auto;
+      padding: 12px 16px 0;
+      border-top: 1px solid var(--border);
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .sync-dot {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent-melina);
+      margin-right: 5px;
+    }
+
+    /* MAIN */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .topbar {
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg2);
+    }
+    .topbar h1 { font-size: 16px; font-weight: 600; }
+    .topbar .ws-badge {
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .ws-badge.ranni { background: #2d1f4e; color: var(--accent-ranni); }
+    .ws-badge.company { background: #0c2d40; color: var(--accent-company); }
+    .ws-badge.melina { background: #0c2d22; color: var(--accent-melina); }
+    .ws-badge.all { background: var(--bg3); color: var(--text); }
+
+    .content { flex: 1; overflow-y: auto; padding: 24px; }
+
+    /* SCREENS */
+    .screen { display: none; }
+    .screen.active { display: block; }
+
+    /* OVERVIEW */
+    .agent-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+    .agent-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .agent-card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .agent-emoji { font-size: 24px; }
+    .agent-name { font-weight: 600; font-size: 15px; }
+    .agent-model { font-size: 11px; color: var(--muted); }
+    .status-pill {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 9px; border-radius: 20px; font-size: 11px; font-weight: 500;
+    }
+    .status-pill.idle { background: #1a1a24; color: var(--muted); }
+    .status-pill.working { background: #0c2d22; color: var(--accent-melina); }
+    .status-pill::before {
+      content: ''; width: 5px; height: 5px; border-radius: 50%; background: currentColor;
+    }
+    .mission-box {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .mission-box h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin-bottom: 10px; }
+    .mission-text { font-size: 15px; line-height: 1.6; color: var(--text); }
+    .mission-empty { color: var(--muted); font-style: italic; font-size: 13px; }
+
+    /* TASK BOARD */
+    .kanban { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .kanban-col { background: var(--bg2); border-radius: 10px; border: 1px solid var(--border); }
+    .kanban-header {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .kanban-title { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); }
+    .kanban-count {
+      background: var(--bg3); color: var(--muted);
+      border-radius: 10px; padding: 1px 7px; font-size: 11px;
+    }
+    .kanban-tasks { padding: 10px; min-height: 200px; }
+    .task-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 11px 13px;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    .task-card:hover { border-color: #3a3a50; }
+    .task-title { font-size: 13px; font-weight: 500; margin-bottom: 5px; }
+    .task-desc { font-size: 12px; color: var(--muted); line-height: 1.4; }
+    .task-meta { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+    .priority-dot { width: 6px; height: 6px; border-radius: 50%; }
+    .priority-dot.high { background: var(--danger); }
+    .priority-dot.medium { background: var(--warning); }
+    .priority-dot.low { background: var(--muted); }
+    .task-assignee { font-size: 11px; color: var(--muted); margin-left: auto; }
+    .empty-col { color: var(--muted); font-size: 12px; padding: 12px 14px; text-align: center; opacity: 0.5; }
+
+    .add-task-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      width: 100%;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 12px;
+      border-top: 1px solid var(--border);
+      border-radius: 0 0 10px 10px;
+    }
+    .add-task-btn:hover { background: var(--bg3); color: var(--text); }
+
+    /* CALENDAR */
+    .calendar-filters { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+    .filter-btn {
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #3a3a50; color: var(--text); }
+    .filter-btn.active { color: var(--text); font-weight: 500; }
+    .filter-btn.active.ranni { border-color: var(--accent-ranni); background: #2d1f4e; color: var(--accent-ranni); }
+    .filter-btn.active.company { border-color: var(--accent-company); background: #0c2d40; color: var(--accent-company); }
+    .filter-btn.active.melina { border-color: var(--accent-melina); background: #0c2d22; color: var(--accent-melina); }
+    .filter-btn.active.all { border-color: #3a3a50; background: var(--bg3); }
+
+    .cron-list { display: flex; flex-direction: column; gap: 10px; }
+    .cron-item {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .cron-ws-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .cron-info { flex: 1; }
+    .cron-name { font-size: 13px; font-weight: 500; margin-bottom: 3px; }
+    .cron-schedule { font-size: 12px; color: var(--muted); font-family: monospace; }
+    .cron-next { font-size: 11px; color: var(--muted); margin-left: auto; text-align: right; }
+    .cron-status {
+      padding: 2px 8px; border-radius: 10px; font-size: 11px;
+    }
+    .cron-status.enabled { background: #0c2d22; color: var(--accent-melina); }
+    .cron-status.disabled { background: var(--bg3); color: var(--muted); }
+
+    /* MEMORY */
+    .memory-grid { display: grid; grid-template-columns: 240px 1fr; gap: 16px; height: calc(100vh - 160px); }
+    .memory-list {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow-y: auto;
+    }
+    .memory-day {
+      padding: 11px 14px;
+      cursor: pointer;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.1s;
+    }
+    .memory-day:hover { background: var(--bg3); }
+    .memory-day.active { background: var(--bg3); }
+    .memory-day-date { font-size: 13px; font-weight: 500; }
+    .memory-day-preview { font-size: 11px; color: var(--muted); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .memory-content {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      overflow-y: auto;
+      font-size: 13px;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      color: var(--text);
+    }
+    .memory-empty { color: var(--muted); font-style: italic; font-size: 13px; }
+
+    /* KB/DOCS */
+    .kb-search {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .kb-search input {
+      flex: 1;
+      padding: 9px 14px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
+    }
+    .kb-search input:focus { border-color: #3a3a50; }
+    .kb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+    .kb-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .kb-card:hover { border-color: #3a3a50; }
+    .kb-score {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .kb-score.high { background: #0c2d22; color: var(--accent-melina); }
+    .kb-score.mid { background: #2d2a0a; color: #fbbf24; }
+    .kb-score.low { background: var(--bg3); color: var(--muted); }
+    .kb-title { font-size: 13px; font-weight: 600; margin-bottom: 5px; }
+    .kb-summary { font-size: 12px; color: var(--muted); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .kb-meta { font-size: 11px; color: var(--muted); margin-top: 8px; display: flex; gap: 10px; }
+
+    /* UTILS */
+    .section-header { margin-bottom: 16px; }
+    .section-header h2 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+    .section-header p { font-size: 13px; color: var(--muted); }
+    .empty-state { text-align: center; padding: 60px 20px; color: var(--muted); }
+    .empty-state .icon { font-size: 36px; margin-bottom: 12px; }
+    .empty-state p { font-size: 13px; }
+
+    /* MODAL */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 100;
       align-items: center;
       justify-content: center;
-      gap: 20px;
     }
-    .logo { font-size: 52px; }
-    h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
-    .sub { color: #64748b; font-size: 14px; }
-    .agents {
-      display: flex;
-      gap: 16px;
-      margin-top: 8px;
-    }
-    .agent-card {
-      background: #111827;
-      border: 1px solid #1f2937;
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--bg2);
+      border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 20px 28px;
-      text-align: center;
-      min-width: 160px;
+      padding: 24px;
+      width: 480px;
+      max-width: 90vw;
     }
-    .agent-emoji { font-size: 32px; margin-bottom: 8px; }
-    .agent-name { font-weight: 600; font-size: 16px; }
-    .agent-status {
-      font-size: 12px;
-      color: #64748b;
-      margin-top: 4px;
+    .modal h3 { font-size: 16px; font-weight: 600; margin-bottom: 16px; }
+    .modal label { font-size: 12px; color: var(--muted); display: block; margin-bottom: 5px; margin-top: 12px; }
+    .modal input, .modal textarea, .modal select {
+      width: 100%;
+      padding: 8px 12px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
     }
-    .agent-status.idle { color: #6366f1; }
-    .agent-status.working { color: #22c55e; }
-    .build-note {
-      margin-top: 8px;
-      padding: 12px 24px;
-      background: #111827;
-      border: 1px solid #1f2937;
-      border-radius: 8px;
-      font-size: 12px;
-      color: #475569;
-    }
+    .modal textarea { min-height: 80px; resize: vertical; font-family: inherit; }
+    .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 20px; }
+    .btn { padding: 7px 16px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; font-weight: 500; }
+    .btn-primary { background: #4f46e5; color: white; }
+    .btn-primary:hover { background: #4338ca; }
+    .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+    .btn-ghost:hover { color: var(--text); }
+
+    scrollbar-width: thin;
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
   </style>
 </head>
 <body>
-  <div class="logo">🎛️</div>
-  <h1>OpenClaw Mission Control</h1>
-  <p class="sub">Multi-workspace dashboard · Under construction</p>
 
-  <div class="agents" id="agents">
-    <div class="agent-card">
-      <div class="agent-emoji">🌙</div>
-      <div class="agent-name">Ranni</div>
-      <div class="agent-status idle" id="status-ranni">Loading...</div>
-    </div>
-    <div class="agent-card">
-      <div class="agent-emoji">🏢</div>
-      <div class="agent-name">Company</div>
-      <div class="agent-status idle" id="status-company">Loading...</div>
-    </div>
-    <div class="agent-card">
-      <div class="agent-emoji">📈</div>
-      <div class="agent-name">Melina</div>
-      <div class="agent-status idle" id="status-melina">Loading...</div>
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <span>🎛️</span>
+    <div>
+      <h2>Mission Control</h2>
+      <small>OpenClaw HQ</small>
     </div>
   </div>
 
-  <div class="build-note">Full dashboard coming soon · Data synced via git push</div>
+  <div class="ws-switcher">
+    <div class="ws-label">Workspace</div>
+    <button class="ws-btn active" data-ws="ranni" onclick="switchWs('ranni')">
+      <span class="ws-dot ranni"></span> Ranni
+    </button>
+    <button class="ws-btn" data-ws="company" onclick="switchWs('company')">
+      <span class="ws-dot company"></span> Company
+    </button>
+    <button class="ws-btn" data-ws="melina" onclick="switchWs('melina')">
+      <span class="ws-dot melina"></span> Melina
+    </button>
+  </div>
 
-  <script>
-    const workspaces = ['ranni', 'company', 'melina'];
-    async function loadAgents() {
-      for (const ws of workspaces) {
-        try {
-          const r = await fetch(`./data/${ws}/agent.json?t=${Date.now()}`);
-          const d = await r.json();
-          const el = document.getElementById(`status-${ws}`);
-          if (el) {
-            el.textContent = d.status || 'idle';
-            el.className = `agent-status ${d.status === 'working' ? 'working' : 'idle'}`;
-          }
-        } catch(e) {}
-      }
-    }
-    loadAgents();
-    setInterval(loadAgents, 60000);
-  </script>
+  <div class="nav-section">
+    <div class="ws-label">Views</div>
+    <button class="nav-item active" data-screen="overview" onclick="switchScreen('overview')">
+      <span class="nav-icon">⚡</span> Overview
+    </button>
+    <button class="nav-item" data-screen="tasks" onclick="switchScreen('tasks')">
+      <span class="nav-icon">📋</span> Task Board
+    </button>
+    <button class="nav-item" data-screen="calendar" onclick="switchScreen('calendar')">
+      <span class="nav-icon">📅</span> Calendar
+    </button>
+    <button class="nav-item" data-screen="memory" onclick="switchScreen('memory')">
+      <span class="nav-icon">🧠</span> Memory
+    </button>
+    <button class="nav-item" data-screen="kb" onclick="switchScreen('kb')">
+      <span class="nav-icon">📚</span> Knowledge Base
+    </button>
+  </div>
+
+  <div class="sidebar-footer">
+    <span class="sync-dot"></span>
+    <span id="last-sync">Loading...</span>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+  <div class="topbar">
+    <h1 id="screen-title">Overview</h1>
+    <div class="ws-badge ranni" id="ws-badge">🌙 Ranni</div>
+  </div>
+
+  <div class="content">
+
+    <!-- OVERVIEW -->
+    <div class="screen active" id="screen-overview">
+      <div class="mission-box">
+        <h3>Mission Statement</h3>
+        <div id="mission-text" class="mission-empty">Loading mission statement...</div>
+      </div>
+      <div class="agent-grid" id="agent-grid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+
+    <!-- TASKS -->
+    <div class="screen" id="screen-tasks">
+      <div class="kanban" id="kanban-board">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+
+    <!-- CALENDAR -->
+    <div class="screen" id="screen-calendar">
+      <div class="calendar-filters">
+        <button class="filter-btn active all" data-filter="all" onclick="filterCron('all')">All</button>
+        <button class="filter-btn ranni" data-filter="ranni" onclick="filterCron('ranni')">🌙 Ranni</button>
+        <button class="filter-btn company" data-filter="company" onclick="filterCron('company')">🏢 Company</button>
+        <button class="filter-btn melina" data-filter="melina" onclick="filterCron('melina')">📈 Melina</button>
+      </div>
+      <div class="cron-list" id="cron-list">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+
+    <!-- MEMORY -->
+    <div class="screen" id="screen-memory">
+      <div class="memory-grid">
+        <div class="memory-list" id="memory-list">
+          <!-- Filled by JS -->
+        </div>
+        <div class="memory-content" id="memory-content">
+          <span class="memory-empty">Select a day to view memories</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- KB -->
+    <div class="screen" id="screen-kb">
+      <div class="kb-search">
+        <input type="text" id="kb-search-input" placeholder="Search knowledge base..." oninput="filterKb(this.value)">
+      </div>
+      <div class="kb-grid" id="kb-grid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ADD TASK MODAL -->
+<div class="modal-overlay" id="task-modal">
+  <div class="modal">
+    <h3>New Task</h3>
+    <label>Title</label>
+    <input type="text" id="new-task-title" placeholder="Task title...">
+    <label>Description</label>
+    <textarea id="new-task-desc" placeholder="What needs to be done..."></textarea>
+    <label>Priority</label>
+    <select id="new-task-priority">
+      <option value="high">High</option>
+      <option value="medium" selected>Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <label>Assignee</label>
+    <select id="new-task-assignee">
+      <option value="andy">Andy</option>
+      <option value="agent">Agent</option>
+    </select>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeTaskModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="addTask()">Add Task</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── STATE ───────────────────────────────────────────────
+const WORKSPACES = ['ranni', 'company', 'melina'];
+const WS_META = {
+  ranni:   { emoji: '🌙', color: '#a78bfa', label: 'Ranni' },
+  company: { emoji: '🏢', color: '#38bdf8', label: 'Company' },
+  melina:  { emoji: '📈', color: '#34d399', label: 'Melina' },
+};
+
+let currentWs = 'ranni';
+let currentScreen = 'overview';
+let cronFilter = 'all';
+let allData = { ranni: {}, company: {}, melina: {} };
+let allCronJobs = [];
+let kbItems = [];
+
+// ─── DATA LOADING ─────────────────────────────────────────
+async function loadJson(path) {
+  try {
+    const r = await fetch(path + '?t=' + Date.now());
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+async function loadAll() {
+  for (const ws of WORKSPACES) {
+    const [agent, tasks, projects, cron] = await Promise.all([
+      loadJson(`./data/${ws}/agent.json`),
+      loadJson(`./data/${ws}/tasks.json`),
+      loadJson(`./data/${ws}/projects.json`),
+      loadJson(`./data/${ws}/cron.json`),
+    ]);
+    allData[ws] = { agent, tasks, projects, cron };
+  }
+
+  // Build unified cron list
+  allCronJobs = [];
+  for (const ws of WORKSPACES) {
+    const jobs = allData[ws]?.cron?.jobs || [];
+    jobs.forEach(j => allCronJobs.push({ ...j, workspace: ws }));
+  }
+
+  // Load KB
+  const kbIndex = await loadJson('./data/ranni/kb-index.json');
+  kbItems = kbIndex?.items || [];
+
+  // Load memory index
+  const memIndex = await loadJson('./data/ranni/memory-index.json');
+
+  // Update sync time
+  const ts = allData.ranni?.agent?.lastUpdated;
+  document.getElementById('last-sync').textContent = ts
+    ? 'Synced ' + timeAgo(ts)
+    : 'Never synced';
+
+  renderAll();
+}
+
+// ─── RENDER ───────────────────────────────────────────────
+function renderAll() {
+  renderOverview();
+  renderTasks();
+  renderCalendar();
+  renderMemory();
+  renderKb();
+}
+
+function renderOverview() {
+  // Mission statement (from current ws)
+  const agent = allData[currentWs]?.agent;
+  const ms = agent?.missionStatement;
+  document.getElementById('mission-text').innerHTML = ms
+    ? `<span class="mission-text">${escHtml(ms)}</span>`
+    : '<span class="mission-empty">No mission statement set. Ask your agent to define one.</span>';
+
+  // Agent cards
+  const grid = document.getElementById('agent-grid');
+  grid.innerHTML = WORKSPACES.map(ws => {
+    const a = allData[ws]?.agent || {};
+    const meta = WS_META[ws];
+    const statusClass = a.status === 'working' ? 'working' : 'idle';
+    const statusText = a.status || 'idle';
+    const taskCount = (allData[ws]?.tasks?.tasks || []).filter(t => t.status === 'in_progress').length;
+    return `
+      <div class="agent-card">
+        <div class="agent-card-header">
+          <span class="agent-emoji">${a.emoji || meta.emoji}</span>
+          <div>
+            <div class="agent-name">${a.name || meta.label}</div>
+            <div class="agent-model">${a.model || '—'}</div>
+          </div>
+        </div>
+        <div style="margin-bottom:10px">
+          <span class="status-pill ${statusClass}">${statusText}</span>
+        </div>
+        ${a.currentTask ? `<div style="font-size:12px;color:var(--muted)">📌 ${escHtml(a.currentTask)}</div>` : ''}
+        <div style="font-size:12px;color:var(--muted);margin-top:8px">${taskCount} in progress</div>
+      </div>`;
+  }).join('');
+}
+
+function renderTasks() {
+  const tasks = allData[currentWs]?.tasks?.tasks || [];
+  const cols = ['backlog', 'in_progress', 'review', 'done'];
+  const colLabels = { backlog: 'Backlog', in_progress: 'In Progress', review: 'Review', done: 'Done' };
+
+  document.getElementById('kanban-board').innerHTML = cols.map(col => {
+    const colTasks = tasks.filter(t => t.status === col);
+    return `
+      <div class="kanban-col">
+        <div class="kanban-header">
+          <span class="kanban-title">${colLabels[col]}</span>
+          <span class="kanban-count">${colTasks.length}</span>
+        </div>
+        <div class="kanban-tasks">
+          ${colTasks.length ? colTasks.map(t => `
+            <div class="task-card">
+              <div class="task-title">${escHtml(t.title)}</div>
+              ${t.description ? `<div class="task-desc">${escHtml(t.description)}</div>` : ''}
+              <div class="task-meta">
+                <span class="priority-dot ${t.priority || 'medium'}"></span>
+                <span style="font-size:11px;color:var(--muted)">${t.priority || 'medium'}</span>
+                <span class="task-assignee">${t.assignee || ''}</span>
+              </div>
+            </div>`).join('') : `<div class="empty-col">No tasks</div>`}
+        </div>
+        <button class="add-task-btn" onclick="openTaskModal('${col}')">+ New task</button>
+      </div>`;
+  }).join('');
+}
+
+function renderCalendar() {
+  const jobs = cronFilter === 'all'
+    ? allCronJobs
+    : allCronJobs.filter(j => j.workspace === cronFilter);
+
+  const list = document.getElementById('cron-list');
+  if (!jobs.length) {
+    list.innerHTML = '<div class="empty-state"><div class="icon">📅</div><p>No cron jobs found. Ask your agents to schedule some tasks.</p></div>';
+    return;
+  }
+
+  list.innerHTML = jobs.map(j => {
+    const meta = WS_META[j.workspace];
+    const color = meta.color;
+    return `
+      <div class="cron-item">
+        <span class="cron-ws-dot" style="background:${color}"></span>
+        <div class="cron-info">
+          <div class="cron-name">${escHtml(j.name || j.id || 'Unnamed job')}</div>
+          <div class="cron-schedule">${escHtml(j.schedule || j.expr || '')}${j.tz ? ` (${j.tz})` : ''}</div>
+          ${j.description ? `<div style="font-size:11px;color:var(--muted);margin-top:2px">${escHtml(j.description)}</div>` : ''}
+        </div>
+        <div class="cron-next">
+          ${j.nextRun ? `<div style="font-size:12px;color:var(--muted)">Next: ${formatDate(j.nextRun)}</div>` : ''}
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">${meta.emoji} ${meta.label}</div>
+        </div>
+        <span class="cron-status ${j.enabled !== false ? 'enabled' : 'disabled'}">${j.enabled !== false ? 'active' : 'off'}</span>
+      </div>`;
+  }).join('');
+}
+
+function renderMemory() {
+  const index = allData[currentWs]?.tasks; // placeholder - memory comes from memory-index
+  // Memory list populated from memory-index.json
+  const memList = document.getElementById('memory-list');
+  const days = (allData.ranni?.['memory-index'] || []);
+  if (!days.length) {
+    memList.innerHTML = '<div class="empty-col" style="padding:20px;text-align:center">No memory index yet.<br>Ask Ranni to build one.</div>';
+    return;
+  }
+  memList.innerHTML = days.map((d, i) => `
+    <div class="memory-day ${i===0?'active':''}" onclick="loadMemoryDay(${i}, this)">
+      <div class="memory-day-date">${d.date}</div>
+      <div class="memory-day-preview">${escHtml(d.preview || '')}</div>
+    </div>`).join('');
+}
+
+function renderKb() {
+  const grid = document.getElementById('kb-grid');
+  if (!kbItems.length) {
+    grid.innerHTML = '<div class="empty-state"><div class="icon">📚</div><p>No KB entries yet.</p></div>';
+    return;
+  }
+  displayKb(kbItems);
+}
+
+function displayKb(items) {
+  const grid = document.getElementById('kb-grid');
+  grid.innerHTML = items.slice(0, 50).map(item => {
+    const score = item.score || item.rating || 0;
+    const scoreClass = score >= 8 ? 'high' : score >= 6 ? 'mid' : 'low';
+    return `
+      <div class="kb-card">
+        ${score ? `<span class="kb-score ${scoreClass}">${score}/10</span>` : ''}
+        <div class="kb-title">${escHtml(item.title || 'Untitled')}</div>
+        <div class="kb-summary">${escHtml(item.summary || item.preview || '')}</div>
+        <div class="kb-meta">
+          <span>${item.date || ''}</span>
+          <span>${item.source || ''}</span>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+// ─── INTERACTIONS ─────────────────────────────────────────
+function switchWs(ws) {
+  currentWs = ws;
+  document.querySelectorAll('.ws-btn').forEach(b => b.classList.toggle('active', b.dataset.ws === ws));
+  const meta = WS_META[ws];
+  const badge = document.getElementById('ws-badge');
+  badge.textContent = `${meta.emoji} ${meta.label}`;
+  badge.className = `ws-badge ${ws}`;
+  renderAll();
+}
+
+function switchScreen(screen) {
+  currentScreen = screen;
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.toggle('active', n.dataset.screen === screen));
+  document.getElementById('screen-' + screen).classList.add('active');
+
+  const titles = { overview: 'Overview', tasks: 'Task Board', calendar: 'Calendar', memory: 'Memory', kb: 'Knowledge Base' };
+  document.getElementById('screen-title').textContent = titles[screen] || screen;
+
+  // Calendar shows all workspaces regardless
+  const badge = document.getElementById('ws-badge');
+  if (screen === 'calendar' || screen === 'kb') {
+    badge.textContent = '🌐 All Workspaces';
+    badge.className = 'ws-badge all';
+  } else {
+    const meta = WS_META[currentWs];
+    badge.textContent = `${meta.emoji} ${meta.label}`;
+    badge.className = `ws-badge ${currentWs}`;
+  }
+}
+
+function filterCron(filter) {
+  cronFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.remove('active');
+    if (b.dataset.filter === filter) b.classList.add('active', b.dataset.filter !== 'all' ? b.dataset.filter : 'all');
+  });
+  renderCalendar();
+}
+
+function filterKb(q) {
+  if (!q) { displayKb(kbItems); return; }
+  const lower = q.toLowerCase();
+  displayKb(kbItems.filter(item =>
+    (item.title || '').toLowerCase().includes(lower) ||
+    (item.summary || item.preview || '').toLowerCase().includes(lower)
+  ));
+}
+
+let taskModalStatus = 'backlog';
+function openTaskModal(status) {
+  taskModalStatus = status;
+  document.getElementById('task-modal').classList.add('open');
+}
+function closeTaskModal() {
+  document.getElementById('task-modal').classList.remove('open');
+}
+
+function addTask() {
+  const title = document.getElementById('new-task-title').value.trim();
+  if (!title) return;
+  const task = {
+    id: 'task_' + Date.now(),
+    title,
+    description: document.getElementById('new-task-desc').value.trim(),
+    status: taskModalStatus,
+    priority: document.getElementById('new-task-priority').value,
+    assignee: document.getElementById('new-task-assignee').value,
+    createdAt: new Date().toISOString(),
+  };
+  if (!allData[currentWs].tasks) allData[currentWs].tasks = { tasks: [] };
+  allData[currentWs].tasks.tasks.push(task);
+  closeTaskModal();
+  renderTasks();
+  // Note: local only until agent pushes data
+}
+
+async function loadMemoryDay(idx, el) {
+  document.querySelectorAll('.memory-day').forEach(d => d.classList.remove('active'));
+  el.classList.add('active');
+  const days = allData.ranni?.['memory-index'] || [];
+  const day = days[idx];
+  if (!day) return;
+  const content = await loadJson(`./data/ranni/memory-${day.date}.json`);
+  document.getElementById('memory-content').textContent = content?.content || 'No content loaded.';
+}
+
+// ─── UTILS ────────────────────────────────────────────────
+function escHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function timeAgo(iso) {
+  const diff = (Date.now() - new Date(iso)) / 1000;
+  if (diff < 60) return 'just now';
+  if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+  return Math.floor(diff/86400) + 'd ago';
+}
+
+function formatDate(iso) {
+  try {
+    return new Date(iso).toLocaleString('en-US', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' });
+  } catch { return iso; }
+}
+
+// ─── INIT ─────────────────────────────────────────────────
+loadAll();
+setInterval(loadAll, 120000); // Refresh every 2 minutes
+</script>
 </body>
 </html>
