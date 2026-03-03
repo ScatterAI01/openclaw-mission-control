@@ -1,4 +1,12 @@
 {
-  "lastUpdated": "",
-  "jobs": []
+  "lastUpdated": "2026-03-03T23:40:16Z",
+  "workspace": "ranni",
+  "jobs": [
+    {"id":"21d97f8f-5145-4525-bc77-a656762608c0","name":"Ranni AI Daily News","schedule":"0 16 * * *","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T00:00:00.000Z"},
+    {"id":"441af127-874a-47c1-b970-30268429bc2d","name":"Ranni workspace daily backup","schedule":"0 11 * * *","tz":"UTC","enabled":true,"nextRun":"2026-03-04T11:00:00.000Z"},
+    {"id":"c063ec4b-242d-4865-8388-66c2c4962e6a","name":"Global KB daily backup","schedule":"30 11 * * *","tz":"UTC","enabled":true,"nextRun":"2026-03-04T11:30:00.000Z"},
+    {"id":"2706f048-7c9f-4ab2-bfeb-9865653c607d","name":"KB Doctor Daily","schedule":"0 10 * * *","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T18:00:00.000Z"},
+    {"id":"83f1dd36-15fd-4965-a40e-30c9f8855e1d","name":"openclaw-version-check","schedule":"0 10 * * *","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T18:00:00.000Z"},
+    {"id":"d990ed40-6ba4-4ed0-bc6c-222c0ab3150d","name":"Ranni Doctor Daily","schedule":"10 10 * * *","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T18:10:00.000Z"}
+  ]
 }

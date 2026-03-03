@@ -1,1 +1,20 @@
-{"lastUpdated":"","workspace":"melina","jobs":[]}
+{
+  "lastUpdated": "2026-03-03T23:40:16Z",
+  "workspace": "melina",
+  "jobs": [
+    {"id":"67477021-e127-4134-843d-ed8c1acda4dd","name":"x-signal-monitor (03:00 UTC)","schedule":"0 3 * * *","tz":"UTC","enabled":true,"nextRun":"2026-03-04T03:00:00.000Z"},
+    {"id":"6503d05a-55d7-4469-8d67-6bc533ba1d55","name":"x-signal-monitor (15:00 UTC)","schedule":"0 15 * * *","tz":"UTC","enabled":true,"nextRun":"2026-03-04T15:00:00.000Z"},
+    {"id":"c75559f9-b5b8-47aa-9c56-4653651aca51","name":"capital-doctor-daily","schedule":"20 10 * * *","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T18:20:00.000Z"},
+    {"id":"de5f901b-3f35-433d-9fc9-56574546902b","name":"daily-event-radar","schedule":"35 10 * * 1-5","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T18:35:00.000Z"},
+    {"id":"1f49c3ec-8cfd-447c-ae01-19187002e9b9","name":"daily-catalyst-calendar","schedule":"50 10 * * 1-5","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T18:50:00.000Z"},
+    {"id":"718f3b5f-631a-477c-8364-350d4b643c43","name":"daily-kb-geo-consistency-check","schedule":"5 11 * * 1-5","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T19:05:00.000Z"},
+    {"id":"d17a400b-2933-43f3-ba19-7a0362fea4a1","name":"daily-price-tracker","schedule":"30 21 * * 1-5","tz":"UTC","enabled":true,"nextRun":"2026-03-04T21:30:00.000Z"},
+    {"id":"63a8e98c-f8c4-4cde-8c92-8588c6f30383","name":"weekly-full-report","schedule":"0 21 * * 5","tz":"UTC","enabled":true,"nextRun":"2026-03-06T21:00:00.000Z"},
+    {"id":"1b30f750-ab3f-4122-adb6-fd5ef6d6c961","name":"quarterly-thesis-rewrite","schedule":"0 12 1 1,4,7,10 *","tz":"UTC","enabled":true,"nextRun":"2026-04-01T12:00:00.000Z"},
+    {"id":"66069f9a-e731-4c20-92e4-9d3adba8eb2e","name":"monthly-narrative-check","schedule":"0 12 1 * *","tz":"UTC","enabled":true,"nextRun":"2026-04-01T12:00:00.000Z"},
+    {"id":"b7efd369-c2a9-4854-a9f5-4 a9f5-753ba3119f52","name":"monthly-macro-update","schedule":"0 13 1 * *","tz":"UTC","enabled":true,"nextRun":"2026-04-01T13:00:00.000Z"},
+    {"id":"0ced2fc4-481b-4251-8675-87151c6dd483","name":"report-validator-BBAI-4week","schedule":"at 2026-03-30T14:00:00.000Z","tz":"UTC","enabled":true,"nextRun":"2026-03-30T14:00:00.000Z"},
+    {"id":"00e80035-aaf7-4b13-9688-e10b1737be6c","name":"report-validator-30day-batch","schedule":"at 2026-04-01T14:00:00.000Z","tz":"UTC","enabled":true,"nextRun":"2026-04-01T14:00:00.000Z"},
+    {"id":"2c44fa93-0a5d-4b8f-4c0d-4cde-8c92-8588c6f30383","name":"report-validator-NVDA-BA-3month","schedule":"at 2026-06-01T13:00:00.000Z","tz":"UTC","enabled":true,"nextRun":"2026-06-01T13:00:00.000Z"}
+  ]
+}

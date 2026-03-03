@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "",
+  "lastUpdated": "2026-03-03T23:40:16Z",
   "workspace": "ranni",
   "name": "Ranni",
-  "emoji": "🌙",
+  "emoji": "\ud83c\udf19",
   "model": "anthropic/claude-sonnet-4-6",
   "missionStatement": "",
   "status": "idle",

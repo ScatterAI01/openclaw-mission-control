@@ -1,4 +1,9 @@
 {
-  "lastUpdated": "",
-  "tasks": []
+  "lastUpdated": "2026-03-03T23:40:16Z",
+  "workspace": "ranni",
+  "tasks": [
+    {"id":"t_seed_1","title":"Wire data exporters → dashboard","description":"Auto-generate cron/tasks/projects/agent status JSON and git push.","status":"in_progress","priority":"high","assignee":"agent","createdAt":"2026-03-03T23:40:16Z"},
+    {"id":"t_seed_2","title":"Decide what content can be public","description":"Memory + KB might contain sensitive info; define redaction rules.","status":"backlog","priority":"high","assignee":"andy","createdAt":"2026-03-03T23:40:16Z"},
+    {"id":"t_seed_3","title":"Add company + melina sync","description":"Let Company & Melina push their own data/agent status into repo namespaces.","status":"backlog","priority":"medium","assignee":"agent","createdAt":"2026-03-03T23:40:16Z"}
+  ]
 }
