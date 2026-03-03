@@ -356,6 +356,169 @@
     .kb-summary { font-size: 12px; color: var(--muted); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     .kb-meta { font-size: 11px; color: var(--muted); margin-top: 8px; display: flex; gap: 10px; }
 
+    /* TEAMS */
+    .teams-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .team-workspace {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .team-ws-header {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .team-ws-title {
+      font-size: 15px;
+      font-weight: 600;
+      flex: 1;
+    }
+    .team-ws-body {
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 20px;
+    }
+    .team-main-agent {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .team-agent-info {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .team-emoji-big { font-size: 36px; line-height: 1; }
+    .team-agent-name { font-size: 16px; font-weight: 700; }
+    .team-agent-role { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .team-current-task {
+      background: var(--bg3);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .team-current-task strong { color: var(--text); display: block; margin-bottom: 3px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .team-activity {
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .activity-item {
+      padding: 5px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 8px;
+    }
+    .activity-item:last-child { border-bottom: none; }
+    .activity-time { color: var(--muted); flex-shrink: 0; width: 55px; }
+    .activity-text { color: var(--text); }
+
+    .team-subagents { }
+    .subagents-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .subagents-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 10px;
+    }
+    .subagent-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .subagent-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .subagent-emoji { font-size: 18px; }
+    .subagent-name { font-size: 13px; font-weight: 600; }
+    .subagent-task { font-size: 11px; color: var(--muted); line-height: 1.4; }
+    .subagent-duration { font-size: 10px; color: var(--muted); margin-top: 5px; }
+    .no-subagents { color: var(--muted); font-size: 12px; font-style: italic; }
+    .team-stats {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .stat-pill {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 12px;
+    }
+    .stat-pill strong { display: block; font-size: 20px; font-weight: 700; }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .project-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+    }
+    .project-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
+    .project-name { font-size: 14px; font-weight: 600; }
+    .project-status {
+      padding: 2px 9px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+    .project-status.active { background: #0c2d22; color: var(--accent-melina); }
+    .project-status.paused { background: #2d2a0a; color: #fbbf24; }
+    .project-status.done { background: var(--bg3); color: var(--muted); }
+    .project-desc { font-size: 12px; color: var(--muted); line-height: 1.5; margin-bottom: 14px; }
+    .progress-bar {
+      height: 4px;
+      background: var(--bg3);
+      border-radius: 2px;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+    .progress-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 0.3s;
+    }
+    .progress-fill.ranni { background: var(--accent-ranni); }
+    .progress-fill.company { background: var(--accent-company); }
+    .progress-fill.melina { background: var(--accent-melina); }
+    .progress-label { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; }
+    .project-meta { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+    .project-tag {
+      padding: 2px 8px;
+      background: var(--bg3);
+      border-radius: 4px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .project-ws-strip {
+      height: 3px;
+      border-radius: 2px;
+      margin-bottom: 14px;
+    }
+    .project-ws-strip.ranni { background: var(--accent-ranni); }
+    .project-ws-strip.company { background: var(--accent-company); }
+    .project-ws-strip.melina { background: var(--accent-melina); }
+
     /* UTILS */
     .section-header { margin-bottom: 16px; }
     .section-header h2 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
@@ -442,6 +605,12 @@
     <button class="nav-item" data-screen="tasks" onclick="switchScreen('tasks')">
       <span class="nav-icon">📋</span> Task Board
     </button>
+    <button class="nav-item" data-screen="teams" onclick="switchScreen('teams')">
+      <span class="nav-icon">👥</span> Teams
+    </button>
+    <button class="nav-item" data-screen="projects" onclick="switchScreen('projects')">
+      <span class="nav-icon">🚀</span> Projects
+    </button>
     <button class="nav-item" data-screen="calendar" onclick="switchScreen('calendar')">
       <span class="nav-icon">📅</span> Calendar
     </button>
@@ -482,6 +651,23 @@
     <!-- TASKS -->
     <div class="screen" id="screen-tasks">
       <div class="kanban" id="kanban-board">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+
+    <!-- TEAMS -->
+    <div class="screen" id="screen-teams">
+      <div class="team-stats" id="team-stats">
+        <!-- Filled by JS -->
+      </div>
+      <div class="teams-grid" id="teams-grid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="screen" id="screen-projects">
+      <div class="projects-grid" id="projects-grid">
         <!-- Filled by JS -->
       </div>
     </div>
@@ -612,6 +798,8 @@ async function loadAll() {
 // ─── RENDER ───────────────────────────────────────────────
 function renderAll() {
   renderOverview();
+  renderTeams();
+  renderProjects();
   renderTasks();
   renderCalendar();
   renderMemory();
@@ -648,6 +836,119 @@ function renderOverview() {
         </div>
         ${a.currentTask ? `<div style="font-size:12px;color:var(--muted)">📌 ${escHtml(a.currentTask)}</div>` : ''}
         <div style="font-size:12px;color:var(--muted);margin-top:8px">${taskCount} in progress</div>
+      </div>`;
+  }).join('');
+}
+
+function renderTeams() {
+  const totalAgents = WORKSPACES.length;
+  const totalSubagents = WORKSPACES.reduce((sum, ws) => {
+    return sum + (allData[ws]?.agent?.subagents?.filter(s => s.status === 'running')?.length || 0);
+  }, 0);
+  const working = WORKSPACES.filter(ws => allData[ws]?.agent?.status === 'working').length;
+
+  document.getElementById('team-stats').innerHTML = `
+    <div class="stat-pill"><strong>${totalAgents}</strong>Agents</div>
+    <div class="stat-pill"><strong>${totalSubagents}</strong>Active Subagents</div>
+    <div class="stat-pill"><strong>${working}</strong>Working Now</div>
+  `;
+
+  const WS_ROLES = {
+    ranni:   'Personal assistant · Research · KB',
+    company: 'ScatterAI business · Content · Products',
+    melina:  'Capital · Investments · Market research',
+  };
+
+  document.getElementById('teams-grid').innerHTML = WORKSPACES.map(ws => {
+    const agent = allData[ws]?.agent || {};
+    const meta = WS_META[ws];
+    const subagents = agent.subagents || [];
+    const running = subagents.filter(s => s.status === 'running');
+    const feed = (agent.activityFeed || []).slice(0, 4);
+
+    return `
+      <div class="team-workspace">
+        <div class="team-ws-header" style="border-left: 3px solid ${meta.color}">
+          <span style="font-size:20px">${agent.emoji || meta.emoji}</span>
+          <div class="team-ws-title">${agent.name || meta.label}</div>
+          <span class="status-pill ${agent.status === 'working' ? 'working' : 'idle'}">${agent.status || 'idle'}</span>
+        </div>
+        <div class="team-ws-body">
+          <div class="team-main-agent">
+            <div class="team-current-task">
+              <strong>Current task</strong>
+              ${agent.currentTask ? escHtml(agent.currentTask) : '<span style="color:var(--muted);font-style:italic">Idle</span>'}
+            </div>
+            ${feed.length ? `
+              <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;margin-top:2px">Activity</div>
+              <div class="team-activity">
+                ${feed.map(f => `
+                  <div class="activity-item">
+                    <span class="activity-time">${f.time ? timeAgo(f.time) : ''}</span>
+                    <span class="activity-text">${escHtml(f.text || '')}</span>
+                  </div>`).join('')}
+              </div>` : '<div style="font-size:12px;color:var(--muted);font-style:italic">No recent activity</div>'}
+          </div>
+          <div class="team-subagents">
+            <div class="subagents-label">Subagents ${running.length ? `(${running.length} running)` : ''}</div>
+            ${running.length ? `
+              <div class="subagents-grid">
+                ${running.map(s => `
+                  <div class="subagent-card">
+                    <div class="subagent-header">
+                      <span class="subagent-emoji">${s.emoji || '🤖'}</span>
+                      <span class="subagent-name">${escHtml(s.label || s.id || 'Sub-agent')}</span>
+                    </div>
+                    <div class="subagent-task">${escHtml(s.task || s.description || 'Working...')}</div>
+                    ${s.startedAt ? `<div class="subagent-duration">Started ${timeAgo(s.startedAt)}</div>` : ''}
+                  </div>`).join('')}
+              </div>` : '<div class="no-subagents">No active subagents</div>'}
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function renderProjects() {
+  const allProjects = [];
+  for (const ws of WORKSPACES) {
+    const projects = allData[ws]?.projects?.projects || [];
+    projects.forEach(p => allProjects.push({ ...p, workspace: ws }));
+  }
+
+  const grid = document.getElementById('projects-grid');
+  if (!allProjects.length) {
+    grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="icon">🚀</div><p>No projects yet. Ask your agents to add projects.</p></div>';
+    return;
+  }
+
+  // Sort: active first, then paused, then done
+  const order = { active: 0, paused: 1, done: 2 };
+  allProjects.sort((a, b) => (order[a.status] || 0) - (order[b.status] || 0));
+
+  grid.innerHTML = allProjects.map(p => {
+    const meta = WS_META[p.workspace];
+    const progress = p.progress || 0;
+    return `
+      <div class="project-card">
+        <div class="project-ws-strip ${p.workspace}"></div>
+        <div class="project-header">
+          <div class="project-name">${escHtml(p.name)}</div>
+          <span class="project-status ${p.status || 'active'}">${p.status || 'active'}</span>
+        </div>
+        ${p.description ? `<div class="project-desc">${escHtml(p.description)}</div>` : ''}
+        <div class="progress-bar">
+          <div class="progress-fill ${p.workspace}" style="width:${progress}%"></div>
+        </div>
+        <div class="progress-label">
+          <span>Progress</span>
+          <span>${progress}%</span>
+        </div>
+        <div class="project-meta">
+          <span class="project-tag">${meta.emoji} ${meta.label}</span>
+          ${(p.tags || []).map(t => `<span class="project-tag">${escHtml(t)}</span>`).join('')}
+          ${p.tasks ? `<span class="project-tag">${p.tasks.length} tasks</span>` : ''}
+        </div>
       </div>`;
   }).join('');
 }
@@ -773,12 +1074,12 @@ function switchScreen(screen) {
   document.querySelectorAll('.nav-item').forEach(n => n.classList.toggle('active', n.dataset.screen === screen));
   document.getElementById('screen-' + screen).classList.add('active');
 
-  const titles = { overview: 'Overview', tasks: 'Task Board', calendar: 'Calendar', memory: 'Memory', kb: 'Knowledge Base' };
+  const titles = { overview: 'Overview', teams: 'Teams', projects: 'Projects', tasks: 'Task Board', calendar: 'Calendar', memory: 'Memory', kb: 'Knowledge Base' };
   document.getElementById('screen-title').textContent = titles[screen] || screen;
 
   // Calendar shows all workspaces regardless
   const badge = document.getElementById('ws-badge');
-  if (screen === 'calendar' || screen === 'kb') {
+  if (screen === 'calendar' || screen === 'kb' || screen === 'teams' || screen === 'projects') {
     badge.textContent = '🌐 All Workspaces';
     badge.className = 'ws-badge all';
   } else {
