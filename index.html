@@ -344,7 +344,7 @@
       margin-bottom: 4px;
     }
     .tg-ws-items { font-size: 11px; line-height: 1.35; color: var(--text); }
-    .tg-ws-items div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .tg-ws-items div { line-height: 1.5; }
 
     .cron-list { display: flex; flex-direction: column; gap: 10px; }
     .cron-item {
@@ -1221,10 +1221,8 @@ function renderCalendar() {
 
         // Merge same-hour tasks for this workspace
         const names = Array.from(new Set(evts.map(e => e.name).filter(Boolean)));
-        const shown = names.slice(0, 2);
-        const more = names.length - shown.length;
 
-        const itemsHtml = shown.map(n => `<div>• ${escHtml(n)}</div>`).join('') + (more > 0 ? `<div style="color:var(--muted)">+${more} more</div>` : '');
+        const itemsHtml = names.map(n => `<div style="padding:2px 0;border-bottom:1px solid var(--border);font-size:11px">${escHtml(n)}</div>`).join('');
 
         return `
           <div class="tg-ws" style="border-left-color:${meta.color}">
@@ -1262,13 +1260,22 @@ function renderMemory() {
 
 function kbPrimaryCategory(item) {
   const tags = (item.tags || []).map(t => String(t).toLowerCase());
+  const title = String(item.title || '').toLowerCase();
+  const summary = String(item.summary || '').toLowerCase();
+  const all = tags.join(' ') + ' ' + title + ' ' + summary;
 
-  const hasAny = (arr) => arr.some(x => tags.includes(String(x).toLowerCase()));
+  const hasTag = (arr) => arr.some(x => tags.includes(String(x).toLowerCase()));
+  const inAll = (arr) => arr.some(x => all.includes(String(x).toLowerCase()));
 
-  // 3 top-level buckets (Andy request)
-  if (hasAny(['ai','llm','tech','product','startup','promptengineering','prompt'])) return 'ai';
-  if (hasAny(['investment','market','stocks','trading','bitcoin','btc','crypto','ethereum','macro','gold','rates','inflation'])) return 'financial';
-  return 'news'; // geopolitics / regulation / general news
+  // Financial: explicit money/market tags
+  if (hasTag(['investment','market','stocks','trading','bitcoin','btc','crypto','ethereum','macro','gold','rates','inflation','regulation','finance','fintech'])) return 'financial';
+
+  // Geo/News: must have explicit geopolitical/news keywords (positive match only)
+  const geoKeywords = ['geopolitics','geopolitical','war','military','china','russia','ukraine','europe','nato','sanction','tariff','election','government','policy','pentagon','defense','diplomat','national security','congress','senate','white house'];
+  if (inAll(geoKeywords)) return 'news';
+
+  // Everything else → AI (default for an AI-focused KB)
+  return 'ai';
 }
 
 function renderKb() {
