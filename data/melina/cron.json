@@ -1,22 +1,6 @@
 {
-  "lastUpdated": "2026-03-04T21:28:20Z",
+  "lastUpdated": "2026-03-04T22:04:48Z",
   "jobs": [
-    {
-      "id": "194d1389-b186-4d27-8f28-6f954a2dd3f5",
-      "name": "post-market-wrap",
-      "enabled": true,
-      "schedule": "30 21 * * 1-5",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "d17a400b-2933-43f3-ba19-7a0362fea4a1",
-      "name": "daily-price-tracker",
-      "enabled": true,
-      "schedule": "30 21 * * 1-5",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
       "name": "hourly-signal-scanner",
@@ -94,6 +78,22 @@
       "name": "ws-capital-consistency-check",
       "enabled": true,
       "schedule": "30 19 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "194d1389-b186-4d27-8f28-6f954a2dd3f5",
+      "name": "post-market-wrap",
+      "enabled": true,
+      "schedule": "30 21 * * 1-5",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "d17a400b-2933-43f3-ba19-7a0362fea4a1",
+      "name": "daily-price-tracker",
+      "enabled": true,
+      "schedule": "30 21 * * 1-5",
       "tz": "UTC",
       "workspace": "melina"
     },
