@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T02:04:46Z",
+  "lastUpdated": "2026-03-04T02:26:31Z",
   "workspace": "company",
   "name": "Company",
   "emoji": "🏢",
@@ -8,5 +8,5 @@
   "currentTask": null,
   "activityFeed": [],
   "subagents": [],
-  "missionStatement": "Find and package AI use cases that create real value, then turn them into revenue."
+  "missionStatement": "Where AI meets the real world — and charges for it."
 }
