@@ -1,0 +1,5424 @@
+{
+  "lastUpdated": "2026-03-04T00:27:55Z",
+  "tz": "America/Los_Angeles",
+  "rangeStartPt": "2026-03-02",
+  "rangeEndPt": "2026-04-27",
+  "events": [
+    {
+      "tsUtc": "2026-03-02T11:00:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "03:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-02T11:30:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "03:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-02T15:00:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "07:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-02T18:00:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-02T18:00:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-02T18:10:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-02T18:20:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-02T18:35:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-02T18:50:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-02T19:05:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-02T21:30:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "13:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-03T00:00:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-03T03:00:00Z",
+      "datePt": "2026-03-02",
+      "timePt": "19:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-03T11:00:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "03:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-03T11:30:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "03:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-03T15:00:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "07:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-03T18:00:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-03T18:00:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-03T18:10:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-03T18:20:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-03T18:35:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-03T18:50:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-03T19:05:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-03T21:30:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "13:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-04T00:00:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-04T03:00:00Z",
+      "datePt": "2026-03-03",
+      "timePt": "19:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-04T11:00:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "03:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-04T11:30:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "03:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-04T15:00:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "07:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-04T18:00:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-04T18:00:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-04T18:10:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-04T18:20:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-04T18:35:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-04T18:50:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-04T19:05:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-04T21:30:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "13:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-05T00:00:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-05T03:00:00Z",
+      "datePt": "2026-03-04",
+      "timePt": "19:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-05T11:00:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "03:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-05T11:30:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "03:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-05T15:00:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "07:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-05T18:00:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-05T18:00:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-05T18:10:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-05T18:20:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-05T18:35:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-05T18:50:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-05T19:05:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-05T21:30:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "13:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-06T00:00:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-06T03:00:00Z",
+      "datePt": "2026-03-05",
+      "timePt": "19:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-06T11:00:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "03:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-06T11:30:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "03:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-06T15:00:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "07:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-06T18:00:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-06T18:00:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-06T18:10:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-06T18:20:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-06T18:35:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-06T18:50:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-06T19:05:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-06T21:00:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "13:00",
+      "name": "weekly-full-report",
+      "workspace": "melina",
+      "jobId": "63a8e98c-f8c4-4cde-8c92-8588c6f30383"
+    },
+    {
+      "tsUtc": "2026-03-06T21:30:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "13:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-07T00:00:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-07T03:00:00Z",
+      "datePt": "2026-03-06",
+      "timePt": "19:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-07T11:00:00Z",
+      "datePt": "2026-03-07",
+      "timePt": "03:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-07T11:30:00Z",
+      "datePt": "2026-03-07",
+      "timePt": "03:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-07T15:00:00Z",
+      "datePt": "2026-03-07",
+      "timePt": "07:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-07T18:00:00Z",
+      "datePt": "2026-03-07",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-07T18:00:00Z",
+      "datePt": "2026-03-07",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-07T18:10:00Z",
+      "datePt": "2026-03-07",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-07T18:20:00Z",
+      "datePt": "2026-03-07",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-08T00:00:00Z",
+      "datePt": "2026-03-07",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-08T03:00:00Z",
+      "datePt": "2026-03-07",
+      "timePt": "19:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-08T11:00:00Z",
+      "datePt": "2026-03-08",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-08T11:30:00Z",
+      "datePt": "2026-03-08",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-08T15:00:00Z",
+      "datePt": "2026-03-08",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-08T17:00:00Z",
+      "datePt": "2026-03-08",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-08T17:00:00Z",
+      "datePt": "2026-03-08",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-08T17:10:00Z",
+      "datePt": "2026-03-08",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-08T17:20:00Z",
+      "datePt": "2026-03-08",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-08T23:00:00Z",
+      "datePt": "2026-03-08",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-09T03:00:00Z",
+      "datePt": "2026-03-08",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-09T11:00:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-09T11:30:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-09T15:00:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-09T17:00:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-09T17:00:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-09T17:10:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-09T17:20:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-09T17:35:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-09T17:50:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-09T18:05:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-09T21:30:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-09T23:00:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-10T03:00:00Z",
+      "datePt": "2026-03-09",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-10T11:00:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-10T11:30:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-10T15:00:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-10T17:00:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-10T17:00:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-10T17:10:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-10T17:20:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-10T17:35:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-10T17:50:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-10T18:05:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-10T21:30:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-10T23:00:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-11T03:00:00Z",
+      "datePt": "2026-03-10",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-11T11:00:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-11T11:30:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-11T15:00:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-11T17:00:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-11T17:00:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-11T17:10:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-11T17:20:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-11T17:35:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-11T17:50:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-11T18:05:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-11T21:30:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-11T23:00:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-12T03:00:00Z",
+      "datePt": "2026-03-11",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-12T11:00:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-12T11:30:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-12T15:00:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-12T17:00:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-12T17:00:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-12T17:10:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-12T17:20:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-12T17:35:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-12T17:50:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-12T18:05:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-12T21:30:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-12T23:00:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-13T03:00:00Z",
+      "datePt": "2026-03-12",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-13T11:00:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-13T11:30:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-13T15:00:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-13T17:00:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-13T17:00:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-13T17:10:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-13T17:20:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-13T17:35:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-13T17:50:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-13T18:05:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-13T21:00:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "14:00",
+      "name": "weekly-full-report",
+      "workspace": "melina",
+      "jobId": "63a8e98c-f8c4-4cde-8c92-8588c6f30383"
+    },
+    {
+      "tsUtc": "2026-03-13T21:30:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-13T23:00:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-14T03:00:00Z",
+      "datePt": "2026-03-13",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-14T11:00:00Z",
+      "datePt": "2026-03-14",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-14T11:30:00Z",
+      "datePt": "2026-03-14",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-14T15:00:00Z",
+      "datePt": "2026-03-14",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-14T17:00:00Z",
+      "datePt": "2026-03-14",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-14T17:00:00Z",
+      "datePt": "2026-03-14",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-14T17:10:00Z",
+      "datePt": "2026-03-14",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-14T17:20:00Z",
+      "datePt": "2026-03-14",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-14T23:00:00Z",
+      "datePt": "2026-03-14",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-15T03:00:00Z",
+      "datePt": "2026-03-14",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-15T11:00:00Z",
+      "datePt": "2026-03-15",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-15T11:30:00Z",
+      "datePt": "2026-03-15",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-15T15:00:00Z",
+      "datePt": "2026-03-15",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-15T17:00:00Z",
+      "datePt": "2026-03-15",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-15T17:00:00Z",
+      "datePt": "2026-03-15",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-15T17:10:00Z",
+      "datePt": "2026-03-15",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-15T17:20:00Z",
+      "datePt": "2026-03-15",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-15T23:00:00Z",
+      "datePt": "2026-03-15",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-16T03:00:00Z",
+      "datePt": "2026-03-15",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-16T11:00:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-16T11:30:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-16T15:00:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-16T17:00:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-16T17:00:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-16T17:10:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-16T17:20:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-16T17:35:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-16T17:50:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-16T18:05:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-16T21:30:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-16T23:00:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-17T03:00:00Z",
+      "datePt": "2026-03-16",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-17T11:00:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-17T11:30:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-17T15:00:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-17T17:00:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-17T17:00:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-17T17:10:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-17T17:20:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-17T17:35:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-17T17:50:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-17T18:05:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-17T21:30:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-17T23:00:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-18T03:00:00Z",
+      "datePt": "2026-03-17",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-18T11:00:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-18T11:30:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-18T15:00:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-18T17:00:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-18T17:00:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-18T17:10:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-18T17:20:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-18T17:35:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-18T17:50:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-18T18:05:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-18T21:30:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-18T23:00:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-19T03:00:00Z",
+      "datePt": "2026-03-18",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-19T11:00:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-19T11:30:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-19T15:00:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-19T17:00:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-19T17:00:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-19T17:10:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-19T17:20:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-19T17:35:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-19T17:50:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-19T18:05:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-19T21:30:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-19T23:00:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-20T03:00:00Z",
+      "datePt": "2026-03-19",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-20T11:00:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-20T11:30:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-20T15:00:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-20T17:00:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-20T17:00:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-20T17:10:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-20T17:20:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-20T17:35:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-20T17:50:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-20T18:05:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-20T21:00:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "14:00",
+      "name": "weekly-full-report",
+      "workspace": "melina",
+      "jobId": "63a8e98c-f8c4-4cde-8c92-8588c6f30383"
+    },
+    {
+      "tsUtc": "2026-03-20T21:30:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-20T23:00:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-21T03:00:00Z",
+      "datePt": "2026-03-20",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-21T11:00:00Z",
+      "datePt": "2026-03-21",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-21T11:30:00Z",
+      "datePt": "2026-03-21",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-21T15:00:00Z",
+      "datePt": "2026-03-21",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-21T17:00:00Z",
+      "datePt": "2026-03-21",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-21T17:00:00Z",
+      "datePt": "2026-03-21",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-21T17:10:00Z",
+      "datePt": "2026-03-21",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-21T17:20:00Z",
+      "datePt": "2026-03-21",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-21T23:00:00Z",
+      "datePt": "2026-03-21",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-22T03:00:00Z",
+      "datePt": "2026-03-21",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-22T11:00:00Z",
+      "datePt": "2026-03-22",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-22T11:30:00Z",
+      "datePt": "2026-03-22",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-22T15:00:00Z",
+      "datePt": "2026-03-22",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-22T17:00:00Z",
+      "datePt": "2026-03-22",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-22T17:00:00Z",
+      "datePt": "2026-03-22",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-22T17:10:00Z",
+      "datePt": "2026-03-22",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-22T17:20:00Z",
+      "datePt": "2026-03-22",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-22T23:00:00Z",
+      "datePt": "2026-03-22",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-23T03:00:00Z",
+      "datePt": "2026-03-22",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-23T11:00:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-23T11:30:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-23T15:00:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-23T17:00:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-23T17:00:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-23T17:10:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-23T17:20:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-23T17:35:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-23T17:50:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-23T18:05:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-23T21:30:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-23T23:00:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-24T03:00:00Z",
+      "datePt": "2026-03-23",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-24T11:00:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-24T11:30:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-24T15:00:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-24T17:00:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-24T17:00:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-24T17:10:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-24T17:20:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-24T17:35:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-24T17:50:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-24T18:05:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-24T21:30:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-24T23:00:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-25T03:00:00Z",
+      "datePt": "2026-03-24",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-25T11:00:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-25T11:30:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-25T15:00:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-25T17:00:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-25T17:00:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-25T17:10:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-25T17:20:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-25T17:35:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-25T17:50:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-25T18:05:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-25T21:30:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-25T23:00:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-26T03:00:00Z",
+      "datePt": "2026-03-25",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-26T11:00:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-26T11:30:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-26T15:00:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-26T17:00:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-26T17:00:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-26T17:10:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-26T17:20:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-26T17:35:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-26T17:50:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-26T18:05:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-26T21:30:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-26T23:00:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-27T03:00:00Z",
+      "datePt": "2026-03-26",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-27T11:00:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-27T11:30:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-27T15:00:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-27T17:00:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-27T17:00:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-27T17:10:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-27T17:20:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-27T17:35:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-27T17:50:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-27T18:05:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-27T21:00:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "14:00",
+      "name": "weekly-full-report",
+      "workspace": "melina",
+      "jobId": "63a8e98c-f8c4-4cde-8c92-8588c6f30383"
+    },
+    {
+      "tsUtc": "2026-03-27T21:30:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-27T23:00:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-28T03:00:00Z",
+      "datePt": "2026-03-27",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-28T11:00:00Z",
+      "datePt": "2026-03-28",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-28T11:30:00Z",
+      "datePt": "2026-03-28",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-28T15:00:00Z",
+      "datePt": "2026-03-28",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-28T17:00:00Z",
+      "datePt": "2026-03-28",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-28T17:00:00Z",
+      "datePt": "2026-03-28",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-28T17:10:00Z",
+      "datePt": "2026-03-28",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-28T17:20:00Z",
+      "datePt": "2026-03-28",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-28T23:00:00Z",
+      "datePt": "2026-03-28",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-29T03:00:00Z",
+      "datePt": "2026-03-28",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-29T11:00:00Z",
+      "datePt": "2026-03-29",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-29T11:30:00Z",
+      "datePt": "2026-03-29",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-29T15:00:00Z",
+      "datePt": "2026-03-29",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-29T17:00:00Z",
+      "datePt": "2026-03-29",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-29T17:00:00Z",
+      "datePt": "2026-03-29",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-29T17:10:00Z",
+      "datePt": "2026-03-29",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-29T17:20:00Z",
+      "datePt": "2026-03-29",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-29T23:00:00Z",
+      "datePt": "2026-03-29",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-30T03:00:00Z",
+      "datePt": "2026-03-29",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-30T11:00:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-30T11:30:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-30T14:00:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "07:00",
+      "name": "report-validator-BBAI-4week",
+      "workspace": "melina",
+      "jobId": "0ced2fc4-481b-4251-8675-87151c6dd483"
+    },
+    {
+      "tsUtc": "2026-03-30T15:00:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-30T17:00:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-30T17:00:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-30T17:10:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-30T17:20:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-30T17:35:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-30T17:50:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-30T18:05:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-30T21:30:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-30T23:00:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-03-31T03:00:00Z",
+      "datePt": "2026-03-30",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-03-31T11:00:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-03-31T11:30:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-03-31T15:00:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-03-31T17:00:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-03-31T17:00:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-03-31T17:10:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-03-31T17:20:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-03-31T17:35:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-03-31T17:50:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-03-31T18:05:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-03-31T21:30:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-03-31T23:00:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-01T03:00:00Z",
+      "datePt": "2026-03-31",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-01T11:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-01T11:30:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-01T12:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "05:00",
+      "name": "monthly-narrative-check",
+      "workspace": "melina",
+      "jobId": "66069f9a-e731-4c20-92e4-9d3adba8eb2e"
+    },
+    {
+      "tsUtc": "2026-04-01T12:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "05:00",
+      "name": "quarterly-thesis-rewrite",
+      "workspace": "melina",
+      "jobId": "1b30f750-ab3f-4122-adb6-fd5ef6d6c961"
+    },
+    {
+      "tsUtc": "2026-04-01T13:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "06:00",
+      "name": "monthly-macro-update",
+      "workspace": "melina",
+      "jobId": "b7efd369-c2a9-4854-a9f5-753ba3119f52"
+    },
+    {
+      "tsUtc": "2026-04-01T14:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "07:00",
+      "name": "report-validator-30day-batch",
+      "workspace": "melina",
+      "jobId": "00e80035-aaf7-4b13-9688-e10b1737be6c"
+    },
+    {
+      "tsUtc": "2026-04-01T15:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-01T17:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-01T17:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-01T17:10:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-01T17:20:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-01T17:35:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-01T17:50:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-01T18:05:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-01T21:30:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-01T23:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-02T03:00:00Z",
+      "datePt": "2026-04-01",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-02T11:00:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-02T11:30:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-02T15:00:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-02T17:00:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-02T17:00:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-02T17:10:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-02T17:20:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-02T17:35:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-02T17:50:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-02T18:05:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-02T21:30:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-02T23:00:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-03T03:00:00Z",
+      "datePt": "2026-04-02",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-03T11:00:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-03T11:30:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-03T15:00:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-03T17:00:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-03T17:00:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-03T17:10:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-03T17:20:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-03T17:35:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-03T17:50:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-03T18:05:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-03T21:00:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "14:00",
+      "name": "weekly-full-report",
+      "workspace": "melina",
+      "jobId": "63a8e98c-f8c4-4cde-8c92-8588c6f30383"
+    },
+    {
+      "tsUtc": "2026-04-03T21:30:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-03T23:00:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-04T03:00:00Z",
+      "datePt": "2026-04-03",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-04T11:00:00Z",
+      "datePt": "2026-04-04",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-04T11:30:00Z",
+      "datePt": "2026-04-04",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-04T15:00:00Z",
+      "datePt": "2026-04-04",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-04T17:00:00Z",
+      "datePt": "2026-04-04",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-04T17:00:00Z",
+      "datePt": "2026-04-04",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-04T17:10:00Z",
+      "datePt": "2026-04-04",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-04T17:20:00Z",
+      "datePt": "2026-04-04",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-04T23:00:00Z",
+      "datePt": "2026-04-04",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-05T03:00:00Z",
+      "datePt": "2026-04-04",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-05T11:00:00Z",
+      "datePt": "2026-04-05",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-05T11:30:00Z",
+      "datePt": "2026-04-05",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-05T15:00:00Z",
+      "datePt": "2026-04-05",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-05T17:00:00Z",
+      "datePt": "2026-04-05",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-05T17:00:00Z",
+      "datePt": "2026-04-05",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-05T17:10:00Z",
+      "datePt": "2026-04-05",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-05T17:20:00Z",
+      "datePt": "2026-04-05",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-05T23:00:00Z",
+      "datePt": "2026-04-05",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-06T03:00:00Z",
+      "datePt": "2026-04-05",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-06T11:00:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-06T11:30:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-06T15:00:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-06T17:00:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-06T17:00:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-06T17:10:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-06T17:20:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-06T17:35:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-06T17:50:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-06T18:05:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-06T21:30:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-06T23:00:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-07T03:00:00Z",
+      "datePt": "2026-04-06",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-07T11:00:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-07T11:30:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-07T15:00:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-07T17:00:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-07T17:00:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-07T17:10:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-07T17:20:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-07T17:35:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-07T17:50:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-07T18:05:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-07T21:30:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-07T23:00:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-08T03:00:00Z",
+      "datePt": "2026-04-07",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-08T11:00:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-08T11:30:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-08T15:00:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-08T17:00:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-08T17:00:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-08T17:10:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-08T17:20:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-08T17:35:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-08T17:50:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-08T18:05:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-08T21:30:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-08T23:00:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-09T03:00:00Z",
+      "datePt": "2026-04-08",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-09T11:00:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-09T11:30:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-09T15:00:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-09T17:00:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-09T17:00:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-09T17:10:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-09T17:20:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-09T17:35:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-09T17:50:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-09T18:05:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-09T21:30:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-09T23:00:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-10T03:00:00Z",
+      "datePt": "2026-04-09",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-10T11:00:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-10T11:30:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-10T15:00:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-10T17:00:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-10T17:00:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-10T17:10:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-10T17:20:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-10T17:35:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-10T17:50:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-10T18:05:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-10T21:00:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "14:00",
+      "name": "weekly-full-report",
+      "workspace": "melina",
+      "jobId": "63a8e98c-f8c4-4cde-8c92-8588c6f30383"
+    },
+    {
+      "tsUtc": "2026-04-10T21:30:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-10T23:00:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-11T03:00:00Z",
+      "datePt": "2026-04-10",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-11T11:00:00Z",
+      "datePt": "2026-04-11",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-11T11:30:00Z",
+      "datePt": "2026-04-11",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-11T15:00:00Z",
+      "datePt": "2026-04-11",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-11T17:00:00Z",
+      "datePt": "2026-04-11",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-11T17:00:00Z",
+      "datePt": "2026-04-11",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-11T17:10:00Z",
+      "datePt": "2026-04-11",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-11T17:20:00Z",
+      "datePt": "2026-04-11",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-11T23:00:00Z",
+      "datePt": "2026-04-11",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-12T03:00:00Z",
+      "datePt": "2026-04-11",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-12T11:00:00Z",
+      "datePt": "2026-04-12",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-12T11:30:00Z",
+      "datePt": "2026-04-12",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-12T15:00:00Z",
+      "datePt": "2026-04-12",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-12T17:00:00Z",
+      "datePt": "2026-04-12",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-12T17:00:00Z",
+      "datePt": "2026-04-12",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-12T17:10:00Z",
+      "datePt": "2026-04-12",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-12T17:20:00Z",
+      "datePt": "2026-04-12",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-12T23:00:00Z",
+      "datePt": "2026-04-12",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-13T03:00:00Z",
+      "datePt": "2026-04-12",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-13T11:00:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-13T11:30:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-13T15:00:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-13T17:00:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-13T17:00:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-13T17:10:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-13T17:20:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-13T17:35:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-13T17:50:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-13T18:05:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-13T21:30:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-13T23:00:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-14T03:00:00Z",
+      "datePt": "2026-04-13",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-14T11:00:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-14T11:30:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-14T15:00:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-14T17:00:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-14T17:00:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-14T17:10:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-14T17:20:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-14T17:35:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-14T17:50:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-14T18:05:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-14T21:30:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-14T23:00:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-15T03:00:00Z",
+      "datePt": "2026-04-14",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-15T11:00:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-15T11:30:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-15T15:00:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-15T17:00:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-15T17:00:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-15T17:10:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-15T17:20:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-15T17:35:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-15T17:50:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-15T18:05:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-15T21:30:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-15T23:00:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-16T03:00:00Z",
+      "datePt": "2026-04-15",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-16T11:00:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-16T11:30:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-16T15:00:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-16T17:00:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-16T17:00:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-16T17:10:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-16T17:20:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-16T17:35:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-16T17:50:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-16T18:05:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-16T21:30:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-16T23:00:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-17T03:00:00Z",
+      "datePt": "2026-04-16",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-17T11:00:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-17T11:30:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-17T15:00:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-17T17:00:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-17T17:00:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-17T17:10:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-17T17:20:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-17T17:35:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-17T17:50:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-17T18:05:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-17T21:00:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "14:00",
+      "name": "weekly-full-report",
+      "workspace": "melina",
+      "jobId": "63a8e98c-f8c4-4cde-8c92-8588c6f30383"
+    },
+    {
+      "tsUtc": "2026-04-17T21:30:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-17T23:00:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-18T03:00:00Z",
+      "datePt": "2026-04-17",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-18T11:00:00Z",
+      "datePt": "2026-04-18",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-18T11:30:00Z",
+      "datePt": "2026-04-18",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-18T15:00:00Z",
+      "datePt": "2026-04-18",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-18T17:00:00Z",
+      "datePt": "2026-04-18",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-18T17:00:00Z",
+      "datePt": "2026-04-18",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-18T17:10:00Z",
+      "datePt": "2026-04-18",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-18T17:20:00Z",
+      "datePt": "2026-04-18",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-18T23:00:00Z",
+      "datePt": "2026-04-18",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-19T03:00:00Z",
+      "datePt": "2026-04-18",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-19T11:00:00Z",
+      "datePt": "2026-04-19",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-19T11:30:00Z",
+      "datePt": "2026-04-19",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-19T15:00:00Z",
+      "datePt": "2026-04-19",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-19T17:00:00Z",
+      "datePt": "2026-04-19",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-19T17:00:00Z",
+      "datePt": "2026-04-19",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-19T17:10:00Z",
+      "datePt": "2026-04-19",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-19T17:20:00Z",
+      "datePt": "2026-04-19",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-19T23:00:00Z",
+      "datePt": "2026-04-19",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-20T03:00:00Z",
+      "datePt": "2026-04-19",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-20T11:00:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-20T11:30:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-20T15:00:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-20T17:00:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-20T17:00:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-20T17:10:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-20T17:20:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-20T17:35:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-20T17:50:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-20T18:05:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-20T21:30:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-20T23:00:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-21T03:00:00Z",
+      "datePt": "2026-04-20",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-21T11:00:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-21T11:30:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-21T15:00:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-21T17:00:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-21T17:00:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-21T17:10:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-21T17:20:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-21T17:35:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-21T17:50:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-21T18:05:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-21T21:30:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-21T23:00:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-22T03:00:00Z",
+      "datePt": "2026-04-21",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-22T11:00:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-22T11:30:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-22T15:00:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-22T17:00:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-22T17:00:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-22T17:10:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-22T17:20:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-22T17:35:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-22T17:50:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-22T18:05:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-22T21:30:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-22T23:00:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-23T03:00:00Z",
+      "datePt": "2026-04-22",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-23T11:00:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-23T11:30:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-23T15:00:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-23T17:00:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-23T17:00:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-23T17:10:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-23T17:20:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-23T17:35:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-23T17:50:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-23T18:05:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-23T21:30:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-23T23:00:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-24T03:00:00Z",
+      "datePt": "2026-04-23",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-24T11:00:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-24T11:30:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-24T15:00:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-24T17:00:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-24T17:00:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-24T17:10:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-24T17:20:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-24T17:35:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "10:35",
+      "name": "daily-event-radar",
+      "workspace": "melina",
+      "jobId": "de5f901b-3f35-433d-9fc9-56574546902b"
+    },
+    {
+      "tsUtc": "2026-04-24T17:50:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "10:50",
+      "name": "daily-catalyst-calendar",
+      "workspace": "melina",
+      "jobId": "1f49c3ec-8cfd-447c-ae01-19187002e9b9"
+    },
+    {
+      "tsUtc": "2026-04-24T18:05:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "11:05",
+      "name": "daily-kb-geo-consistency-check",
+      "workspace": "melina",
+      "jobId": "718f3b5f-631a-477c-8364-350d4b643c43"
+    },
+    {
+      "tsUtc": "2026-04-24T21:00:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "14:00",
+      "name": "weekly-full-report",
+      "workspace": "melina",
+      "jobId": "63a8e98c-f8c4-4cde-8c92-8588c6f30383"
+    },
+    {
+      "tsUtc": "2026-04-24T21:30:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "14:30",
+      "name": "daily-price-tracker",
+      "workspace": "melina",
+      "jobId": "d17a400b-2933-43f3-ba19-7a0362fea4a1"
+    },
+    {
+      "tsUtc": "2026-04-24T23:00:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-25T03:00:00Z",
+      "datePt": "2026-04-24",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-25T11:00:00Z",
+      "datePt": "2026-04-25",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-25T11:30:00Z",
+      "datePt": "2026-04-25",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-25T15:00:00Z",
+      "datePt": "2026-04-25",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-25T17:00:00Z",
+      "datePt": "2026-04-25",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-25T17:00:00Z",
+      "datePt": "2026-04-25",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-25T17:10:00Z",
+      "datePt": "2026-04-25",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-25T17:20:00Z",
+      "datePt": "2026-04-25",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-25T23:00:00Z",
+      "datePt": "2026-04-25",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-26T03:00:00Z",
+      "datePt": "2026-04-25",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    },
+    {
+      "tsUtc": "2026-04-26T11:00:00Z",
+      "datePt": "2026-04-26",
+      "timePt": "04:00",
+      "name": "Ranni workspace daily backup",
+      "workspace": "ranni",
+      "jobId": "441af127-874a-47c1-b970-30268429bc2d"
+    },
+    {
+      "tsUtc": "2026-04-26T11:30:00Z",
+      "datePt": "2026-04-26",
+      "timePt": "04:30",
+      "name": "Global KB daily backup",
+      "workspace": "ranni",
+      "jobId": "c063ec4b-242d-4865-8388-66c2c4962e6a"
+    },
+    {
+      "tsUtc": "2026-04-26T15:00:00Z",
+      "datePt": "2026-04-26",
+      "timePt": "08:00",
+      "name": "x-signal-monitor (15:00 UTC)",
+      "workspace": "melina",
+      "jobId": "6503d05a-55d7-4469-8d67-6bc533ba1d55"
+    },
+    {
+      "tsUtc": "2026-04-26T17:00:00Z",
+      "datePt": "2026-04-26",
+      "timePt": "10:00",
+      "name": "KB Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "2706f048-7c9f-4ab2-bfeb-9865653c607d"
+    },
+    {
+      "tsUtc": "2026-04-26T17:00:00Z",
+      "datePt": "2026-04-26",
+      "timePt": "10:00",
+      "name": "openclaw-version-check",
+      "workspace": "ranni",
+      "jobId": "83f1dd36-15fd-4965-a40e-30c9f8855e1d"
+    },
+    {
+      "tsUtc": "2026-04-26T17:10:00Z",
+      "datePt": "2026-04-26",
+      "timePt": "10:10",
+      "name": "Ranni Doctor Daily",
+      "workspace": "ranni",
+      "jobId": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d"
+    },
+    {
+      "tsUtc": "2026-04-26T17:20:00Z",
+      "datePt": "2026-04-26",
+      "timePt": "10:20",
+      "name": "capital-doctor-daily",
+      "workspace": "melina",
+      "jobId": "c75559f9-b5b8-47aa-9c56-4653651aca51"
+    },
+    {
+      "tsUtc": "2026-04-26T23:00:00Z",
+      "datePt": "2026-04-26",
+      "timePt": "16:00",
+      "name": "Ranni AI Daily News",
+      "workspace": "ranni",
+      "jobId": "21d97f8f-5145-4525-bc77-a656762608c0"
+    },
+    {
+      "tsUtc": "2026-04-27T03:00:00Z",
+      "datePt": "2026-04-26",
+      "timePt": "20:00",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "workspace": "melina",
+      "jobId": "67477021-e127-4134-843d-ed8c1acda4dd"
+    }
+  ]
+}
