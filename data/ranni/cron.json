@@ -1,12 +1,149 @@
 {
-  "lastUpdated": "2026-03-03T23:40:16Z",
-  "workspace": "ranni",
+  "lastUpdated": "2026-03-04T21:25:18Z",
   "jobs": [
-    {"id":"21d97f8f-5145-4525-bc77-a656762608c0","name":"Ranni AI Daily News","schedule":"0 16 * * *","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T00:00:00.000Z"},
-    {"id":"441af127-874a-47c1-b970-30268429bc2d","name":"Ranni workspace daily backup","schedule":"0 11 * * *","tz":"UTC","enabled":true,"nextRun":"2026-03-04T11:00:00.000Z"},
-    {"id":"c063ec4b-242d-4865-8388-66c2c4962e6a","name":"Global KB daily backup","schedule":"30 11 * * *","tz":"UTC","enabled":true,"nextRun":"2026-03-04T11:30:00.000Z"},
-    {"id":"2706f048-7c9f-4ab2-bfeb-9865653c607d","name":"KB Doctor Daily","schedule":"0 10 * * *","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T18:00:00.000Z"},
-    {"id":"83f1dd36-15fd-4965-a40e-30c9f8855e1d","name":"openclaw-version-check","schedule":"0 10 * * *","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T18:00:00.000Z"},
-    {"id":"d990ed40-6ba4-4ed0-bc6c-222c0ab3150d","name":"Ranni Doctor Daily","schedule":"10 10 * * *","tz":"America/Los_Angeles","enabled":true,"nextRun":"2026-03-04T18:10:00.000Z"}
+    {
+      "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
+      "name": "mission-control-sync",
+      "enabled": true,
+      "schedule": "0 * * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "c15d9819-c050-4aef-b963-6bb93d93f864",
+      "name": "ai-digest-afternoon",
+      "enabled": true,
+      "schedule": "0 23 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "d22de8d3-5265-4b9d-b3b4-f9cfe181e637",
+      "name": "x-ai-influencer-afternoon",
+      "enabled": true,
+      "schedule": "0 23 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "512688a4-316e-436b-93c7-00fd9279d10a",
+      "name": "ai-digest-evening",
+      "enabled": true,
+      "schedule": "0 5 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "6bfffd2e-77d4-427a-8015-4907f2fb9a52",
+      "name": "x-ai-influencer-evening",
+      "enabled": true,
+      "schedule": "0 5 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "441af127-874a-47c1-b970-30268429bc2d",
+      "name": "Ranni workspace daily backup",
+      "enabled": true,
+      "schedule": "0 11 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "c063ec4b-242d-4865-8388-66c2c4962e6a",
+      "name": "Global KB daily backup",
+      "enabled": true,
+      "schedule": "30 11 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "73633b75-f900-46d6-837a-e2d8f2410cab",
+      "name": "morning-briefing",
+      "enabled": true,
+      "schedule": "0 9 * * *",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "2706f048-7c9f-4ab2-bfeb-9865653c607d",
+      "name": "KB Doctor Daily",
+      "enabled": true,
+      "schedule": "0 10 * * *",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "83f1dd36-15fd-4965-a40e-30c9f8855e1d",
+      "name": "openclaw-version-check",
+      "enabled": true,
+      "schedule": "0 10 * * *",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d",
+      "name": "Ranni Doctor Daily",
+      "enabled": true,
+      "schedule": "10 10 * * *",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "5231678b-9502-4eea-81f0-98cc1554181a",
+      "name": "ai-digest-morning",
+      "enabled": true,
+      "schedule": "30 18 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "5dabdf81-a050-459b-92f9-f411d1f7353c",
+      "name": "x-ai-influencer-morning",
+      "enabled": true,
+      "schedule": "30 18 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "7992f931-9b02-4e8c-ade1-cb225ea92cdf",
+      "name": "ws-personal-consistency-check",
+      "enabled": true,
+      "schedule": "30 19 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "5cf57deb-e24f-451c-9af9-8184eb3d9b17",
+      "name": "ws-company-consistency-check",
+      "enabled": true,
+      "schedule": "35 19 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "6d3ba255-04aa-438c-8333-0235bdecace5",
+      "name": "openclaw-community-picks",
+      "enabled": true,
+      "schedule": "0 20 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "3d2a892d-7e9e-4038-87ec-cc07f487c880",
+      "name": "weekly-memory-digest",
+      "enabled": true,
+      "schedule": "0 22 * * 0",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "0bf47bc3-721a-4847-8360-19897c91644a",
+      "name": "ai-radar-weekly-arxiv",
+      "enabled": true,
+      "schedule": "0 9 * * 1",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    }
   ]
 }
