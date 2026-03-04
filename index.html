@@ -278,42 +278,73 @@
     .tz-note { font-size: 12px; color: var(--muted); }
 
     .week-grid {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 10px;
-    }
-    .week-day {
       background: var(--bg2);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-      min-height: 160px;
-      display:flex;
-      flex-direction: column;
+      border-radius: 12px;
+      overflow: auto;
+      max-height: calc(100vh - 270px);
     }
-    .week-day-header {
-      padding: 10px 12px;
-      border-bottom: 1px solid var(--border);
+
+    /* Weekly time grid: left column = time, 7 columns = Mon..Sun */
+    .timegrid {
+      display: grid;
+      grid-template-columns: 72px repeat(7, minmax(160px, 1fr));
+      min-width: 980px;
+    }
+    .tg-head {
+      position: sticky;
+      top: 0;
+      z-index: 2;
       background: var(--bg3);
-      display:flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      padding: 10px 10px;
+      font-size: 12px;
+      font-weight: 700;
     }
-    .week-day-name { font-size: 12px; font-weight: 700; }
-    .week-day-date { font-size: 11px; color: var(--muted); }
-    .week-day-body { padding: 10px 10px 12px; display:flex; flex-direction: column; gap: 8px; }
-    .event-chip {
+    .tg-head.time { left: 0; z-index: 4; }
+    .tg-head-day { display:flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+    .tg-head-day .date { font-size: 11px; color: var(--muted); font-weight: 500; }
+
+    .tg-time {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      background: var(--bg2);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .tg-cell {
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    .tg-ws {
       border: 1px solid var(--border);
       border-left: 3px solid #3a3a50;
       background: rgba(255,255,255,0.02);
       border-radius: 8px;
-      padding: 8px 10px;
-      font-size: 12px;
-      line-height: 1.35;
+      padding: 6px 8px;
+      margin-bottom: 6px;
     }
-    .event-time { font-family: monospace; color: var(--muted); font-size: 11px; display:block; margin-bottom: 3px; }
-    .event-name { font-weight: 600; }
+    .tg-ws:last-child { margin-bottom: 0; }
+    .tg-ws-title {
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .tg-ws-items { font-size: 11px; line-height: 1.35; color: var(--text); }
+    .tg-ws-items div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
     .cron-list { display: flex; flex-direction: column; gap: 10px; }
     .cron-item {
@@ -432,6 +463,22 @@
     .kb-title { font-size: 13px; font-weight: 600; margin-bottom: 5px; }
     .kb-summary { font-size: 12px; color: var(--muted); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     .kb-meta { font-size: 11px; color: var(--muted); margin-top: 8px; display: flex; gap: 10px; }
+
+    .kb-internal {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+    .kb-internal summary {
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      list-style: none;
+    }
+    .kb-internal summary::-webkit-details-marker { display:none; }
+    .kb-grid-inner { margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
 
     /* TEAMS */
     .teams-grid {
@@ -1125,43 +1172,76 @@ function renderCalendar() {
   const fmtRange = new Intl.DateTimeFormat('en-US', { timeZone: PT_TZ, month:'short', day:'numeric' });
   label.textContent = `${fmtRange.format(keyToDateNoonUTC(weekKeys[0]))} – ${fmtRange.format(keyToDateNoonUTC(weekKeys[6]))} (PT)`;
 
-  const buckets = {};
-  weekKeys.forEach(k => buckets[k] = []);
-
   const events = calendarWeek.events
     .filter(e => weekKeySet.has(e.datePt))
     .filter(e => cronFilter === 'all' ? true : e.workspace === cronFilter);
 
+  // Build day/hour/workspace buckets
+  const cells = {};
+  weekKeys.forEach(d => cells[d] = {});
+
+  const hoursSet = new Set();
   events.forEach(e => {
-    buckets[e.datePt].push(e);
+    const hour = String(e.timePt || '').split(':')[0];
+    if (!hour) return;
+    hoursSet.add(hour);
+
+    if (!cells[e.datePt][hour]) cells[e.datePt][hour] = {};
+    if (!cells[e.datePt][hour][e.workspace]) cells[e.datePt][hour][e.workspace] = [];
+    cells[e.datePt][hour][e.workspace].push(e);
   });
+
+  const hours = Array.from(hoursSet).sort((a,b)=> Number(a) - Number(b));
 
   const dayName = (key) => new Intl.DateTimeFormat('en-US', { timeZone: PT_TZ, weekday:'short' }).format(keyToDateNoonUTC(key));
   const dayDate = (key) => new Intl.DateTimeFormat('en-US', { timeZone: PT_TZ, month:'numeric', day:'numeric' }).format(keyToDateNoonUTC(key));
 
-  grid.innerHTML = weekKeys.map(k => {
-    const evts = (buckets[k] || []).sort((a,b)=> String(a.timePt).localeCompare(String(b.timePt)));
+  let html = '<div class="timegrid">';
+  html += '<div class="tg-head time">Time</div>';
+  html += weekKeys.map(k => `
+    <div class="tg-head">
+      <div class="tg-head-day"><span>${dayName(k)}</span><span class="date">${dayDate(k)}</span></div>
+    </div>`).join('');
 
-    const body = evts.length
-      ? evts.map(e => {
-          const meta = WS_META[e.workspace] || { emoji:'', color:'#3a3a50' };
-          return `
-            <div class="event-chip" style="border-left-color:${meta.color}">
-              <span class="event-time">${escHtml(e.timePt)} PT · ${meta.emoji}</span>
-              <div class="event-name">${escHtml(e.name)}</div>
-            </div>`;
-        }).join('')
-      : `<div style="color:var(--muted);font-size:12px;opacity:0.6">—</div>`;
+  for (const h of hours) {
+    html += `<div class="tg-time">${String(h).padStart(2,'0')}:00</div>`;
 
-    return `
-      <div class="week-day">
-        <div class="week-day-header">
-          <div class="week-day-name">${dayName(k)}</div>
-          <div class="week-day-date">${dayDate(k)}</div>
-        </div>
-        <div class="week-day-body">${body}</div>
-      </div>`;
-  }).join('');
+    for (const day of weekKeys) {
+      const byWs = (cells[day] && cells[day][h]) ? cells[day][h] : {};
+      const wsKeys = Object.keys(byWs);
+
+      if (!wsKeys.length) {
+        html += '<div class="tg-cell"></div>';
+        continue;
+      }
+
+      const blocks = wsKeys.map(ws => {
+        const meta = WS_META[ws] || { emoji:'', color:'#3a3a50', label: ws };
+        const evts = byWs[ws].slice().sort((a,b)=> String(a.timePt).localeCompare(String(b.timePt)));
+
+        // Merge same-hour tasks for this workspace
+        const names = Array.from(new Set(evts.map(e => e.name).filter(Boolean)));
+        const shown = names.slice(0, 2);
+        const more = names.length - shown.length;
+
+        const itemsHtml = shown.map(n => `<div>• ${escHtml(n)}</div>`).join('') + (more > 0 ? `<div style="color:var(--muted)">+${more} more</div>` : '');
+
+        return `
+          <div class="tg-ws" style="border-left-color:${meta.color}">
+            <div class="tg-ws-title">
+              <span>${meta.emoji} ${escHtml(meta.label)} · ${names.length}</span>
+              <span>${String(h).padStart(2,'0')}:00</span>
+            </div>
+            <div class="tg-ws-items">${itemsHtml}</div>
+          </div>`;
+      }).join('');
+
+      html += `<div class="tg-cell">${blocks}</div>`;
+    }
+  }
+
+  html += '</div>';
+  grid.innerHTML = html;
 }
 
 function renderMemory() {
@@ -1182,19 +1262,13 @@ function renderMemory() {
 
 function kbPrimaryCategory(item) {
   const tags = (item.tags || []).map(t => String(t).toLowerCase());
-  const type = String(item.type || '').toLowerCase();
 
-  const has = (s) => tags.includes(String(s).toLowerCase());
   const hasAny = (arr) => arr.some(x => tags.includes(String(x).toLowerCase()));
 
-  if (hasAny(['bitcoin','btc','crypto','ethereum'])) return 'crypto';
-  if (hasAny(['macro','gold','rates','inflation'])) return 'macro';
-  if (hasAny(['investment','market','stocks','trading','regulation'])) return 'investment';
-  if (hasAny(['promptengineering','prompt'])) return 'prompt';
-  if (has('product') || has('startup')) return 'product';
-  if (has('ai') || has('llm') || type === 'paper') return 'ai';
-  if (type === 'tweet') return 'social';
-  return 'other';
+  // 3 top-level buckets (Andy request)
+  if (hasAny(['ai','llm','tech','product','startup','promptengineering','prompt'])) return 'ai';
+  if (hasAny(['investment','market','stocks','trading','bitcoin','btc','crypto','ethereum','macro','gold','rates','inflation'])) return 'financial';
+  return 'news'; // geopolitics / regulation / general news
 }
 
 function renderKb() {
@@ -1211,13 +1285,8 @@ function renderKb() {
   const cats = [
     { id: 'all', label: 'All' },
     { id: 'ai', label: 'AI' },
-    { id: 'product', label: 'Product' },
-    { id: 'investment', label: 'Investment' },
-    { id: 'crypto', label: 'Crypto' },
-    { id: 'macro', label: 'Macro' },
-    { id: 'prompt', label: 'Prompting' },
-    { id: 'social', label: 'Social' },
-    { id: 'other', label: 'Other' },
+    { id: 'financial', label: 'Financial' },
+    { id: 'news', label: 'Geo/News' }
   ];
 
   const counts = { all: kbItems.length };
@@ -1259,20 +1328,20 @@ function displayKb(items) {
     return;
   }
 
-  grid.innerHTML = items.slice(0, 80).map(item => {
+  const renderCard = (item) => {
     const score = item.score || item.rating || 0;
     const scoreClass = score >= 8 ? 'high' : score >= 6 ? 'mid' : 'low';
     const cat = kbPrimaryCategory(item);
     const hasLink = !!(item.url && String(item.url).startsWith('http'));
-
-    const clickAttr = hasLink ? `onclick="window.open('${String(item.url).replace(/"/g,'').replace(/'/g,'')}', '_blank')"` : '';
+    const safeUrl = hasLink ? String(item.url).replace(/"/g,'').replace(/'/g,'') : '';
+    const clickAttr = hasLink ? `onclick="window.open('${safeUrl}', '_blank')"` : '';
 
     return `
       <div class="kb-card ${hasLink ? 'has-link' : 'no-link'}" ${clickAttr}>
         <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
           <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
             ${score ? `<span class="kb-score ${scoreClass}">${score}/10</span>` : ''}
-            <span class="project-tag">${escHtml(cat)}</span>
+            <span class="project-tag">${escHtml(cat.toUpperCase())}</span>
             ${item.source ? `<span class="project-tag">✍️ ${escHtml(item.source)}</span>` : ''}
           </div>
           <div style="font-size:11px;color:var(--muted)">${escHtml(item.date || '')}</div>
@@ -1283,10 +1352,28 @@ function displayKb(items) {
 
         <div class="kb-meta" style="align-items:center;justify-content:space-between">
           <span>${item.type ? escHtml(item.type) : ''}</span>
-          <span class="kb-link-badge">${hasLink ? '↗ source link' : 'no source link'}</span>
+          <span class="kb-link-badge">${hasLink ? '↗ source link' : 'agent note'}</span>
         </div>
       </div>`;
-  }).join('');
+  };
+
+  const hasLink = (it) => !!(it.url && String(it.url).startsWith('http'));
+  const external = items.filter(hasLink).slice(0, 80);
+  const internal = items.filter(it => !hasLink(it)).slice(0, 80);
+
+  let html = external.map(renderCard).join('');
+
+  if (internal.length) {
+    html += `
+      <details class="kb-internal" style="grid-column:1/-1">
+        <summary>Agent-written notes (${internal.length})</summary>
+        <div class="kb-grid-inner">
+          ${internal.map(renderCard).join('')}
+        </div>
+      </details>`;
+  }
+
+  grid.innerHTML = html;
 }
 
 // ─── INTERACTIONS ─────────────────────────────────────────
