@@ -1,15 +1,4 @@
 {
   "lastUpdated": "",
-  "workspace": "ranni",
-  "projects": [
-    {
-      "id": "proj_001",
-      "name": "Mission Control Dashboard",
-      "description": "Multi-workspace dashboard deployed via GitHub Pages. 5 screens: Overview, Teams, Task Board, Calendar, KB.",
-      "status": "active",
-      "progress": 60,
-      "tags": ["infrastructure", "tooling"],
-      "tasks": []
-    }
-  ]
+  "projects": []
 }
