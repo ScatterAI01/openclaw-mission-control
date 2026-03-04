@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T23:51:14Z",
+  "lastUpdated": "2026-03-04T00:30:27Z",
   "kind": "kb-index",
   "items": [
     {
@@ -131,7 +131,7 @@
       "id": "research-naval-swe-not-dead",
       "date": "2026-03-02",
       "type": "research",
-      "title": "",
+      "title": "(research) research-naval-swe-not-dead",
       "summary": "",
       "score": null,
       "tags": [
@@ -147,7 +147,7 @@
       "id": "research-2026-03-02-naval-swe-not-dead",
       "date": "2026-03-02",
       "type": "research",
-      "title": "",
+      "title": "(research) research-2026-03-02-naval-swe-not-dead",
       "summary": "",
       "score": null,
       "tags": [
@@ -409,7 +409,7 @@
       "id": null,
       "date": "2026-03-01",
       "type": null,
-      "title": "",
+      "title": "(item) untitled",
       "summary": "",
       "score": null,
       "tags": [
@@ -427,7 +427,7 @@
       "id": null,
       "date": "2026-03-01",
       "type": null,
-      "title": "",
+      "title": "(item) untitled",
       "summary": "",
       "score": null,
       "tags": [
@@ -444,7 +444,7 @@
       "id": null,
       "date": "2026-03-01",
       "type": null,
-      "title": "",
+      "title": "(item) untitled",
       "summary": "",
       "score": null,
       "tags": [
@@ -519,7 +519,7 @@
       "id": "research-openai-anthropic-pentagon",
       "date": "2026-02-28",
       "type": "research",
-      "title": "",
+      "title": "(research) research-openai-anthropic-pentagon",
       "summary": "",
       "score": null,
       "tags": [
@@ -553,7 +553,7 @@
       "id": "research-us-israel-iran",
       "date": "2026-02-28",
       "type": "research",
-      "title": "",
+      "title": "(research) research-us-israel-iran",
       "summary": "",
       "score": null,
       "tags": [
@@ -570,7 +570,7 @@
       "id": "research-khamenei-death",
       "date": "2026-02-28",
       "type": "research",
-      "title": "",
+      "title": "(research) research-khamenei-death",
       "summary": "",
       "score": null,
       "tags": [
@@ -586,7 +586,7 @@
       "id": "research-iran-war-trajectory",
       "date": "2026-02-28",
       "type": "research",
-      "title": "",
+      "title": "(research) research-iran-war-trajectory",
       "summary": "",
       "score": null,
       "tags": [
