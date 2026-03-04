@@ -1,11 +1,12 @@
 {
-  "lastUpdated": "2026-03-03T23:40:16Z",
+  "lastUpdated": "2026-03-04T01:38:41Z",
   "workspace": "melina",
-  "name": "",
-  "emoji": "",
-  "model": "",
+  "name": "Melina",
+  "emoji": "📈",
+  "model": "google/gemini-3-flash-preview",
   "status": "idle",
   "currentTask": null,
   "activityFeed": [],
-  "subagents": []
+  "subagents": [],
+  "missionStatement": "Elevate Andy's cognition through current events, markets, human behavior, and emerging technology — with investing as the concrete expression of that understanding."
 }
