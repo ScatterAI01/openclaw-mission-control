@@ -262,6 +262,59 @@
     .filter-btn.active.melina { border-color: var(--accent-melina); background: #0c2d22; color: var(--accent-melina); }
     .filter-btn.active.all { border-color: #3a3a50; background: var(--bg3); }
 
+    .calendar-top { display:flex; align-items:center; justify-content: space-between; margin-bottom: 12px; }
+    .week-controls { display:flex; align-items:center; gap: 8px; }
+    .week-btn {
+      padding: 5px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .week-btn:hover { color: var(--text); border-color: #3a3a50; }
+    .week-label { color: var(--text); font-weight: 600; font-size: 12px; margin-left: 8px; }
+    .tz-note { font-size: 12px; color: var(--muted); }
+
+    .week-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+    .week-day {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      min-height: 160px;
+      display:flex;
+      flex-direction: column;
+    }
+    .week-day-header {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg3);
+      display:flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .week-day-name { font-size: 12px; font-weight: 700; }
+    .week-day-date { font-size: 11px; color: var(--muted); }
+    .week-day-body { padding: 10px 10px 12px; display:flex; flex-direction: column; gap: 8px; }
+    .event-chip {
+      border: 1px solid var(--border);
+      border-left: 3px solid #3a3a50;
+      background: rgba(255,255,255,0.02);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .event-time { font-family: monospace; color: var(--muted); font-size: 11px; display:block; margin-bottom: 3px; }
+    .event-name { font-weight: 600; }
+
     .cron-list { display: flex; flex-direction: column; gap: 10px; }
     .cron-item {
       background: var(--bg2);
@@ -318,8 +371,21 @@
     .kb-search {
       display: flex;
       gap: 10px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
+
+    .kb-filters { display:flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+    .kb-cat {
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .kb-cat:hover { border-color: #3a3a50; color: var(--text); }
+    .kb-cat.active { background: var(--bg3); color: var(--text); font-weight: 500; border-color: #3a3a50; }
     .kb-search input {
       flex: 1;
       padding: 9px 14px;
@@ -680,7 +746,21 @@
         <button class="filter-btn company" data-filter="company" onclick="filterCron('company')">🏢 Company</button>
         <button class="filter-btn melina" data-filter="melina" onclick="filterCron('melina')">📈 Melina</button>
       </div>
-      <div class="cron-list" id="cron-list">
+      <div class="calendar-top">
+        <div class="week-controls">
+          <button class="week-btn" onclick="shiftWeek(-1)">←</button>
+          <button class="week-btn" onclick="shiftWeek(0)">Today</button>
+          <button class="week-btn" onclick="shiftWeek(1)">→</button>
+          <div class="week-label" id="week-label">Week</div>
+        </div>
+        <div class="tz-note">All times PT</div>
+      </div>
+
+      <div class="week-grid" id="week-grid">
+        <!-- Filled by JS -->
+      </div>
+
+      <div class="cron-list" id="cron-list" style="margin-top:16px">
         <!-- Filled by JS -->
       </div>
     </div>
@@ -701,6 +781,9 @@
     <div class="screen" id="screen-kb">
       <div class="kb-search">
         <input type="text" id="kb-search-input" placeholder="Search knowledge base..." oninput="filterKb(this.value)">
+      </div>
+      <div class="kb-filters" id="kb-filters">
+        <!-- Filled by JS -->
       </div>
       <div class="kb-grid" id="kb-grid">
         <!-- Filled by JS -->
@@ -748,6 +831,10 @@ const WS_META = {
 let currentWs = 'ranni';
 let currentScreen = 'overview';
 let cronFilter = 'all';
+let calendarWeekOffset = 0; // 0 = current week in PT
+let kbCategory = 'all';
+let kbQuery = '';
+
 let allData = { ranni: {}, company: {}, melina: {} };
 let allCronJobs = [];
 let kbItems = [];
@@ -984,16 +1071,112 @@ function renderTasks() {
 }
 
 function renderCalendar() {
+  const PT_TZ = 'America/Los_Angeles';
+
   const jobs = cronFilter === 'all'
     ? allCronJobs
     : allCronJobs.filter(j => j.workspace === cronFilter);
 
   const list = document.getElementById('cron-list');
+  const grid = document.getElementById('week-grid');
+  const label = document.getElementById('week-label');
+
   if (!jobs.length) {
+    grid.innerHTML = '';
     list.innerHTML = '<div class="empty-state"><div class="icon">📅</div><p>No cron jobs found. Ask your agents to schedule some tasks.</p></div>';
     return;
   }
 
+  const dtWeekday = (d) => new Intl.DateTimeFormat('en-US', { timeZone: PT_TZ, weekday: 'short' }).format(d);
+  const dtYMD = (d) => {
+    const parts = new Intl.DateTimeFormat('en-CA', { timeZone: PT_TZ, year:'numeric', month:'2-digit', day:'2-digit' }).formatToParts(d);
+    const y = parts.find(p=>p.type==='year')?.value;
+    const m = parts.find(p=>p.type==='month')?.value;
+    const da = parts.find(p=>p.type==='day')?.value;
+    return `${y}-${m}-${da}`;
+  };
+
+  const base = new Date(Date.now() + calendarWeekOffset * 7 * 86400000);
+
+  // Find Monday of the week in PT by walking back up to 6 days
+  let mondayKey = dtYMD(base);
+  for (let i=0;i<7;i++) {
+    const d = new Date(base.getTime() - i*86400000);
+    if (dtWeekday(d) === 'Mon') { mondayKey = dtYMD(d); break; }
+  }
+
+  const keyToDateNoonUTC = (key) => {
+    const [y,m,da] = key.split('-').map(Number);
+    return new Date(Date.UTC(y, m-1, da, 12, 0, 0));
+  };
+  const addDaysKey = (key, days) => {
+    const d = keyToDateNoonUTC(key);
+    d.setUTCDate(d.getUTCDate() + days);
+    // IMPORTANT: format in PT to keep PT date key stable
+    return dtYMD(d);
+  };
+
+  const weekKeys = Array.from({length:7}, (_,i)=> addDaysKey(mondayKey, i));
+  const weekKeySet = new Set(weekKeys);
+
+  const weekStart = keyToDateNoonUTC(weekKeys[0]);
+  const weekEnd = keyToDateNoonUTC(weekKeys[6]);
+  const fmtRange = new Intl.DateTimeFormat('en-US', { timeZone: PT_TZ, month:'short', day:'numeric' });
+  label.textContent = `${fmtRange.format(weekStart)} – ${fmtRange.format(weekEnd)} (PT)`;
+
+  // Bucket next runs into this week (PT)
+  const buckets = {};
+  weekKeys.forEach(k => buckets[k] = []);
+
+  const fmtTime = new Intl.DateTimeFormat('en-US', { timeZone: PT_TZ, hour:'2-digit', minute:'2-digit', hour12:false });
+
+  jobs.forEach(j => {
+    if (!j.nextRun) return;
+    const d = new Date(j.nextRun);
+    const key = dtYMD(d);
+    if (!weekKeySet.has(key)) return;
+
+    buckets[key].push({
+      time: fmtTime.format(d),
+      name: j.name || j.id || 'Unnamed job',
+      workspace: j.workspace,
+    });
+  });
+
+  // Render grid Monday → Sunday
+  const dayName = (key) => {
+    const d = keyToDateNoonUTC(key);
+    return new Intl.DateTimeFormat('en-US', { timeZone: PT_TZ, weekday:'short' }).format(d);
+  };
+  const dayDate = (key) => {
+    const d = keyToDateNoonUTC(key);
+    return new Intl.DateTimeFormat('en-US', { timeZone: PT_TZ, month:'numeric', day:'numeric' }).format(d);
+  };
+
+  grid.innerHTML = weekKeys.map(k => {
+    const evts = buckets[k].sort((a,b)=> String(a.time).localeCompare(String(b.time)));
+    const body = evts.length
+      ? evts.map(e => {
+          const meta = WS_META[e.workspace];
+          return `
+            <div class="event-chip" style="border-left-color:${meta.color}">
+              <span class="event-time">${e.time} PT · ${meta.emoji}</span>
+              <div class="event-name">${escHtml(e.name)}</div>
+            </div>`;
+        }).join('')
+      : `<div style="color:var(--muted);font-size:12px;opacity:0.6">—</div>`;
+
+    return `
+      <div class="week-day">
+        <div class="week-day-header">
+          <div class="week-day-name">${dayName(k)}</div>
+          <div class="week-day-date">${dayDate(k)}</div>
+        </div>
+        <div class="week-day-body">${body}</div>
+      </div>`;
+  }).join('');
+
+  // Keep the old list view below (also in PT)
   list.innerHTML = jobs.map(j => {
     const meta = WS_META[j.workspace];
     const color = meta.color;
@@ -1006,7 +1189,7 @@ function renderCalendar() {
           ${j.description ? `<div style="font-size:11px;color:var(--muted);margin-top:2px">${escHtml(j.description)}</div>` : ''}
         </div>
         <div class="cron-next">
-          ${j.nextRun ? `<div style="font-size:12px;color:var(--muted)">Next: ${formatDate(j.nextRun)}</div>` : ''}
+          ${j.nextRun ? `<div style="font-size:12px;color:var(--muted)">Next: ${formatDatePt(j.nextRun)}</div>` : ''}
           <div style="font-size:11px;color:var(--muted);margin-top:2px">${meta.emoji} ${meta.label}</div>
         </div>
         <span class="cron-status ${j.enabled !== false ? 'enabled' : 'disabled'}">${j.enabled !== false ? 'active' : 'off'}</span>
@@ -1030,28 +1213,103 @@ function renderMemory() {
     </div>`).join('');
 }
 
+function kbPrimaryCategory(item) {
+  const tags = (item.tags || []).map(t => String(t).toLowerCase());
+  const type = String(item.type || '').toLowerCase();
+
+  const has = (s) => tags.includes(String(s).toLowerCase());
+  const hasAny = (arr) => arr.some(x => tags.includes(String(x).toLowerCase()));
+
+  if (hasAny(['bitcoin','btc','crypto','ethereum'])) return 'crypto';
+  if (hasAny(['macro','gold','rates','inflation'])) return 'macro';
+  if (hasAny(['investment','market','stocks','trading','regulation'])) return 'investment';
+  if (hasAny(['promptengineering','prompt'])) return 'prompt';
+  if (has('product') || has('startup')) return 'product';
+  if (has('ai') || has('llm') || type === 'paper') return 'ai';
+  if (type === 'tweet') return 'social';
+  return 'other';
+}
+
 function renderKb() {
   const grid = document.getElementById('kb-grid');
+  const filters = document.getElementById('kb-filters');
+
   if (!kbItems.length) {
     grid.innerHTML = '<div class="empty-state"><div class="icon">📚</div><p>No KB entries yet.</p></div>';
+    filters.innerHTML = '';
     return;
   }
-  displayKb(kbItems);
+
+  // Build category counts
+  const cats = [
+    { id: 'all', label: 'All' },
+    { id: 'ai', label: 'AI' },
+    { id: 'product', label: 'Product' },
+    { id: 'investment', label: 'Investment' },
+    { id: 'crypto', label: 'Crypto' },
+    { id: 'macro', label: 'Macro' },
+    { id: 'prompt', label: 'Prompting' },
+    { id: 'social', label: 'Social' },
+    { id: 'other', label: 'Other' },
+  ];
+
+  const counts = { all: kbItems.length };
+  kbItems.forEach(it => {
+    const c = kbPrimaryCategory(it);
+    counts[c] = (counts[c] || 0) + 1;
+  });
+
+  filters.innerHTML = cats.map(c => {
+    const n = counts[c.id] || 0;
+    return `<button class="kb-cat ${kbCategory===c.id?'active':''}" data-cat="${c.id}" onclick="setKbCategory('${c.id}')">${c.label} (${n})</button>`;
+  }).join('');
+
+  // Filter + sort
+  let items = kbItems.slice();
+
+  if (kbCategory !== 'all') {
+    items = items.filter(it => kbPrimaryCategory(it) === kbCategory);
+  }
+
+  if (kbQuery) {
+    const q = kbQuery.toLowerCase();
+    items = items.filter(it =>
+      (it.title || '').toLowerCase().includes(q) ||
+      (it.summary || it.preview || '').toLowerCase().includes(q) ||
+      (it.source || '').toLowerCase().includes(q)
+    );
+  }
+
+  items.sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+
+  displayKb(items);
 }
 
 function displayKb(items) {
   const grid = document.getElementById('kb-grid');
-  grid.innerHTML = items.slice(0, 50).map(item => {
+  if (!items.length) {
+    grid.innerHTML = '<div class="empty-state"><div class="icon">📚</div><p>No matches.</p></div>';
+    return;
+  }
+
+  grid.innerHTML = items.slice(0, 80).map(item => {
     const score = item.score || item.rating || 0;
     const scoreClass = score >= 8 ? 'high' : score >= 6 ? 'mid' : 'low';
+    const cat = kbPrimaryCategory(item);
     return `
-      <div class="kb-card">
-        ${score ? `<span class="kb-score ${scoreClass}">${score}/10</span>` : ''}
-        <div class="kb-title">${escHtml(item.title || 'Untitled')}</div>
+      <div class="kb-card" onclick="${item.url ? `window.open('${item.url}','_blank')` : ''}">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+          <div>
+            ${score ? `<span class="kb-score ${scoreClass}">${score}/10</span>` : ''}
+            <span class="project-tag" style="margin-left:8px">${escHtml(cat)}</span>
+          </div>
+          <div style="font-size:11px;color:var(--muted)">${escHtml(item.date || '')}</div>
+        </div>
+        <div class="kb-title" style="margin-top:10px">${escHtml(item.title || 'Untitled')}</div>
         <div class="kb-summary">${escHtml(item.summary || item.preview || '')}</div>
         <div class="kb-meta">
-          <span>${item.date || ''}</span>
-          <span>${item.source || ''}</span>
+          <span>${escHtml(item.source || '')}</span>
+          <span>${item.type ? escHtml(item.type) : ''}</span>
         </div>
       </div>`;
   }).join('');
@@ -1098,13 +1356,21 @@ function filterCron(filter) {
   renderCalendar();
 }
 
+function shiftWeek(delta) {
+  if (delta === 0) calendarWeekOffset = 0;
+  else calendarWeekOffset += delta;
+  renderCalendar();
+}
+
 function filterKb(q) {
-  if (!q) { displayKb(kbItems); return; }
-  const lower = q.toLowerCase();
-  displayKb(kbItems.filter(item =>
-    (item.title || '').toLowerCase().includes(lower) ||
-    (item.summary || item.preview || '').toLowerCase().includes(lower)
-  ));
+  kbQuery = (q || '').trim();
+  renderKb();
+}
+
+function setKbCategory(cat) {
+  kbCategory = cat;
+  document.querySelectorAll('.kb-cat').forEach(b => b.classList.toggle('active', b.dataset.cat === cat));
+  renderKb();
 }
 
 let taskModalStatus = 'backlog';
@@ -1161,6 +1427,15 @@ function timeAgo(iso) {
 function formatDate(iso) {
   try {
     return new Date(iso).toLocaleString('en-US', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' });
+  } catch { return iso; }
+}
+
+function formatDatePt(iso) {
+  try {
+    return new Date(iso).toLocaleString('en-US', {
+      timeZone: 'America/Los_Angeles',
+      month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'
+    }) + ' PT';
   } catch { return iso; }
 }
 
