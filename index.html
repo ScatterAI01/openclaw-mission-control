@@ -1222,7 +1222,7 @@ function renderCalendar() {
         // Merge same-hour tasks for this workspace
         const names = Array.from(new Set(evts.map(e => e.name).filter(Boolean)));
 
-        const itemsHtml = names.map(n => `<div style="padding:2px 0;border-bottom:1px solid var(--border);font-size:11px">${escHtml(n)}</div>`).join('');
+        const itemsHtml = names.map(n => `<div style="padding:2px 0;border-bottom:1px solid var(--border);font-size:11px">${escHtml(friendlyName(n))}</div>`).join('');
 
         return `
           <div class="tg-ws" style="border-left-color:${meta.color}">
@@ -1496,6 +1496,27 @@ async function loadMemoryDay(idx, el) {
 }
 
 // ─── UTILS ────────────────────────────────────────────────
+const FRIENDLY_ABBR = {
+  'kb': 'KB', 'ai': 'AI', 'utc': 'UTC', 'pt': 'PT',
+  'x': 'X',  'api': 'API', 'kb': 'KB', 'db': 'DB',
+  'geo': 'Geo', 'pnr': 'PNR', 'bbai': 'BBAI', 'nvda': 'NVDA',
+  'ba': 'BA', 'tsla': 'TSLA', 'app': 'APP', 'rklb': 'RKLB',
+};
+
+function friendlyName(raw) {
+  if (!raw) return '';
+  return String(raw)
+    .replace(/[-_]/g, ' ')        // dashes/underscores → space
+    .replace(/\s+/g, ' ')
+    .trim()
+    .split(' ')
+    .map(w => {
+      const lo = w.toLowerCase();
+      return FRIENDLY_ABBR[lo] || (w.charAt(0).toUpperCase() + w.slice(1).toLowerCase());
+    })
+    .join(' ');
+}
+
 function escHtml(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
