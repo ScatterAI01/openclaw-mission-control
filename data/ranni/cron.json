@@ -1,35 +1,11 @@
 {
-  "lastUpdated": "2026-03-05T18:07:06Z",
+  "lastUpdated": "2026-03-05T19:04:48Z",
   "jobs": [
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
       "name": "mission-control-sync",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d",
-      "name": "Ranni Doctor Daily",
-      "enabled": true,
-      "schedule": "10 10 * * *",
-      "tz": "America/Los_Angeles",
-      "workspace": "ranni"
-    },
-    {
-      "id": "5231678b-9502-4eea-81f0-98cc1554181a",
-      "name": "ai-digest-morning",
-      "enabled": true,
-      "schedule": "30 18 * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "5dabdf81-a050-459b-92f9-f411d1f7353c",
-      "name": "x-ai-influencer-morning",
-      "enabled": true,
-      "schedule": "30 18 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
@@ -135,6 +111,30 @@
       "enabled": true,
       "schedule": "0 10 * * *",
       "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d",
+      "name": "Ranni Doctor Daily",
+      "enabled": true,
+      "schedule": "10 10 * * *",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "5231678b-9502-4eea-81f0-98cc1554181a",
+      "name": "ai-digest-morning",
+      "enabled": true,
+      "schedule": "30 18 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "5dabdf81-a050-459b-92f9-f411d1f7353c",
+      "name": "x-ai-influencer-morning",
+      "enabled": true,
+      "schedule": "30 18 * * *",
+      "tz": "UTC",
       "workspace": "ranni"
     },
     {

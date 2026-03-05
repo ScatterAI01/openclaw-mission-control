@@ -1,38 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T18:07:06Z",
+  "lastUpdated": "2026-03-05T19:04:48Z",
   "jobs": [
-    {
-      "id": "c75559f9-b5b8-47aa-9c56-4653651aca51",
-      "name": "capital-doctor-daily",
-      "enabled": true,
-      "schedule": "20 10 * * *",
-      "tz": "America/Los_Angeles",
-      "workspace": "melina"
-    },
-    {
-      "id": "de5f901b-3f35-433d-9fc9-56574546902b",
-      "name": "daily-event-radar",
-      "enabled": true,
-      "schedule": "35 10 * * 1-5",
-      "tz": "America/Los_Angeles",
-      "workspace": "melina"
-    },
-    {
-      "id": "1f49c3ec-8cfd-447c-ae01-19187002e9b9",
-      "name": "daily-catalyst-calendar",
-      "enabled": true,
-      "schedule": "50 10 * * 1-5",
-      "tz": "America/Los_Angeles",
-      "workspace": "melina"
-    },
-    {
-      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
-      "name": "hourly-signal-scanner",
-      "enabled": true,
-      "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "718f3b5f-631a-477c-8364-350d4b643c43",
       "name": "daily-kb-geo-consistency-check",
@@ -46,6 +14,14 @@
       "name": "ws-capital-consistency-check",
       "enabled": true,
       "schedule": "30 19 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
+      "name": "hourly-signal-scanner",
+      "enabled": true,
+      "schedule": "0 * * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -95,6 +71,30 @@
       "enabled": true,
       "schedule": "0 18 * * 1-5",
       "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "c75559f9-b5b8-47aa-9c56-4653651aca51",
+      "name": "capital-doctor-daily",
+      "enabled": true,
+      "schedule": "20 10 * * *",
+      "tz": "America/Los_Angeles",
+      "workspace": "melina"
+    },
+    {
+      "id": "de5f901b-3f35-433d-9fc9-56574546902b",
+      "name": "daily-event-radar",
+      "enabled": true,
+      "schedule": "35 10 * * 1-5",
+      "tz": "America/Los_Angeles",
+      "workspace": "melina"
+    },
+    {
+      "id": "1f49c3ec-8cfd-447c-ae01-19187002e9b9",
+      "name": "daily-catalyst-calendar",
+      "enabled": true,
+      "schedule": "50 10 * * 1-5",
+      "tz": "America/Los_Angeles",
       "workspace": "melina"
     },
     {

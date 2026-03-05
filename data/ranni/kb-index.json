@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T18:07:06Z",
+  "lastUpdated": "2026-03-05T19:04:48Z",
   "kind": "kb-index",
   "primary": [
     {
@@ -25,6 +25,66 @@
       "timeliness": null,
       "relevance": null,
       "url": "https://www.politico.com/news/2026/03/04/trump-and-ai-leaders-tout-his-build-your-own-power-plant-pledge-00812891"
+    },
+    {
+      "id": "ai-digest-2026-03-05-9b6b0562",
+      "date": "2026-03-05",
+      "type": "article",
+      "domain": "ai",
+      "title": "OpenAI Releases GPT-5.3 Instant: Fewer Refusals, Better Web Synthesis",
+      "takeaway": "OpenAI 发布 GPT-5.3 Instant，聚焦日常对话体验优化，大幅减少不必要的拒绝和道德说教式前言。新版在调用网络搜索时能更好地融合自有知识与在线信息，不再只是罗列链接。对话风格更自然简洁，GPT-5.2 Instant 将于 2026 年 6 月 3 日正式退役。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://releasebot.io/updates/openai"
+    },
+    {
+      "id": "ai-digest-2026-03-05-5c9d74a6",
+      "date": "2026-03-05",
+      "type": "article",
+      "domain": "ai",
+      "title": "Anthropic Blacklisted by Pentagon After OpenAI-DoD Deal Clash",
+      "takeaway": "Anthropic 与美国国防部（DoD）合同谈判破裂，被五角大楼列入黑名单，OpenAI 随即填补空缺，与 Pentagon 达成合作协议。事件导火索是 DoD 官员 Emil Michael（前 Uber 高管）公开称 Anthropic CEO Dario Amodei 为撒谎者，并指其有\"上帝情结\"。Sam Altman 随后举行 AMA 向公众解释 OpenAI 介入的理由，整件事引发业界对 AI 公司与军方关系的广泛讨论。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://fortune.com/2026/03/02/openai-anthropic-pentagon-tempest/"
+    },
+    {
+      "id": "ai-digest-2026-03-05-813f76d3",
+      "date": "2026-03-05",
+      "type": "article",
+      "domain": "ai",
+      "title": "AI-Driven Mass Layoffs: Microsoft 15K, Amazon 14K, Intel 15K Jobs Cut",
+      "takeaway": "Microsoft、Amazon、Intel、Verizon 等科技巨头以 AI 自动化为由合计裁员逾 5 万人，同期这些公司仍在大力回购股票并加码 AI 基础设施投资。Seattle 就业市场受到显著冲击，被裁员工面临 AI 简历筛选、更激烈竞争和更长求职周期三重压力。业界将此视为 AI 替代传统软件岗位的标志性时刻。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.wsws.org/en/articles/2026/03/02/ukue-m02.html"
+    },
+    {
+      "id": "ai-digest-2026-03-05-78cc7ee4",
+      "date": "2026-03-05",
+      "type": "article",
+      "domain": "ai",
+      "title": "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine-Tuning, and On-Device Optimizations",
+      "takeaway": "Hugging Face 与 NXP 联合发布技术博客，介绍如何将 Vision-Language-Action（VLA）模型部署至嵌入式平台。内容涵盖数据集录制流程、VLA 微调方法、以及针对边缘设备的量化与推理优化策略。这对机器人 AI 的低成本落地具有重要参考价值，也标志着具身智能走向更广泛硬件生态。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms"
+    },
+    {
+      "id": "ai-digest-2026-03-05-de357058",
+      "date": "2026-03-05",
+      "type": "article",
+      "domain": "ai",
+      "title": "Introducing Modular Diffusers: Composable Building Blocks for Diffusion Pipelines",
+      "takeaway": "Hugging Face 推出 Modular Diffusers，将扩散模型 pipeline 拆解为可组合的模块化构件，让研究者和开发者能够更灵活地组合不同的 scheduler、encoder 和 decoder 组件。这一设计大幅降低了实验迭代成本，也让社区基于 diffusers 库构建自定义图像生成工作流变得更加直观。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://huggingface.co/blog/modular-diffusers"
     },
     {
       "id": "ai-digest-2026-03-04-c8f98948",
