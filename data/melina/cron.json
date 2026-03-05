@@ -1,14 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T20:04:48Z",
+  "lastUpdated": "2026-03-05T21:04:48Z",
   "jobs": [
-    {
-      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
-      "name": "hourly-signal-scanner",
-      "enabled": true,
-      "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "194d1389-b186-4d27-8f28-6f954a2dd3f5",
       "name": "post-market-wrap",
@@ -26,10 +18,34 @@
       "workspace": "melina"
     },
     {
+      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
+      "name": "hourly-signal-scanner",
+      "enabled": true,
+      "schedule": "0 * * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "b273f088-74ea-4e15-abcd-8f09c8098379",
+      "name": "x-signal-monitor (23:00 UTC)",
+      "enabled": true,
+      "schedule": "0 23 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
       "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
       "name": "polymarket-monitor",
       "enabled": true,
-      "schedule": "0 */6 * * *",
+      "schedule": "0 18,0,6 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "b3993030-f014-41ee-989d-30287e0e79fc",
+      "name": "ws-capital-consistency-check",
+      "enabled": true,
+      "schedule": "5 0 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -42,10 +58,26 @@
       "workspace": "melina"
     },
     {
+      "id": "c75559f9-b5b8-47aa-9c56-4653651aca51",
+      "name": "capital-doctor-daily",
+      "enabled": true,
+      "schedule": "20 2 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
       "id": "67477021-e127-4134-843d-ed8c1acda4dd",
       "name": "x-signal-monitor (03:00 UTC)",
       "enabled": true,
       "schedule": "0 3 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "d1cda221-f4eb-4ea7-9b8d-70d39817f1a7",
+      "name": "x-signal-monitor (08:00 UTC)",
+      "enabled": true,
+      "schedule": "0 8 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -58,18 +90,10 @@
       "workspace": "melina"
     },
     {
-      "id": "c75559f9-b5b8-47aa-9c56-4653651aca51",
-      "name": "capital-doctor-daily",
-      "enabled": true,
-      "schedule": "20 10 * * *",
-      "tz": "America/Los_Angeles",
-      "workspace": "melina"
-    },
-    {
       "id": "de5f901b-3f35-433d-9fc9-56574546902b",
       "name": "daily-event-radar",
       "enabled": true,
-      "schedule": "35 10 * * 1-5",
+      "schedule": "0 12 * * 1-5",
       "tz": "America/Los_Angeles",
       "workspace": "melina"
     },
@@ -77,7 +101,7 @@
       "id": "1f49c3ec-8cfd-447c-ae01-19187002e9b9",
       "name": "daily-catalyst-calendar",
       "enabled": true,
-      "schedule": "50 10 * * 1-5",
+      "schedule": "15 12 * * 1-5",
       "tz": "America/Los_Angeles",
       "workspace": "melina"
     },
@@ -85,16 +109,8 @@
       "id": "718f3b5f-631a-477c-8364-350d4b643c43",
       "name": "daily-kb-geo-consistency-check",
       "enabled": true,
-      "schedule": "5 11 * * 1-5",
+      "schedule": "30 12 * * 1-5",
       "tz": "America/Los_Angeles",
-      "workspace": "melina"
-    },
-    {
-      "id": "b3993030-f014-41ee-989d-30287e0e79fc",
-      "name": "ws-capital-consistency-check",
-      "enabled": true,
-      "schedule": "30 19 * * *",
-      "tz": "UTC",
       "workspace": "melina"
     },
     {
@@ -130,10 +146,18 @@
       "workspace": "melina"
     },
     {
+      "id": "00e80035-aaf7-4b13-9688-e10b1737be6c",
+      "name": "report-validator-30day-batch",
+      "enabled": true,
+      "schedule": "at 2026-04-01T14:00:00.000Z",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
       "id": "66069f9a-e731-4c20-92e4-9d3adba8eb2e",
       "name": "monthly-narrative-check",
       "enabled": true,
-      "schedule": "0 12 1 * *",
+      "schedule": "0 20 1 * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -141,15 +165,7 @@
       "id": "b7efd369-c2a9-4854-a9f5-753ba3119f52",
       "name": "monthly-macro-update",
       "enabled": true,
-      "schedule": "0 13 1 * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "00e80035-aaf7-4b13-9688-e10b1737be6c",
-      "name": "report-validator-30day-batch",
-      "enabled": true,
-      "schedule": "at 2026-04-01T14:00:00.000Z",
+      "schedule": "0 21 1 * *",
       "tz": "UTC",
       "workspace": "melina"
     },
