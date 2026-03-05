@@ -1,19 +1,11 @@
 {
-  "lastUpdated": "2026-03-05T21:04:48Z",
+  "lastUpdated": "2026-03-05T22:04:49Z",
   "jobs": [
     {
-      "id": "194d1389-b186-4d27-8f28-6f954a2dd3f5",
-      "name": "post-market-wrap",
+      "id": "b273f088-74ea-4e15-abcd-8f09c8098379",
+      "name": "x-signal-monitor (23:00 UTC)",
       "enabled": true,
-      "schedule": "30 21 * * 1-5",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "d17a400b-2933-43f3-ba19-7a0362fea4a1",
-      "name": "daily-price-tracker",
-      "enabled": true,
-      "schedule": "30 21 * * 1-5",
+      "schedule": "0 23 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -22,14 +14,6 @@
       "name": "hourly-signal-scanner",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "b273f088-74ea-4e15-abcd-8f09c8098379",
-      "name": "x-signal-monitor (23:00 UTC)",
-      "enabled": true,
-      "schedule": "0 23 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -118,6 +102,22 @@
       "name": "weekly-full-report",
       "enabled": true,
       "schedule": "0 21 * * 5",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "194d1389-b186-4d27-8f28-6f954a2dd3f5",
+      "name": "post-market-wrap",
+      "enabled": true,
+      "schedule": "30 21 * * 1-5",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "d17a400b-2933-43f3-ba19-7a0362fea4a1",
+      "name": "daily-price-tracker",
+      "enabled": true,
+      "schedule": "30 21 * * 1-5",
       "tz": "UTC",
       "workspace": "melina"
     },
