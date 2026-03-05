@@ -428,6 +428,79 @@
       outline: none;
     }
     .kb-search input:focus { border-color: #3a3a50; }
+
+    /* KB Section headers */
+    .kb-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--muted);
+      margin: 20px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Primary Signals timeline */
+    .kb-timeline { display: flex; flex-direction: column; gap: 4px; }
+    .kb-timeline-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 8px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.1s;
+      border: 1px solid transparent;
+    }
+    .kb-timeline-row:hover { background: var(--bg2); border-color: var(--border); }
+    .kb-timeline-row.no-link { cursor: default; opacity: 0.7; }
+    .kb-timeline-row.no-link:hover { background: transparent; border-color: transparent; }
+    .kb-timeline-main { flex: 1; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; min-width: 0; }
+    .kb-timeline-title { font-size: 13px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 300px; }
+    .kb-timeline-takeaway { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0; }
+    .kb-timeline-badges { display: flex; gap: 4px; flex-shrink: 0; }
+    .kb-timeline-date { font-size: 11px; color: var(--muted); flex-shrink: 0; }
+
+    /* Domain tag */
+    .kb-domain {
+      display: inline-block;
+      padding: 1px 7px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      flex-shrink: 0;
+      background: var(--bg3);
+      color: var(--muted);
+      border: 1px solid var(--border);
+    }
+
+    /* Signal badges */
+    .sig-badge {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .sig-impact-high { background: rgba(255,68,68,0.15); color: #ff4444; border: 1px solid rgba(255,68,68,0.3); }
+    .sig-impact-med  { background: rgba(255,136,0,0.15); color: #ff8800; border: 1px solid rgba(255,136,0,0.3); }
+    .sig-impact-low  { background: var(--bg3); color: var(--muted); border: 1px solid var(--border); }
+    .sig-timeliness-breaking { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); animation: blink 1.5s ease-in-out infinite; }
+    .sig-timeliness-weekly { background: rgba(56,189,248,0.1); color: #38bdf8; border: 1px solid rgba(56,189,248,0.2); }
+    .sig-timeliness-evergreen { background: var(--bg3); color: var(--muted); border: 1px solid var(--border); }
+    .sig-relevance-high { background: rgba(52,211,153,0.15); color: var(--accent-melina); border: 1px solid rgba(52,211,153,0.3); }
+    .sig-relevance-med  { background: var(--bg3); color: var(--muted); border: 1px solid var(--border); }
+    .sig-relevance-low  { background: var(--bg3); color: var(--muted); border: 1px solid var(--border); opacity: 0.6; }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* Secondary cards grid */
     .kb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
     .kb-card {
       background: var(--bg2);
@@ -839,6 +912,13 @@
       <div class="kb-filters" id="kb-filters">
         <!-- Filled by JS -->
       </div>
+      <!-- Primary Signals timeline -->
+      <div class="kb-section-title" id="kb-primary-title">Primary Signals</div>
+      <div class="kb-timeline" id="kb-timeline">
+        <!-- Filled by JS -->
+      </div>
+      <!-- Secondary / Analysis cards -->
+      <div class="kb-section-title" id="kb-secondary-title" style="margin-top:28px">Analysis & Insights</div>
       <div class="kb-grid" id="kb-grid">
         <!-- Filled by JS -->
       </div>
@@ -886,13 +966,15 @@ let currentWs = 'ranni';
 let currentScreen = 'overview';
 let cronFilter = 'all';
 let calendarWeekOffset = 0; // 0 = current week in PT
-let kbCategory = 'all';
-let kbQuery = '';
+// kbCategory: legacy, kept for compat
 
 let allData = { ranni: {}, company: {}, melina: {} };
 let allCronJobs = [];
 let calendarWeek = null;
-let kbItems = [];
+let kbPrimary = [];
+let kbSecondary = [];
+let kbDomainFilter = 'all';
+let kbQuery = '';
 
 // ─── DATA LOADING ─────────────────────────────────────────
 async function loadJson(path) {
@@ -926,7 +1008,8 @@ async function loadAll() {
 
   // Load KB
   const kbIndex = await loadJson('./data/ranni/kb-index.json');
-  kbItems = kbIndex?.items || [];
+  kbPrimary = kbIndex?.primary || [];
+  kbSecondary = kbIndex?.secondary || [];
 
   // Load memory index
   const memIndex = await loadJson('./data/ranni/memory-index.json');
@@ -1258,129 +1341,156 @@ function renderMemory() {
     </div>`).join('');
 }
 
-function kbPrimaryCategory(item) {
-  const tags = (item.tags || []).map(t => String(t).toLowerCase());
-  const title = String(item.title || '').toLowerCase();
-  const summary = String(item.summary || '').toLowerCase();
-  const all = tags.join(' ') + ' ' + title + ' ' + summary;
+// Domain display config
+const DOMAIN_META = {
+  ai:           { label: 'AI',          color: '#a78bfa' },
+  tech:         { label: 'TECH',        color: '#38bdf8' },
+  energy:       { label: 'ENERGY',      color: '#fbbf24' },
+  crypto:       { label: 'CRYPTO',      color: '#f97316' },
+  macro:        { label: 'MACRO',       color: '#34d399' },
+  geopolitics:  { label: 'GEO',         color: '#f87171' },
+  materials:    { label: 'MATERIALS',   color: '#a3e635' },
+  industrial:   { label: 'INDUSTRIAL',  color: '#94a3b8' },
+  other:        { label: 'OTHER',       color: '#64748b' },
+};
 
-  const hasTag = (arr) => arr.some(x => tags.includes(String(x).toLowerCase()));
-  const inAll = (arr) => arr.some(x => all.includes(String(x).toLowerCase()));
+function domainTag(domain) {
+  const d = String(domain || 'other').toLowerCase();
+  const meta = DOMAIN_META[d] || DOMAIN_META.other;
+  return `<span class="kb-domain" style="color:${meta.color};border-color:${meta.color}22;background:${meta.color}11">${escHtml(meta.label)}</span>`;
+}
 
-  // Financial: explicit money/market tags
-  if (hasTag(['investment','market','stocks','trading','bitcoin','btc','crypto','ethereum','macro','gold','rates','inflation','regulation','finance','fintech'])) return 'financial';
+function impactBadge(v) {
+  if (!v) return '';
+  const cls = v === 'high' ? 'sig-impact-high' : v === 'med' ? 'sig-impact-med' : 'sig-impact-low';
+  return `<span class="sig-badge ${cls}">↑${v.toUpperCase()}</span>`;
+}
 
-  // Geo/News: must have explicit geopolitical/news keywords (positive match only)
-  const geoKeywords = ['geopolitics','geopolitical','war','military','china','russia','ukraine','europe','nato','sanction','tariff','election','government','policy','pentagon','defense','diplomat','national security','congress','senate','white house'];
-  if (inAll(geoKeywords)) return 'news';
+function timelinessBadge(v) {
+  if (!v) return '';
+  const cls = v === 'breaking' ? 'sig-timeliness-breaking' : v === 'weekly' ? 'sig-timeliness-weekly' : 'sig-timeliness-evergreen';
+  const label = v === 'breaking' ? '⚡ BREAKING' : v === 'weekly' ? 'WEEKLY' : '🌿 EVRGN';
+  return `<span class="sig-badge ${cls}">${label}</span>`;
+}
 
-  // Everything else → AI (default for an AI-focused KB)
-  return 'ai';
+function relevanceBadge(v) {
+  if (!v) return '';
+  const cls = v === 'high' ? 'sig-relevance-high' : v === 'med' ? 'sig-relevance-med' : 'sig-relevance-low';
+  const label = v === 'high' ? '★ HI' : v === 'med' ? '◦ MED' : '· LOW';
+  return `<span class="sig-badge ${cls}">${label}</span>`;
+}
+
+const KB_DOMAINS = ['all','ai','tech','energy','crypto','macro','geopolitics','materials','industrial'];
+
+function filterKbByDomain(items) {
+  if (kbDomainFilter === 'all') return items;
+  return items.filter(it => (it.domain || 'other').toLowerCase() === kbDomainFilter);
+}
+
+function filterKbByQuery(items) {
+  if (!kbQuery) return items;
+  const q = kbQuery.toLowerCase();
+  return items.filter(it =>
+    (it.title || '').toLowerCase().includes(q) ||
+    (it.summary || it.takeaway || '').toLowerCase().includes(q)
+  );
 }
 
 function renderKb() {
-  const grid = document.getElementById('kb-grid');
   const filters = document.getElementById('kb-filters');
+  const timeline = document.getElementById('kb-timeline');
+  const grid = document.getElementById('kb-grid');
+  const primaryTitle = document.getElementById('kb-primary-title');
+  const secondaryTitle = document.getElementById('kb-secondary-title');
 
-  if (!kbItems.length) {
-    grid.innerHTML = '<div class="empty-state"><div class="icon">📚</div><p>No KB entries yet.</p></div>';
-    filters.innerHTML = '';
-    return;
-  }
+  const allItems = [...kbPrimary, ...kbSecondary];
 
-  // Build category counts
-  const cats = [
-    { id: 'all', label: 'All' },
-    { id: 'ai', label: 'AI' },
-    { id: 'financial', label: 'Financial' },
-    { id: 'news', label: 'Geo/News' }
-  ];
-
-  const counts = { all: kbItems.length };
-  kbItems.forEach(it => {
-    const c = kbPrimaryCategory(it);
-    counts[c] = (counts[c] || 0) + 1;
+  // Domain filter buttons
+  const domainCounts = { all: allItems.length };
+  allItems.forEach(it => {
+    const d = (it.domain || 'other').toLowerCase();
+    domainCounts[d] = (domainCounts[d] || 0) + 1;
   });
 
-  filters.innerHTML = cats.map(c => {
-    const n = counts[c.id] || 0;
-    return `<button class="kb-cat ${kbCategory===c.id?'active':''}" data-cat="${c.id}" onclick="setKbCategory('${c.id}')">${c.label} (${n})</button>`;
+  filters.innerHTML = KB_DOMAINS.map(d => {
+    const label = d === 'all' ? 'All' : (DOMAIN_META[d]?.label || d.toUpperCase());
+    const n = domainCounts[d] || 0;
+    return `<button class="kb-cat ${kbDomainFilter===d?'active':''}" data-cat="${d}" onclick="setKbDomain('${d}')">${escHtml(label)}${n ? ` <span style="opacity:0.6;font-size:10px">${n}</span>` : ''}</button>`;
   }).join('');
 
-  // Filter + sort
-  let items = kbItems.slice();
+  // Filter primary
+  let primary = filterKbByQuery(filterKbByDomain(kbPrimary));
+  let secondary = filterKbByQuery(filterKbByDomain(kbSecondary));
 
-  if (kbCategory !== 'all') {
-    items = items.filter(it => kbPrimaryCategory(it) === kbCategory);
+  // Render primary timeline
+  if (!primary.length) {
+    primaryTitle.textContent = 'Primary Signals (0)';
+    timeline.innerHTML = '<div style="padding:12px;color:var(--muted);font-size:12px;font-style:italic">No primary signals match current filter.</div>';
+  } else {
+    primaryTitle.textContent = `Primary Signals (${primary.length})`;
+    timeline.innerHTML = primary.map(item => {
+      const hasLink = !!(item.url && String(item.url).startsWith('http'));
+      const safeUrl = hasLink ? String(item.url).replace(/"/g,'').replace(/'/g,'') : '';
+      const clickAttr = hasLink ? `onclick="window.open('${safeUrl}', '_blank')"` : '';
+      const takeaway = (item.takeaway || '').trim();
+
+      return `
+        <div class="kb-timeline-row ${hasLink ? '' : 'no-link'}" ${clickAttr}>
+          ${domainTag(item.domain)}
+          <div class="kb-timeline-main">
+            <span class="kb-timeline-title">${escHtml(item.title || 'Untitled')}</span>
+            ${takeaway ? `<span class="kb-timeline-takeaway">— ${escHtml(takeaway)}</span>` : ''}
+          </div>
+          <div class="kb-timeline-badges">
+            ${impactBadge(item.impact)}
+            ${timelinessBadge(item.timeliness)}
+            ${relevanceBadge(item.relevance)}
+          </div>
+          <span class="kb-timeline-date">${escHtml(item.date || '')}</span>
+        </div>`;
+    }).join('');
   }
 
-  if (kbQuery) {
-    const q = kbQuery.toLowerCase();
-    items = items.filter(it =>
-      (it.title || '').toLowerCase().includes(q) ||
-      (it.summary || it.preview || '').toLowerCase().includes(q) ||
-      (it.source || '').toLowerCase().includes(q)
-    );
-  }
-
-  items.sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
-
-  displayKb(items);
-}
-
-function displayKb(items) {
-  const grid = document.getElementById('kb-grid');
-  if (!items.length) {
-    grid.innerHTML = '<div class="empty-state"><div class="icon">📚</div><p>No matches.</p></div>';
+  // Render secondary cards
+  if (!secondary.length) {
+    secondaryTitle.textContent = 'Analysis & Insights (0)';
+    grid.innerHTML = '<div class="empty-state"><div class="icon">📚</div><p>No analysis entries match current filter.</p></div>';
     return;
   }
 
-  const renderCard = (item) => {
-    const score = item.score || item.rating || 0;
+  secondaryTitle.textContent = `Analysis & Insights (${secondary.length})`;
+
+  // Sort by score desc
+  secondary = secondary.slice().sort((a, b) => (b.score || 0) - (a.score || 0));
+
+  grid.innerHTML = secondary.map(item => {
+    const score = item.score || 0;
     const scoreClass = score >= 8 ? 'high' : score >= 6 ? 'mid' : 'low';
-    const cat = kbPrimaryCategory(item);
     const hasLink = !!(item.url && String(item.url).startsWith('http'));
     const safeUrl = hasLink ? String(item.url).replace(/"/g,'').replace(/'/g,'') : '';
     const clickAttr = hasLink ? `onclick="window.open('${safeUrl}', '_blank')"` : '';
+    const showFullSummary = score >= 7;
 
     return `
       <div class="kb-card ${hasLink ? 'has-link' : 'no-link'}" ${clickAttr}>
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
-          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
             ${score ? `<span class="kb-score ${scoreClass}">${score}/10</span>` : ''}
-            <span class="project-tag">${escHtml(cat.toUpperCase())}</span>
+            ${domainTag(item.domain)}
             ${item.source ? `<span class="project-tag">✍️ ${escHtml(item.source)}</span>` : ''}
           </div>
           <div style="font-size:11px;color:var(--muted)">${escHtml(item.date || '')}</div>
         </div>
-
-        <div class="kb-title" style="margin-top:10px">${escHtml(item.title || 'Untitled')}</div>
-        <div class="kb-summary">${escHtml(item.summary || item.preview || '')}</div>
-
-        <div class="kb-meta" style="align-items:center;justify-content:space-between">
+        <div class="kb-title">${escHtml(item.title || 'Untitled')}</div>
+        ${showFullSummary
+          ? `<div class="kb-summary">${escHtml(item.summary || '')}</div>`
+          : `<div style="font-size:12px;color:var(--muted);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${escHtml(item.summary || '')}</div>`}
+        <div class="kb-meta" style="align-items:center;justify-content:space-between;margin-top:8px">
           <span>${item.type ? escHtml(item.type) : ''}</span>
-          <span class="kb-link-badge">${hasLink ? '↗ source link' : 'agent note'}</span>
+          <span class="kb-link-badge">${hasLink ? '↗ source' : 'agent note'}</span>
         </div>
       </div>`;
-  };
-
-  const hasLink = (it) => !!(it.url && String(it.url).startsWith('http'));
-  const external = items.filter(hasLink).slice(0, 80);
-  const internal = items.filter(it => !hasLink(it)).slice(0, 80);
-
-  let html = external.map(renderCard).join('');
-
-  if (internal.length) {
-    html += `
-      <details class="kb-internal" style="grid-column:1/-1">
-        <summary>Agent-written notes (${internal.length})</summary>
-        <div class="kb-grid-inner">
-          ${internal.map(renderCard).join('')}
-        </div>
-      </details>`;
-  }
-
-  grid.innerHTML = html;
+  }).join('');
 }
 
 // ─── INTERACTIONS ─────────────────────────────────────────
@@ -1451,11 +1561,14 @@ function filterKb(q) {
   renderKb();
 }
 
-function setKbCategory(cat) {
-  kbCategory = cat;
-  document.querySelectorAll('.kb-cat').forEach(b => b.classList.toggle('active', b.dataset.cat === cat));
+function setKbDomain(domain) {
+  kbDomainFilter = domain;
+  document.querySelectorAll('.kb-cat').forEach(b => b.classList.toggle('active', b.dataset.cat === domain));
   renderKb();
 }
+
+// Legacy alias
+function setKbCategory(cat) { setKbDomain(cat); }
 
 let taskModalStatus = 'backlog';
 function openTaskModal(status) {
