@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T08:06:32Z",
+  "lastUpdated": "2026-03-05T09:04:49Z",
   "kind": "kb-index",
   "primary": [
     {
@@ -164,6 +164,24 @@
       ],
       "source": "Dario Amodei (Anthropic CEO)",
       "url": "https://www.youtube.com/watch?v=68ylaeBbdsg"
+    },
+    {
+      "id": "youtube-henren778-hormuz-insurance",
+      "date": "2026-03-05",
+      "type": "youtube",
+      "domain": "geopolitics",
+      "title": "霍尔木兹封锁机制：关闭海峡的不是伊朗军舰而是伦敦保险公司",
+      "summary": "P&I Club撤保机制是实质封锁海峡的关键；软封锁2-6个月独立于军事进展；旁路产能缺口800-1000万桶/天无法弥补",
+      "score": 7,
+      "tags": [
+        "Geopolitics",
+        "Energy",
+        "Oil",
+        "Insurance",
+        "Hormuz"
+      ],
+      "source": "melina",
+      "url": "https://www.youtube.com/@henren778"
     },
     {
       "id": "tweet-2026757796390449382",
