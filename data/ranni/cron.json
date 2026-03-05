@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T23:04:48Z",
+  "lastUpdated": "2026-03-05T00:07:14Z",
   "jobs": [
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
@@ -7,6 +7,14 @@
       "enabled": true,
       "schedule": "0 * * * *",
       "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "d19ecc27-8d93-45fd-afad-96e1760072e6",
+      "name": "session-context-check",
+      "enabled": true,
+      "schedule": "0 */3 * * *",
+      "tz": "America/Los_Angeles",
       "workspace": "ranni"
     },
     {

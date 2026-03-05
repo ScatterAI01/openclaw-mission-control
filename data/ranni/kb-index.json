@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T23:04:48Z",
+  "lastUpdated": "2026-03-05T00:07:14Z",
   "kind": "kb-index",
   "items": [
     {
@@ -91,6 +91,52 @@
       ],
       "source": "Apple",
       "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/"
+    },
+    {
+      "id": "nugt-equities-main",
+      "date": "2026-03-04",
+      "type": "equity",
+      "title": "NUGT — Direxion Daily Gold Miners Bull 3X ETF",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "NUGT",
+        "gold",
+        "leveraged-etf"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "nugt-geo-2026-03-04",
+      "date": "2026-03-04",
+      "type": "equity",
+      "title": "NUGT Geo & Event Log",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "NUGT",
+        "geo",
+        "gold"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "nugt-narrative-2026-03-04",
+      "date": "2026-03-04",
+      "type": "equity",
+      "title": "NUGT Narrative",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "NUGT",
+        "narrative",
+        "gold",
+        "leveraged-etf"
+      ],
+      "source": "melina",
+      "url": ""
     },
     {
       "id": null,
@@ -248,6 +294,111 @@
         "ContextEngineering"
       ],
       "source": "ranni",
+      "url": ""
+    },
+    {
+      "id": "report-app-2026-03-02",
+      "date": "2026-03-02",
+      "type": "research-report",
+      "title": "APP Research Report 2026-03-02",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "APP",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-ba-2026-03-02",
+      "date": "2026-03-02",
+      "type": "research-report",
+      "title": "BA Research Report 2026-03-02",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "BA",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-bbai-2026-03-02",
+      "date": "2026-03-02",
+      "type": "research-report",
+      "title": "BBAI Research Report 2026-03-02",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "BBAI",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-orcl-2026-03-02",
+      "date": "2026-03-02",
+      "type": "research-report",
+      "title": "ORCL Research Report 2026-03-02",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "ORCL",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-pltr-2026-03-02",
+      "date": "2026-03-02",
+      "type": "research-report",
+      "title": "PLTR Research Report 2026-03-02",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "PLTR",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-rklb-2026-03-02",
+      "date": "2026-03-02",
+      "type": "research-report",
+      "title": "RKLB Research Report 2026-03-02",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "RKLB",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-tsla-2026-03-02",
+      "date": "2026-03-02",
+      "type": "research-report",
+      "title": "TSLA Research Report 2026-03-02",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "TSLA",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
       "url": ""
     },
     {
@@ -601,6 +752,97 @@
         "defense",
         "geopolitics",
         "maven"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-nvda-2026-03-01-v1",
+      "date": "2026-03-01",
+      "type": "research-report",
+      "title": "NVDA Research Report 2026-03-01 v1",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "NVDA",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-nvda-2026-03-01-v2",
+      "date": "2026-03-01",
+      "type": "research-report",
+      "title": "NVDA Research Report 2026-03-01 v2",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "NVDA",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-nvda-2026-03-01-v3",
+      "date": "2026-03-01",
+      "type": "research-report",
+      "title": "NVDA Research Report 2026-03-01 v3",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "NVDA",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-nvda-2026-03-01-v4",
+      "date": "2026-03-01",
+      "type": "research-report",
+      "title": "NVDA Research Report 2026-03-01 v4 (latest)",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "NVDA",
+        "equity",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-nugt-gold-analysis-2026-03-01",
+      "date": "2026-03-01",
+      "type": "research-report",
+      "title": "NUGT Gold Analysis 2026-03-01",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "NUGT",
+        "gold",
+        "research-report"
+      ],
+      "source": "melina",
+      "url": ""
+    },
+    {
+      "id": "report-spacex-ipo-tsla-impact",
+      "date": "2026-03-01",
+      "type": "research-report",
+      "title": "SpaceX IPO TSLA Impact Analysis",
+      "summary": "",
+      "score": null,
+      "tags": [
+        "SpaceX",
+        "TSLA",
+        "pre-ipo",
+        "research-report"
       ],
       "source": "melina",
       "url": ""

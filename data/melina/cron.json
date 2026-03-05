@@ -1,22 +1,6 @@
 {
-  "lastUpdated": "2026-03-04T23:04:48Z",
+  "lastUpdated": "2026-03-05T00:07:14Z",
   "jobs": [
-    {
-      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
-      "name": "hourly-signal-scanner",
-      "enabled": true,
-      "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
-      "name": "polymarket-monitor",
-      "enabled": true,
-      "schedule": "0 */6 * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "6503d05a-55d7-4469-8d67-6bc533ba1d55",
       "name": "x-signal-monitor (01:00 UTC)",
@@ -26,10 +10,26 @@
       "workspace": "melina"
     },
     {
+      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
+      "name": "hourly-signal-scanner",
+      "enabled": true,
+      "schedule": "0 * * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
       "id": "67477021-e127-4134-843d-ed8c1acda4dd",
       "name": "x-signal-monitor (03:00 UTC)",
       "enabled": true,
       "schedule": "0 3 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
+      "name": "polymarket-monitor",
+      "enabled": true,
+      "schedule": "0 */6 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
