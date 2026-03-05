@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-03-05T07:04:49Z",
+  "lastUpdated": "2026-03-05T08:03:28Z",
   "jobs": [
-    {
-      "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
-      "name": "mission-control-sync",
-      "enabled": true,
-      "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
     {
       "id": "d19ecc27-8d93-45fd-afad-96e1760072e6",
       "name": "session-context-check",
       "enabled": true,
       "schedule": "0 */3 * * *",
       "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
+      "name": "mission-control-sync",
+      "enabled": true,
+      "schedule": "0 * * * *",
+      "tz": "UTC",
       "workspace": "ranni"
     },
     {
