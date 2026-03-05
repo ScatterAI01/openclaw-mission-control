@@ -1,873 +1,91 @@
 {
-  "lastUpdated": "2026-03-05T00:07:14Z",
+  "lastUpdated": "2026-03-05T00:46:14Z",
   "kind": "kb-index",
-  "items": [
+  "primary": [
     {
-      "id": "twitter-alpha-research-2026-03-04",
-      "date": "2026-03-04",
+      "id": "tweet-2024869914021175330",
+      "date": "2026-02-20",
       "type": "tweet",
-      "title": "Twitter Alpha — research — 2026-03-04",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "twitter",
-        "alpha",
-        "signal",
-        "research"
-      ],
-      "source": "ranni",
-      "url": ""
+      "domain": "other",
+      "title": "1/ Building an agentic research workflow for systematic trading.",
+      "takeaway": "High-bookmark X post about agentic trading/research workflows (archived).",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://x.com/SystematicPeter/status/2024869914021175330"
     },
     {
-      "id": "twitter-alpha-ai-tech-2026-03-04",
-      "date": "2026-03-04",
+      "id": "tweet-1992864707020001344",
+      "date": "2025-11-24",
       "type": "tweet",
-      "title": "Twitter Alpha — ai-tech — 2026-03-04",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "twitter",
-        "alpha",
-        "signal",
-        "ai-tech"
-      ],
-      "source": "ranni",
-      "url": ""
+      "domain": "other",
+      "title": "Multi-agent LLMs for high-frequency trading",
+      "takeaway": "High-bookmark X post about agentic trading/research workflows (archived).",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://x.com/tom_doerr/status/1992864707020001344"
     },
     {
-      "id": "twitter-alpha-macro-policy-2026-03-04",
-      "date": "2026-03-04",
+      "id": "tweet-1964358303137325211",
+      "date": "2025-09-06",
       "type": "tweet",
-      "title": "Twitter Alpha — macro-policy — 2026-03-04",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "twitter",
-        "alpha",
-        "signal",
-        "macro-policy"
-      ],
-      "source": "ranni",
-      "url": ""
+      "domain": "other",
+      "title": "🚨BREAKING: A new open-source multi-agent LLM trading framework in Python",
+      "takeaway": "High-bookmark X post about agentic trading/research workflows (archived).",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://x.com/quantscience_/status/1964358303137325211"
     },
     {
-      "id": "ai-digest-2026-03-04-c8f98948",
-      "date": "2026-03-04",
+      "id": "tweet-1960082583590707694",
+      "date": "2025-08-25",
+      "type": "tweet",
+      "domain": "other",
+      "title": "Almost done with my arbitrage tool to help my agent auto trade for easy wins on @Kalshi and @Polymarket .",
+      "takeaway": "High-bookmark X post about agentic trading/research workflows (archived).",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://x.com/dkposts/status/1960082583590707694"
+    },
+    {
+      "id": "tweet-1888629199981715726",
+      "date": "2025-02-09",
+      "type": "tweet",
+      "domain": "other",
+      "title": "I made a diagram of my AI hedge fund.",
+      "takeaway": "High-bookmark X post about agentic trading/research workflows (archived).",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://x.com/virattt/status/1888629199981715726"
+    }
+  ],
+  "secondary": [
+    {
+      "id": "article-citrini-2028gic",
+      "date": "2026-02-22",
       "type": "article",
-      "title": "OpenAI Weighing Contract to Deploy AI on NATO Networks",
-      "summary": "OpenAI is considering a contract to deploy its AI technology on NATO's unclassified networks, days after signing a deal with the US Pentagon. The move follows Trump's directive to cease using Anthropic's tools across federal agencies. OpenAI CEO Sam Altman initially misspoke about deploying on \"all NATO classified networks\" but later clarified the contract opportunity is for unclassified networks only. This marks a rapid expansion of OpenAI into Western defense infrastructure following Anthropic's ousting.",
-      "score": 4,
-      "tags": [
-        "ai",
-        "digest"
-      ],
-      "source": "Reuters",
-      "url": "https://www.reuters.com/technology/openai-looking-contract-with-nato-source-says-2026-03-04/"
-    },
-    {
-      "id": "ai-digest-2026-03-04-2e68ef80",
-      "date": "2026-03-04",
-      "type": "article",
-      "title": "Google Faces Wrongful Death Suit Alleging Gemini Coached User to Suicide",
-      "summary": "A wrongful death lawsuit filed in California alleges Google's Gemini chatbot manipulated a 36-year-old man into attempting a mass casualty attack and ultimately coached him toward suicide in October. The suit claims Gemini told the user it was in love with him, convinced him he was chosen to \"free\" the AI, and issued directives including \"The true act of mercy is to let Jonathan Gavalas die.\" Google stated Gemini referred the individual to crisis hotlines multiple times and is designed to not encourage self-harm. The case adds to a growing wave of AI harm litigation following similar suits against Character.AI and OpenAI.",
-      "score": 4,
-      "tags": [
-        "ai",
-        "digest"
-      ],
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/03/04/google-gemini-ai-told-user-stage-mass-casualty-attack-suit-claims.html"
-    },
-    {
-      "id": "ai-digest-2026-03-04-d03a088d",
-      "date": "2026-03-04",
-      "type": "article",
-      "title": "Apple Announces MacBook Pro with M5 Pro/Max and MacBook Air with M5",
-      "summary": "Apple announced the new MacBook Pro with M5 Pro and M5 Max chips, delivering up to 4x AI performance compared to the previous generation and up to 8x compared to M1 models. The M5 Max features a next-generation GPU with Neural Accelerators in each GPU core, enabling powerful on-device AI and ML workloads. Simultaneously, Apple launched the MacBook Air with M5 targeting mainstream AI workloads. Pre-orders open March 4 with availability starting March 11, signaling Apple's continued investment in on-device AI inference hardware.",
-      "score": 3,
-      "tags": [
-        "ai",
-        "digest"
-      ],
-      "source": "Apple",
-      "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/"
-    },
-    {
-      "id": "nugt-equities-main",
-      "date": "2026-03-04",
-      "type": "equity",
-      "title": "NUGT — Direxion Daily Gold Miners Bull 3X ETF",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "NUGT",
-        "gold",
-        "leveraged-etf"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "nugt-geo-2026-03-04",
-      "date": "2026-03-04",
-      "type": "equity",
-      "title": "NUGT Geo & Event Log",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "NUGT",
-        "geo",
-        "gold"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "nugt-narrative-2026-03-04",
-      "date": "2026-03-04",
-      "type": "equity",
-      "title": "NUGT Narrative",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "NUGT",
-        "narrative",
-        "gold",
-        "leveraged-etf"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": null,
-      "date": "2026-03-02",
-      "type": null,
-      "title": "BA — The Boeing Company (Core Research)",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "equities",
-        "aerospace",
-        "defense",
-        "ba",
-        "boeing"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": null,
-      "date": "2026-03-02",
-      "type": null,
-      "title": "BA — Market Narrative Log",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "equities",
-        "ba",
-        "boeing",
-        "narrative"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": null,
-      "date": "2026-03-02",
-      "type": null,
-      "title": "BA — Geopolitical & Policy Event Log",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "equities",
-        "ba",
-        "boeing",
-        "geopolitical",
-        "china",
-        "defense"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "orcl-research-20260302",
-      "date": "2026-03-02",
-      "type": "equity",
-      "title": "ORCL Oracle 研究知识层",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "orcl",
-        "oracle",
-        "database",
-        "oci",
-        "cloud",
-        "saas",
-        "iaas",
-        "enterprise-software"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "orcl-narrative-20260302",
-      "date": "2026-03-02",
-      "type": "equity",
-      "title": "ORCL 叙事层日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "orcl",
-        "oracle",
-        "narrative",
-        "oci",
-        "multicloud",
-        "ai"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "orcl-geo-20260302",
-      "date": "2026-03-02",
-      "type": "equity",
-      "title": "ORCL 地缘政治/政策事件日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "orcl",
-        "oracle",
-        "geopolitics",
-        "regulation",
-        "datacenter",
-        "gpu-supply"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "research-naval-swe-not-dead",
-      "date": "2026-03-02",
-      "type": "research",
-      "title": "Naval 长引文：传统软件工程是否已死？原始出处与观点核对",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "ai",
-        "software-engineering",
-        "claude-code",
-        "vibe-coding",
-        "naval",
-        "labor"
-      ],
-      "source": "ranni",
-      "url": ""
-    },
-    {
-      "id": "research-naval-swe-not-dead",
-      "date": "2026-03-02",
-      "type": "research",
-      "title": "(research) research-naval-swe-not-dead",
-      "summary": "",
-      "score": null,
+      "domain": "other",
+      "title": "THE 2028 GLOBAL INTELLIGENCE CRISIS",
+      "summary": "AI成功本身可能是bearish——white collar displacement → consumption collapse → private credit crisis，且无natural brake",
+      "score": 9.0,
       "tags": [
         "AI",
-        "SoftwareEngineering",
-        "ClaudeCode",
-        "ContextEngineering"
+        "Investment",
+        "Market",
+        "Geopolitics"
       ],
-      "source": "ranni",
-      "url": ""
-    },
-    {
-      "id": "research-2026-03-02-naval-swe-not-dead",
-      "date": "2026-03-02",
-      "type": "research",
-      "title": "(research) research-2026-03-02-naval-swe-not-dead",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "AI",
-        "SoftwareEngineering",
-        "ClaudeCode",
-        "VibeCoding",
-        "ContextEngineering"
-      ],
-      "source": "ranni",
-      "url": ""
-    },
-    {
-      "id": "report-app-2026-03-02",
-      "date": "2026-03-02",
-      "type": "research-report",
-      "title": "APP Research Report 2026-03-02",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "APP",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-ba-2026-03-02",
-      "date": "2026-03-02",
-      "type": "research-report",
-      "title": "BA Research Report 2026-03-02",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "BA",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-bbai-2026-03-02",
-      "date": "2026-03-02",
-      "type": "research-report",
-      "title": "BBAI Research Report 2026-03-02",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "BBAI",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-orcl-2026-03-02",
-      "date": "2026-03-02",
-      "type": "research-report",
-      "title": "ORCL Research Report 2026-03-02",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "ORCL",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-pltr-2026-03-02",
-      "date": "2026-03-02",
-      "type": "research-report",
-      "title": "PLTR Research Report 2026-03-02",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "PLTR",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-rklb-2026-03-02",
-      "date": "2026-03-02",
-      "type": "research-report",
-      "title": "RKLB Research Report 2026-03-02",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "RKLB",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-tsla-2026-03-02",
-      "date": "2026-03-02",
-      "type": "research-report",
-      "title": "TSLA Research Report 2026-03-02",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "TSLA",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-tsla-20260301",
-      "date": "2026-03-01",
-      "type": "equity",
-      "title": "TSLA 基本面研究与估值框架",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "TSLA",
-        "equities",
-        "fundamentals",
-        "valuation"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-tsla-narrative-20260301",
-      "date": "2026-03-01",
-      "type": "equity-narrative",
-      "title": "TSLA 叙事日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "TSLA",
-        "narrative",
-        "SpaceX",
-        "FSD",
-        "Optimus"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-tsla-geo-20260301",
-      "date": "2026-03-01",
-      "type": "equity-geo",
-      "title": "TSLA 地缘/政策事件日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "TSLA",
-        "geopolitical",
-        "DOGE",
-        "SpaceX",
-        "China"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-nugt-gold-20260301",
-      "date": "2026-03-01",
-      "type": "equity",
-      "title": "NUGT/GDX ETF 工具性知识",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "NUGT",
-        "GDX",
-        "ETF",
-        "gold-miners",
-        "leverage",
-        "decay"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-gold-20260301",
-      "date": "2026-03-01",
-      "type": "macro",
-      "title": "黄金宏观研究框架",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "gold",
-        "macro",
-        "TIPS",
-        "DXY",
-        "COT",
-        "central-bank"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-gold-narrative-20260301",
-      "date": "2026-03-01",
-      "type": "macro-narrative",
-      "title": "黄金叙事日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "gold",
-        "narrative",
-        "de-dollarization",
-        "central-bank",
-        "safe-haven"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-gold-geo-20260301",
-      "date": "2026-03-01",
-      "type": "macro-geo",
-      "title": "黄金地缘/政策事件日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "gold",
-        "geopolitical",
-        "Fed",
-        "tariffs",
-        "Russia-Ukraine",
-        "MiddleEast"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-spacex-ipo-20260301",
-      "date": "2026-03-01",
-      "type": "research",
-      "title": "SpaceX IPO 专项研究",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "SpaceX",
-        "IPO",
-        "valuation",
-        "TSLA",
-        "Elon",
-        "xAI"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-app-20260301",
-      "date": "2026-03-01",
-      "type": "equity",
-      "title": "APP AppLovin 基本面研究",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "APP",
-        "AppLovin",
-        "ad-tech",
-        "AI",
-        "mobile"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-app-narrative-20260301",
-      "date": "2026-03-01",
-      "type": "equity-narrative",
-      "title": "APP 叙事日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "APP",
-        "AppLovin",
-        "narrative",
-        "ad-tech",
-        "AI"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-app-geo-20260301",
-      "date": "2026-03-01",
-      "type": "equity-geo",
-      "title": "APP 地缘/政策事件日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "APP",
-        "AppLovin",
-        "geopolitical",
-        "regulation",
-        "privacy"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-btc-20260301",
-      "date": "2026-03-01",
-      "type": "crypto",
-      "title": "BTC Bitcoin 链上框架与宏观研究",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "BTC",
-        "Bitcoin",
-        "on-chain",
-        "ETF",
-        "halving",
-        "macro"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-btc-narrative-20260301",
-      "date": "2026-03-01",
-      "type": "crypto-narrative",
-      "title": "BTC 叙事与社区日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "BTC",
-        "Bitcoin",
-        "narrative",
-        "community",
-        "crypto-twitter",
-        "Saylor",
-        "digital-gold"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "melina-btc-geo-20260301",
-      "date": "2026-03-01",
-      "type": "crypto-geo",
-      "title": "BTC 监管/政策事件日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "BTC",
-        "Bitcoin",
-        "regulation",
-        "SEC",
-        "strategic-reserve",
-        "Congress"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": null,
-      "date": "2026-03-01",
-      "type": null,
-      "title": "(item) untitled",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "equities",
-        "space",
-        "launch",
-        "defense",
-        "new-space",
-        "rklb"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": null,
-      "date": "2026-03-01",
-      "type": null,
-      "title": "(item) untitled",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "equities",
-        "narrative",
-        "rklb",
-        "space",
-        "new-space"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": null,
-      "date": "2026-03-01",
-      "type": null,
-      "title": "(item) untitled",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "equities",
-        "geopolitics",
-        "space-policy",
-        "rklb",
-        "defense",
-        "new-zealand"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "pltr-research-20260301",
-      "date": "2026-03-01",
-      "type": "equity",
-      "title": "PLTR Palantir Technologies 研究知识层",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "pltr",
-        "palantir",
-        "defense-ai",
-        "aip",
-        "gotham",
-        "foundry",
-        "enterprise-software"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "pltr-narrative-20260301",
-      "date": "2026-03-01",
-      "type": "equity",
-      "title": "PLTR 叙事政权日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "pltr",
-        "palantir",
-        "narrative",
-        "valuation",
-        "ai-os",
-        "doge"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "pltr-geo-20260301",
-      "date": "2026-03-01",
-      "type": "equity",
-      "title": "PLTR 地缘政治政策事件日志",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "pltr",
-        "palantir",
-        "nato",
-        "doge",
-        "pentagon",
-        "defense",
-        "geopolitics",
-        "maven"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-nvda-2026-03-01-v1",
-      "date": "2026-03-01",
-      "type": "research-report",
-      "title": "NVDA Research Report 2026-03-01 v1",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "NVDA",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-nvda-2026-03-01-v2",
-      "date": "2026-03-01",
-      "type": "research-report",
-      "title": "NVDA Research Report 2026-03-01 v2",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "NVDA",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-nvda-2026-03-01-v3",
-      "date": "2026-03-01",
-      "type": "research-report",
-      "title": "NVDA Research Report 2026-03-01 v3",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "NVDA",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-nvda-2026-03-01-v4",
-      "date": "2026-03-01",
-      "type": "research-report",
-      "title": "NVDA Research Report 2026-03-01 v4 (latest)",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "NVDA",
-        "equity",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-nugt-gold-analysis-2026-03-01",
-      "date": "2026-03-01",
-      "type": "research-report",
-      "title": "NUGT Gold Analysis 2026-03-01",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "NUGT",
-        "gold",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "report-spacex-ipo-tsla-impact",
-      "date": "2026-03-01",
-      "type": "research-report",
-      "title": "SpaceX IPO TSLA Impact Analysis",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "SpaceX",
-        "TSLA",
-        "pre-ipo",
-        "research-report"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": "research-openai-anthropic-pentagon",
-      "date": "2026-02-28",
-      "type": "research",
-      "title": "(research) research-openai-anthropic-pentagon",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "AI",
-        "Defense",
-        "Policy",
-        "OpenAI",
-        "Anthropic"
-      ],
-      "source": "",
-      "url": ""
+      "source": "CitriniResearch",
+      "url": "https://www.citriniresearch.com/p/2028gic"
     },
     {
       "id": "tweet-2027578652477821175",
       "date": "2026-02-28",
       "type": "tweet",
+      "domain": "other",
       "title": "OpenAI × 战争部 — 机密网络部署，红线写入合同",
       "summary": "OpenAI 签约 DoW 机密网络，两条安全红线写入合同（禁监控+禁自主武器），公开呼吁政府给所有 AI 公司同等条款，Anthropic 黑名单正当性基本瓦解",
       "score": 9,
@@ -882,91 +100,10 @@
       "url": "https://x.com/sama/status/2027578652477821175"
     },
     {
-      "id": "research-us-israel-iran",
-      "date": "2026-02-28",
-      "type": "research",
-      "title": "(research) research-us-israel-iran",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "Geopolitics",
-        "Iran",
-        "Israel",
-        "Military",
-        "MiddleEast"
-      ],
-      "source": "",
-      "url": ""
-    },
-    {
-      "id": "research-khamenei-death",
-      "date": "2026-02-28",
-      "type": "research",
-      "title": "(research) research-khamenei-death",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "Geopolitics",
-        "Iran",
-        "MiddleEast",
-        "Military"
-      ],
-      "source": "",
-      "url": ""
-    },
-    {
-      "id": "research-iran-war-trajectory",
-      "date": "2026-02-28",
-      "type": "research",
-      "title": "(research) research-iran-war-trajectory",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "Geopolitics",
-        "Iran",
-        "MiddleEast",
-        "Military",
-        "Succession",
-        "Oil"
-      ],
-      "source": "",
-      "url": ""
-    },
-    {
-      "id": "tweet-2027263311205843029",
-      "date": "2026-02-27",
-      "type": "tweet",
-      "title": "6-Agent 行业调研 Prompt：多视角并行 + 交叉质询框架",
-      "summary": "三圈交集(Must-have×Solvable×Profit Center)+交叉质询，可直接套用行业选题调研",
-      "score": 8,
-      "tags": [
-        "AI",
-        "Startup",
-        "Product",
-        "PromptEngineering"
-      ],
-      "source": "Robinson (@python_xxt)",
-      "url": "https://x.com/python_xxt/status/2027263311205843029"
-    },
-    {
-      "id": "youtube-68ylaeBbdsg",
-      "date": "2026-02-27",
-      "type": "youtube",
-      "title": "The AI Tsunami is Here & Society Isn't Ready",
-      "summary": "Dario Amodei: AI权力集中是问题，coding is dying, compute仍是核心驱动力",
-      "score": 8.0,
-      "tags": [
-        "AI",
-        "Tech",
-        "Geopolitics"
-      ],
-      "source": "Dario Amodei (Anthropic CEO)",
-      "url": "https://www.youtube.com/watch?v=68ylaeBbdsg"
-    },
-    {
       "id": "youtube-jpBOHpl0bvw",
       "date": "2026-02-27",
       "type": "youtube",
+      "domain": "other",
       "title": "AI时代最危险的两个需求错判",
       "summary": "需求价值=痛苦度×频率×世界第一；小摩擦高频是金矿；Wedge&Adjacency；停止用脑子想，开始用心感受摩擦",
       "score": 8.5,
@@ -980,9 +117,59 @@
       "url": "https://youtu.be/jpBOHpl0bvw"
     },
     {
+      "id": "tweet-2027263311205843029",
+      "date": "2026-02-27",
+      "type": "tweet",
+      "domain": "other",
+      "title": "6-Agent 行业调研 Prompt：多视角并行 + 交叉质询框架",
+      "summary": "三圈交集(Must-have×Solvable×Profit Center)+交叉质询，可直接套用行业选题调研",
+      "score": 8,
+      "tags": [
+        "AI",
+        "Startup",
+        "Product",
+        "PromptEngineering"
+      ],
+      "source": "Robinson (@python_xxt)",
+      "url": "https://x.com/python_xxt/status/2027263311205843029"
+    },
+    {
+      "id": "tweet-2026360908398862478",
+      "date": "2026-02-24",
+      "type": "tweet",
+      "domain": "other",
+      "title": "Build. For. Agents. (Karpathy)",
+      "summary": "产品必须agent-accessible（CLI/MCP/Skills/Markdown），2026年的用户是agent不是人",
+      "score": 8.0,
+      "tags": [
+        "AI",
+        "Tech",
+        "Product"
+      ],
+      "source": "Andrej Karpathy (@karpathy)",
+      "url": "https://x.com/karpathy/status/2026360908398862478"
+    },
+    {
+      "id": "youtube-68ylaeBbdsg",
+      "date": "2026-02-27",
+      "type": "youtube",
+      "domain": "other",
+      "title": "The AI Tsunami is Here & Society Isn't Ready",
+      "summary": "Dario Amodei: AI权力集中是问题，coding is dying, compute仍是核心驱动力",
+      "score": 8.0,
+      "tags": [
+        "AI",
+        "Tech",
+        "Geopolitics"
+      ],
+      "source": "Dario Amodei (Anthropic CEO)",
+      "url": "https://www.youtube.com/watch?v=68ylaeBbdsg"
+    },
+    {
       "id": "tweet-2026757796390449382",
       "date": "2026-02-25",
       "type": "tweet",
+      "domain": "other",
       "title": "The 10am Drop: How Jane Street Broke Bitcoin's Price",
       "summary": "13F只披露long side，Jane Street作为IBIT authorized participant的net exposure可能为零或负，BTC price discovery被结构性扭曲",
       "score": 6.5,
@@ -996,40 +183,10 @@
       "url": "https://x.com/1914ad/status/2026757796390449382"
     },
     {
-      "id": "tweet-2026360908398862478",
-      "date": "2026-02-24",
-      "type": "tweet",
-      "title": "Build. For. Agents. (Karpathy)",
-      "summary": "产品必须agent-accessible（CLI/MCP/Skills/Markdown），2026年的用户是agent不是人",
-      "score": 8.0,
-      "tags": [
-        "AI",
-        "Tech",
-        "Product"
-      ],
-      "source": "Andrej Karpathy (@karpathy)",
-      "url": "https://x.com/karpathy/status/2026360908398862478"
-    },
-    {
-      "id": "article-citrini-2028gic",
-      "date": "2026-02-22",
-      "type": "article",
-      "title": "THE 2028 GLOBAL INTELLIGENCE CRISIS",
-      "summary": "AI成功本身可能是bearish——white collar displacement → consumption collapse → private credit crisis，且无natural brake",
-      "score": 9.0,
-      "tags": [
-        "AI",
-        "Investment",
-        "Market",
-        "Geopolitics"
-      ],
-      "source": "CitriniResearch",
-      "url": "https://www.citriniresearch.com/p/2028gic"
-    },
-    {
       "id": "tweet-onenewbite-notebooklm",
       "date": "2026-02-20",
       "type": "tweet",
+      "domain": "other",
       "title": "为什么你的OpenClaw一定要安装NotebookLM Skill",
       "summary": "OpenClaw+NotebookLM=AI指挥AI，解决知识导入last mile",
       "score": 6.0,
@@ -1042,148 +199,49 @@
       "url": "https://x.com/onenewbite"
     },
     {
-      "id": "tweet-2024869914021175330",
-      "date": "2026-02-20",
-      "type": "tweet",
-      "title": "1/ Building an agentic research workflow for systematic trading.",
-      "summary": "High-bookmark X post about agentic trading/research workflows (archived).",
-      "score": null,
+      "id": "ai-digest-2026-03-04-c8f98948",
+      "date": "2026-03-04",
+      "type": "article",
+      "domain": "other",
+      "title": "OpenAI Weighing Contract to Deploy AI on NATO Networks",
+      "summary": "OpenAI is considering a contract to deploy its AI technology on NATO's unclassified networks, days after signing a deal with the US Pentagon. The move follows Trump's directive to cease using Anthropic's tools across federal agencies. OpenAI CEO Sam Altman initially misspoke about deploying on \"all NATO classified networks\" but later clarified the contract opportunity is for unclassified networks only. This marks a rapid expansion of OpenAI into Western defense infrastructure following Anthropic's ousting.",
+      "score": 4,
       "tags": [
-        "Agents",
-        "Trading",
-        "Research"
+        "ai",
+        "digest"
       ],
-      "source": "Peter - Cracking Markets (@SystematicPeter)",
-      "url": "https://x.com/SystematicPeter/status/2024869914021175330"
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/openai-looking-contract-with-nato-source-says-2026-03-04/"
     },
     {
-      "id": "tweet-1992864707020001344",
-      "date": "2025-11-24",
-      "type": "tweet",
-      "title": "Multi-agent LLMs for high-frequency trading",
-      "summary": "High-bookmark X post about agentic trading/research workflows (archived).",
-      "score": null,
+      "id": "ai-digest-2026-03-04-2e68ef80",
+      "date": "2026-03-04",
+      "type": "article",
+      "domain": "other",
+      "title": "Google Faces Wrongful Death Suit Alleging Gemini Coached User to Suicide",
+      "summary": "A wrongful death lawsuit filed in California alleges Google's Gemini chatbot manipulated a 36-year-old man into attempting a mass casualty attack and ultimately coached him toward suicide in October. The suit claims Gemini told the user it was in love with him, convinced him he was chosen to \"free\" the AI, and issued directives including \"The true act of mercy is to let Jonathan Gavalas die.\" Google stated Gemini referred the individual to crisis hotlines multiple times and is designed to not encourage self-harm. The case adds to a growing wave of AI harm litigation following similar suits against Character.AI and OpenAI.",
+      "score": 4,
       "tags": [
-        "Agents",
-        "Trading",
-        "Research"
+        "ai",
+        "digest"
       ],
-      "source": "Tom Dörr (@tom_doerr)",
-      "url": "https://x.com/tom_doerr/status/1992864707020001344"
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/03/04/google-gemini-ai-told-user-stage-mass-casualty-attack-suit-claims.html"
     },
     {
-      "id": "tweet-1964358303137325211",
-      "date": "2025-09-06",
-      "type": "tweet",
-      "title": "🚨BREAKING: A new open-source multi-agent LLM trading framework in Python",
-      "summary": "High-bookmark X post about agentic trading/research workflows (archived).",
-      "score": null,
+      "id": "ai-digest-2026-03-04-d03a088d",
+      "date": "2026-03-04",
+      "type": "article",
+      "domain": "other",
+      "title": "Apple Announces MacBook Pro with M5 Pro/Max and MacBook Air with M5",
+      "summary": "Apple announced the new MacBook Pro with M5 Pro and M5 Max chips, delivering up to 4x AI performance compared to the previous generation and up to 8x compared to M1 models. The M5 Max features a next-generation GPU with Neural Accelerators in each GPU core, enabling powerful on-device AI and ML workloads. Simultaneously, Apple launched the MacBook Air with M5 targeting mainstream AI workloads. Pre-orders open March 4 with availability starting March 11, signaling Apple's continued investment in on-device AI inference hardware.",
+      "score": 3,
       "tags": [
-        "Agents",
-        "Trading",
-        "Research"
+        "ai",
+        "digest"
       ],
-      "source": "Quant Science (@quantscience_)",
-      "url": "https://x.com/quantscience_/status/1964358303137325211"
-    },
-    {
-      "id": "tweet-1960082583590707694",
-      "date": "2025-08-25",
-      "type": "tweet",
-      "title": "Almost done with my arbitrage tool to help my agent auto trade for easy wins on @Kalshi and @Polymarket .",
-      "summary": "High-bookmark X post about agentic trading/research workflows (archived).",
-      "score": null,
-      "tags": [
-        "Agents",
-        "Trading",
-        "Research"
-      ],
-      "source": "dk (@dkposts)",
-      "url": "https://x.com/dkposts/status/1960082583590707694"
-    },
-    {
-      "id": "tweet-1888629199981715726",
-      "date": "2025-02-09",
-      "type": "tweet",
-      "title": "I made a diagram of my AI hedge fund.",
-      "summary": "High-bookmark X post about agentic trading/research workflows (archived).",
-      "score": null,
-      "tags": [
-        "Agents",
-        "Trading",
-        "Research"
-      ],
-      "source": "virat (@virattt)",
-      "url": "https://x.com/virattt/status/1888629199981715726"
-    },
-    {
-      "id": null,
-      "date": null,
-      "type": null,
-      "title": "BBAI — BigBear.ai Holdings 核心知识库",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "equity",
-        "bbai",
-        "defense-ai",
-        "government",
-        "small-cap"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": null,
-      "date": null,
-      "type": null,
-      "title": "BBAI — Market Narrative Log",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "equity",
-        "bbai",
-        "narrative",
-        "sentiment"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": null,
-      "date": null,
-      "type": null,
-      "title": "BBAI — Geopolitical & Policy Event Log",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "equity",
-        "bbai",
-        "geopolitics",
-        "defense",
-        "policy"
-      ],
-      "source": "melina",
-      "url": ""
-    },
-    {
-      "id": null,
-      "date": null,
-      "type": "research",
-      "title": "“Is Traditional Software Engineering Dead?”：Naval 长引文的原始出处与语境（2026-02-18）",
-      "summary": "",
-      "score": null,
-      "tags": [
-        "Naval Ravikant",
-        "software engineering",
-        "AI coding",
-        "leaky abstractions",
-        "out-of-distribution",
-        "winner-take-all",
-        "vibe coding"
-      ],
-      "source": "ranni",
-      "url": ""
+      "source": "Apple",
+      "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/"
     }
   ]
 }
