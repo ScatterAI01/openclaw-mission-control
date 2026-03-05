@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T10:04:48Z",
+  "lastUpdated": "2026-03-05T11:04:50Z",
   "jobs": [
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
@@ -10,10 +10,10 @@
       "workspace": "ranni"
     },
     {
-      "id": "441af127-874a-47c1-b970-30268429bc2d",
-      "name": "Ranni workspace daily backup",
+      "id": "c063ec4b-242d-4865-8388-66c2c4962e6a",
+      "name": "Global KB daily backup",
       "enabled": true,
-      "schedule": "0 11 * * *",
+      "schedule": "30 11 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
@@ -23,14 +23,6 @@
       "enabled": true,
       "schedule": "0 */3 * * *",
       "tz": "America/Los_Angeles",
-      "workspace": "ranni"
-    },
-    {
-      "id": "c063ec4b-242d-4865-8388-66c2c4962e6a",
-      "name": "Global KB daily backup",
-      "enabled": true,
-      "schedule": "30 11 * * *",
-      "tz": "UTC",
       "workspace": "ranni"
     },
     {
@@ -134,6 +126,14 @@
       "name": "x-ai-influencer-evening",
       "enabled": true,
       "schedule": "0 5 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "441af127-874a-47c1-b970-30268429bc2d",
+      "name": "Ranni workspace daily backup",
+      "enabled": true,
+      "schedule": "0 11 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
