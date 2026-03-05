@@ -1,14 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T02:04:48Z",
+  "lastUpdated": "2026-03-05T03:04:50Z",
   "jobs": [
-    {
-      "id": "67477021-e127-4134-843d-ed8c1acda4dd",
-      "name": "x-signal-monitor (03:00 UTC)",
-      "enabled": true,
-      "schedule": "0 3 * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
       "name": "hourly-signal-scanner",
@@ -94,6 +86,14 @@
       "name": "x-signal-monitor (01:00 UTC)",
       "enabled": true,
       "schedule": "0 1 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "67477021-e127-4134-843d-ed8c1acda4dd",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "enabled": true,
+      "schedule": "0 3 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
