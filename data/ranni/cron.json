@@ -1,27 +1,11 @@
 {
-  "lastUpdated": "2026-03-05T22:04:49Z",
+  "lastUpdated": "2026-03-05T23:05:46Z",
   "jobs": [
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
       "name": "mission-control-sync",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "c15d9819-c050-4aef-b963-6bb93d93f864",
-      "name": "ai-digest-afternoon",
-      "enabled": true,
-      "schedule": "0 23 * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "d22de8d3-5265-4b9d-b3b4-f9cfe181e637",
-      "name": "x-ai-influencer-afternoon",
-      "enabled": true,
-      "schedule": "0 23 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
@@ -134,6 +118,22 @@
       "name": "x-ai-influencer-morning",
       "enabled": true,
       "schedule": "0 19 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "c15d9819-c050-4aef-b963-6bb93d93f864",
+      "name": "ai-digest-afternoon",
+      "enabled": true,
+      "schedule": "0 23 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "d22de8d3-5265-4b9d-b3b4-f9cfe181e637",
+      "name": "x-ai-influencer-afternoon",
+      "enabled": true,
+      "schedule": "0 23 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },

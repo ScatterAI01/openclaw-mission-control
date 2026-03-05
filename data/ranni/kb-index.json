@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T22:04:49Z",
+  "lastUpdated": "2026-03-05T23:05:46Z",
   "kind": "kb-index",
   "primary": [
     {
@@ -85,6 +85,18 @@
       "timeliness": null,
       "relevance": null,
       "url": "https://huggingface.co/blog/modular-diffusers"
+    },
+    {
+      "id": "ai-digest-2026-03-05-45ee9c39",
+      "date": "2026-03-05",
+      "type": "article",
+      "domain": "ai",
+      "title": "OpenAI Launches GPT-5.4 with Native Computer Use and Financial Services Tools",
+      "takeaway": "OpenAI today released GPT-5.4, its latest flagship model, available on ChatGPT, the API, and Codex. The model uses 47% fewer tokens on certain tasks compared to predecessors, and introduces a \"native Computer Use\" mode that lets it navigate a user's computer across applications like a human. GPT-5.4 scored a record 83% on OpenAI's GDPval knowledge work benchmark and topped Mercor's APEX-Agents professional skills benchmark. Alongside the model, OpenAI unveiled \"OpenAI for Financial Services\"—tools including a ChatGPT integration for spreadsheets (Excel, Google Sheets) and new finance-focused apps targeting wealth managers and enterprise clients.",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://techcrunch.com/2026/03/05/openai-launches-gpt-5-4-with-pro-and-thinking-versions/"
     },
     {
       "id": "ai-digest-2026-03-04-c8f98948",
