@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T19:04:48Z",
+  "lastUpdated": "2026-03-05T20:04:48Z",
   "jobs": [
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
@@ -7,38 +7,6 @@
       "enabled": true,
       "schedule": "0 * * * *",
       "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "7992f931-9b02-4e8c-ade1-cb225ea92cdf",
-      "name": "ws-personal-consistency-check",
-      "enabled": true,
-      "schedule": "30 19 * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "5cf57deb-e24f-451c-9af9-8184eb3d9b17",
-      "name": "ws-company-consistency-check",
-      "enabled": true,
-      "schedule": "35 19 * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "6d3ba255-04aa-438c-8333-0235bdecace5",
-      "name": "openclaw-community-picks",
-      "enabled": true,
-      "schedule": "0 20 * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "d19ecc27-8d93-45fd-afad-96e1760072e6",
-      "name": "session-context-check",
-      "enabled": true,
-      "schedule": "0 */3 * * *",
-      "tz": "America/Los_Angeles",
       "workspace": "ranni"
     },
     {
@@ -55,6 +23,14 @@
       "enabled": true,
       "schedule": "0 23 * * *",
       "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "d19ecc27-8d93-45fd-afad-96e1760072e6",
+      "name": "session-context-check",
+      "enabled": true,
+      "schedule": "0 */3 * * *",
+      "tz": "America/Los_Angeles",
       "workspace": "ranni"
     },
     {
@@ -134,6 +110,30 @@
       "name": "x-ai-influencer-morning",
       "enabled": true,
       "schedule": "30 18 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "7992f931-9b02-4e8c-ade1-cb225ea92cdf",
+      "name": "ws-personal-consistency-check",
+      "enabled": true,
+      "schedule": "30 19 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "5cf57deb-e24f-451c-9af9-8184eb3d9b17",
+      "name": "ws-company-consistency-check",
+      "enabled": true,
+      "schedule": "35 19 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "6d3ba255-04aa-438c-8333-0235bdecace5",
+      "name": "openclaw-community-picks",
+      "enabled": true,
+      "schedule": "0 20 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
