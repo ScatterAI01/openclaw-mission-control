@@ -1,6 +1,31 @@
 {
-  "lastUpdated": "2026-03-05T04:04:48Z",
+  "lastUpdated": "2026-03-05T05:04:49Z",
   "kind": "kb-index",
-  "primary": [],
+  "primary": [
+    {
+      "id": "ai-digest-2026-03-05-808d2667",
+      "date": "2026-03-05",
+      "type": "article",
+      "domain": "ai",
+      "title": "OpenAI Revises Pentagon Deal Amid Domestic Surveillance Backlash",
+      "takeaway": "OpenAI CEO Sam Altman unveiled a reworked agreement with the Pentagon, explicitly stating AI systems shall not be used for domestic surveillance of U.S. persons. The revision came after significant public backlash over perceived loopholes in the original deal. This follows weeks of tension with rival Anthropic, which was blocked from classified Pentagon networks after refusing to agree to \"any lawful purpose\" terms. The episode highlights a sharpening divide in the industry over AI use in military and surveillance contexts. Both OpenAI and Anthropic are now calling on Congress to establish clear AI use protections.",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.nbcnews.com/tech/tech-news/openai-alters-deal-pentagon-critics-sound-alarm-surveillance-rcna261357"
+    },
+    {
+      "id": "ai-digest-2026-03-05-cfc686e5",
+      "date": "2026-03-05",
+      "type": "article",
+      "domain": "ai",
+      "title": "Trump and AI Leaders Tout 'Build Your Own Power Plant' Pledge to Address Energy Crunch",
+      "takeaway": "Trump and major AI industry leaders are promoting a policy allowing tech companies to build their own power plants directly, aimed at addressing soaring electricity costs driven by AI infrastructure demand. U.S. residential electricity rates rose an average of 6% in December 2025 year-over-year, partly attributed to AI data center energy consumption. The pledge represents a significant deregulatory push as AI's power footprint continues to expand. Critics note it shifts energy infrastructure burden to the private sector without addressing broader grid stability. The move signals AI energy demand is now a top-tier policy issue in Washington.",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.politico.com/news/2026/03/04/trump-and-ai-leaders-tout-his-build-your-own-power-plant-pledge-00812891"
+    }
+  ],
   "secondary": []
 }
