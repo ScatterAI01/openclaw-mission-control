@@ -1,19 +1,11 @@
 {
-  "lastUpdated": "2026-03-05T11:04:50Z",
+  "lastUpdated": "2026-03-05T12:05:47Z",
   "jobs": [
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
       "name": "mission-control-sync",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "c063ec4b-242d-4865-8388-66c2c4962e6a",
-      "name": "Global KB daily backup",
-      "enabled": true,
-      "schedule": "30 11 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
@@ -134,6 +126,14 @@
       "name": "Ranni workspace daily backup",
       "enabled": true,
       "schedule": "0 11 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "c063ec4b-242d-4865-8388-66c2c4962e6a",
+      "name": "Global KB daily backup",
+      "enabled": true,
+      "schedule": "30 11 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
