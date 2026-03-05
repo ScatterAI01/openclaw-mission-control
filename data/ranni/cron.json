@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T16:04:50Z",
+  "lastUpdated": "2026-03-05T17:04:48Z",
   "jobs": [
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
@@ -7,22 +7,6 @@
       "enabled": true,
       "schedule": "0 * * * *",
       "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "73633b75-f900-46d6-837a-e2d8f2410cab",
-      "name": "morning-briefing",
-      "enabled": true,
-      "schedule": "0 9 * * *",
-      "tz": "America/Los_Angeles",
-      "workspace": "ranni"
-    },
-    {
-      "id": "d19ecc27-8d93-45fd-afad-96e1760072e6",
-      "name": "session-context-check",
-      "enabled": true,
-      "schedule": "0 */3 * * *",
-      "tz": "America/Los_Angeles",
       "workspace": "ranni"
     },
     {
@@ -90,6 +74,14 @@
       "workspace": "ranni"
     },
     {
+      "id": "d19ecc27-8d93-45fd-afad-96e1760072e6",
+      "name": "session-context-check",
+      "enabled": true,
+      "schedule": "0 */3 * * *",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
       "id": "c15d9819-c050-4aef-b963-6bb93d93f864",
       "name": "ai-digest-afternoon",
       "enabled": true,
@@ -135,6 +127,14 @@
       "enabled": true,
       "schedule": "30 11 * * *",
       "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "73633b75-f900-46d6-837a-e2d8f2410cab",
+      "name": "morning-briefing",
+      "enabled": true,
+      "schedule": "0 9 * * *",
+      "tz": "America/Los_Angeles",
       "workspace": "ranni"
     },
     {
