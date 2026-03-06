@@ -1,35 +1,19 @@
 {
-  "lastUpdated": "2026-03-06T21:05:33Z",
+  "lastUpdated": "2026-03-06T22:05:36Z",
   "jobs": [
-    {
-      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
-      "name": "hourly-signal-scanner",
-      "enabled": true,
-      "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "194d1389-b186-4d27-8f28-6f954a2dd3f5",
-      "name": "post-market-wrap",
-      "enabled": true,
-      "schedule": "30 21 * * 1-5",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "d17a400b-2933-43f3-ba19-7a0362fea4a1",
-      "name": "daily-price-tracker",
-      "enabled": true,
-      "schedule": "30 21 * * 1-5",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "b273f088-74ea-4e15-abcd-8f09c8098379",
       "name": "x-signal-monitor (23:00 UTC)",
       "enabled": true,
       "schedule": "0 23 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
+      "name": "hourly-signal-scanner",
+      "enabled": true,
+      "schedule": "0 * * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -127,6 +111,22 @@
       "enabled": true,
       "schedule": "30 12 * * 1-5",
       "tz": "America/Los_Angeles",
+      "workspace": "melina"
+    },
+    {
+      "id": "194d1389-b186-4d27-8f28-6f954a2dd3f5",
+      "name": "post-market-wrap",
+      "enabled": true,
+      "schedule": "30 21 * * 1-5",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "d17a400b-2933-43f3-ba19-7a0362fea4a1",
+      "name": "daily-price-tracker",
+      "enabled": true,
+      "schedule": "30 21 * * 1-5",
+      "tz": "UTC",
       "workspace": "melina"
     },
     {
