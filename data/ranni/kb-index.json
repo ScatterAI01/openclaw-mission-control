@@ -1,7 +1,31 @@
 {
-  "lastUpdated": "2026-03-06T04:04:48Z",
+  "lastUpdated": "2026-03-06T05:05:13Z",
   "kind": "kb-index",
   "primary": [
+    {
+      "id": "ai-digest-2026-03-06-2050a940",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "OpenAI Launches GPT-5.4 With Native Computer Use and Pro-Level Coding",
+      "takeaway": "OpenAI released GPT-5.4, its most capable reasoning model to date, now available in ChatGPT, the API, and Codex. The model achieves 83% on the GDPval benchmark—meeting or exceeding expert-level performance across 44 professions—and surpasses human performance on OSWorld desktop navigation at 75% vs 72.4%. GPT-5.4 is OpenAI's first universal model with native computer use, able to control websites and software via mouse/keyboard commands from screenshots. It also delivers 33% fewer false statements and 18% fewer errors compared to GPT-5.2. Pricing is higher than previous models, positioning it squarely against Anthropic's Claude Opus 4.6 and Claude Code.",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.trendingtopics.eu/gpt-5-4-targets-anthropics-claude-with-premium-pricing-and-coding-muscle/"
+    },
+    {
+      "id": "ai-digest-2026-03-06-58931f51",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Anthropic Launches Claude Memory Import to Poach ChatGPT Users",
+      "takeaway": "Anthropic launched a memory import feature for Claude, allowing users to transfer personalized memory profiles from ChatGPT, Google Gemini, and Microsoft Copilot with a simple copy-paste process. The move is a strategic play to capitalize on the ongoing #QuitGPT campaign, as Claude's iOS app recently hit #1 on the Apple App Store free chart. Users can import memories without a paid Claude subscription. The feature lowers the friction of switching AI providers, representing a notable competitive tactic in the crowded AI assistant market.",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.zdnet.com/article/switch-to-claude-ai-import-memories-preferences/"
+    },
     {
       "id": "ai-digest-2026-03-05-808d2667",
       "date": "2026-03-05",
