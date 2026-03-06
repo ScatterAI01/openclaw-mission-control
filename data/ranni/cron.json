@@ -1,44 +1,20 @@
 {
-  "lastUpdated": "2026-03-06T18:08:51Z",
+  "lastUpdated": "2026-03-06T19:06:39Z",
   "jobs": [
-    {
-      "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
-      "name": "mission-control-sync",
-      "enabled": true,
-      "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "73633b75-f900-46d6-837a-e2d8f2410cab",
-      "name": "morning-briefing",
-      "enabled": true,
-      "schedule": "10 10 * * *",
-      "tz": "America/Los_Angeles",
-      "workspace": "ranni"
-    },
-    {
-      "id": "5231678b-9502-4eea-81f0-98cc1554181a",
-      "name": "ai-digest-morning",
-      "enabled": true,
-      "schedule": "0 19 * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "5dabdf81-a050-459b-92f9-f411d1f7353c",
-      "name": "x-ai-influencer-morning",
-      "enabled": true,
-      "schedule": "0 19 * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
     {
       "id": "d19ecc27-8d93-45fd-afad-96e1760072e6",
       "name": "session-context-check",
       "enabled": true,
       "schedule": "0 11,14,17,23 * * *",
       "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
+      "name": "mission-control-sync",
+      "enabled": true,
+      "schedule": "0 * * * *",
+      "tz": "UTC",
       "workspace": "ranni"
     },
     {
@@ -134,6 +110,30 @@
       "name": "x-ai-influencer-evening",
       "enabled": true,
       "schedule": "0 5 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "73633b75-f900-46d6-837a-e2d8f2410cab",
+      "name": "morning-briefing",
+      "enabled": true,
+      "schedule": "10 10 * * *",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
+      "id": "5231678b-9502-4eea-81f0-98cc1554181a",
+      "name": "ai-digest-morning",
+      "enabled": true,
+      "schedule": "0 19 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "5dabdf81-a050-459b-92f9-f411d1f7353c",
+      "name": "x-ai-influencer-morning",
+      "enabled": true,
+      "schedule": "0 19 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },

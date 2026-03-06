@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-06T18:08:51Z",
+  "lastUpdated": "2026-03-06T19:06:39Z",
   "kind": "kb-index",
   "primary": [
     {
@@ -25,6 +25,114 @@
       "timeliness": null,
       "relevance": null,
       "url": "https://www.zdnet.com/article/switch-to-claude-ai-import-memories-preferences/"
+    },
+    {
+      "id": "ai-digest-2026-03-06-d2442ef8",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Conversational LLM Evaluations in Minutes with NVIDIA NeMo Evaluator Agent Skills",
+      "takeaway": "Hugging Face 发布文章介绍 NVIDIA NeMo 的 Evaluator Agent Skills：把对话式 LLM 的评测流程做成可复用的“技能”，能在几分钟内自动跑完一组基准与打分。核心价值在于把数据准备、提示词/评测器编排、以及结果汇总标准化，减少手工评测带来的偏差与重复劳动。对团队来说，这类 agentic evaluation 更像一条可持续迭代的 CI 管线：模型/提示词一变就能立刻回归对比。也意味着评测能力越来越“产品化”，会加速开源与企业内部的模型迭代速度。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://huggingface.co/blog/nvidia/model-evaluation-skill"
+    },
+    {
+      "id": "ai-digest-2026-03-06-91ff7181",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Vietnam implements sweeping AI law",
+      "takeaway": "JURIST 报道称，越南《Law on Artificial Intelligence》已正式生效，覆盖 AI 系统的开发、部署与监管框架。它把“合规”前置到产品生命周期：从风险分类、透明度/披露义务到数据治理与责任边界，都更接近一套可执行的行政体系。对跨境产品而言，这类法律会直接影响本地化上线节奏（例如模型训练数据、日志留存、以及人类监督机制）。政策信号很明确：AI 监管正在从原则讨论转向具体可落地的制度与执法工具。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.jurist.org/news/2026/03/vietnam-implements-sweeping-ai-law/"
+    },
+    {
+      "id": "ai-digest-2026-03-06-34a9397c",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Anthropic, OpenAI, Google battle threatens safe AI",
+      "takeaway": "Axios 关注 OpenAI 与 Anthropic 围绕政府/军方使用 AI 的分歧升级：在安全立场与商业竞争的拉扯下，行业“最低安全共识”可能被侵蚀。报道提到在相关争议节点上，OpenAI 宣布向机密网络提供模型/能力的合作，进一步放大了外界对军用与监控场景的担忧。与此同时，Google 与 OpenAI 员工的公开信声援也显示，内部伦理分歧正在外溢为组织治理问题。整体来看，这不是单一公司公关事件，而是未来 AI 安全标准、合同边界与透明度规则如何形成的一次压力测试。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.axios.com/2026/03/03/ai-race-safety-guardrail"
+    },
+    {
+      "id": "ai-digest-2026-03-06-b84e79d0",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "OpenAI Reaches A.I. Agreement With Defense Dept. After Anthropic Clash",
+      "takeaway": "OpenAI 与美国 Defense Dept. 达成 AI 合作协议，发生在 Pentagon 与 Anthropic 因模型使用权限/安全条款产生冲突之后。此举被视为大模型厂商在政府与国防场景“可用性 vs. 安全边界”的一次公开分水岭，也会影响企业/政府采购对供应商风险的评估。对市场而言，这类高敏场景的落地往往会带来合规与审计要求的再提升，并加速各家在“受控部署/隔离环境/访问控制”上的产品化。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.nytimes.com/2026/02/27/technology/openai-agreement-pentagon-ai.html"
+    },
+    {
+      "id": "ai-digest-2026-03-06-3952d53c",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Anthropic, OpenAI, Google battle threatens safe AI",
+      "takeaway": "Axios 报道称，围绕 Pentagon 对模型使用权限的要求，Anthropic、OpenAI 与 Google 的竞争与分歧正在外溢到“AI safety guardrails”的公共叙事。文中提到 OpenAI 也宣布向机密网络提供模型服务，使“军事/情报场景的模型部署”从边缘议题变为主战场。短期看，这会推高各家在 policy、red-teaming、以及可验证的使用限制上的投入；长期看，可能促成更明确的行业标准（或监管）来界定可接受的军用/监控用途。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.axios.com/2026/03/03/ai-race-safety-guardrail"
+    },
+    {
+      "id": "ai-digest-2026-03-06-0d047325",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Vietnam implements sweeping AI law",
+      "takeaway": "越南一项覆盖面广的 AI 法律正式生效，显示出各国正在把 AI 从“行业自律”推向“硬法/可执法”的治理路径。对出海团队而言，这类立法往往意味着更明确的数据、透明度、以及责任归属要求，合规成本也会前置到产品设计阶段。值得关注的是，它可能成为东南亚区域监管的参照模板，影响跨境模型服务、内容生成、以及企业内部 AI 使用规范。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.jurist.org/news/2026/03/vietnam-implements-sweeping-ai-law/"
+    },
+    {
+      "id": "ai-digest-2026-03-06-6766625f",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "OpenAI 推出 GPT‑5.4（ChatGPT / API / Codex 同步上线）并卷入与 Anthropic 的 Pentagon 争议",
+      "takeaway": "CNBC 报道称，OpenAI 在 ChatGPT、API 与 Codex 中发布新模型 GPT‑5.4，定位为更“capable and efficient”的专业工作模型。报道同时回顾了 OpenAI 与 Anthropic 围绕 Pentagon 合作条款的公开冲突：Anthropic 被美国国防部门指认为“supply chain risk”，而 OpenAI 随后宣布与 DOD 达成协议并承认时机看起来“opportunistic”。这把“前沿模型能力升级”与“政府/军方采购与使用边界”绑定在一起，短期会加速企业与政府客户的迁移与选型，长期会把 AI 安全与合规争议推到台前。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.cnbc.com/2026/03/05/open-ai-altman-anthropic-pentagon-war.html"
+    },
+    {
+      "id": "ai-digest-2026-03-06-bf6d8aeb",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Google 与 Microsoft 表态：Anthropic Claude 仍可在云上使用（不含 defense 项目）",
+      "takeaway": "Google 表示，在 Pentagon 将 Anthropic 列为“supply chain risk”之后，Anthropic 的 Claude 仍会继续通过 Google Cloud（Vertex AI）向非国防场景客户提供；Microsoft 也发布了类似说法。CNBC 提到，Anthropic 与 Google Cloud 在算力与投资层面绑定紧密（包括 TPUs 资源），但国防相关客户与 defense tech 公司正在加速评估替代方案。这个事件的本质是“监管/采购决定”如何瞬间改变模型分发渠道与企业用模策略：同一模型可能在一个行业被禁、在另一个行业继续可用，迫使企业把供应商切换与合规隔离做成工程能力。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.cnbc.com/2026/03/06/google-says-anthropic-remains-available-outside-of-defense-projects.html"
+    },
+    {
+      "id": "ai-digest-2026-03-06-3b7bca26",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Fortune：Anthropic–OpenAI 与 Pentagon 的冲突暴露 AI safety 依赖少数权力中心的问题",
+      "takeaway": "Fortune 的 Eye on AI 专栏用 Anthropic 与 OpenAI 的公开对立作为切口，强调所谓“industrial capture”风险：前沿 AI 的路线、部署与安全边界，过度集中在少数公司与政府官员手里。文章指出两家公司的竞争压力已影响各自的安全策略与公开承诺（例如 policy 调整、军用条款的变化等），而在监管仍弱的背景下，行业实际上依赖企业自律。对创业与产品团队来说，这意味着：安全与合规不再是“文档”，而是会被地缘政治与商业竞争实时撕扯的约束条件，需要预留策略与技术缓冲。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://fortune.com/2026/03/05/anthropic-openai-feud-pentagon-dispute-ai-safety-dilemma-personalities/"
     },
     {
       "id": "ai-digest-2026-03-05-808d2667",
