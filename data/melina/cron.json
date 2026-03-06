@@ -1,22 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T23:05:46Z",
+  "lastUpdated": "2026-03-06T00:07:05Z",
   "jobs": [
-    {
-      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
-      "name": "hourly-signal-scanner",
-      "enabled": true,
-      "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
-      "name": "polymarket-monitor",
-      "enabled": true,
-      "schedule": "0 18,0,6 * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "b3993030-f014-41ee-989d-30287e0e79fc",
       "name": "ws-capital-consistency-check",
@@ -34,6 +18,14 @@
       "workspace": "melina"
     },
     {
+      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
+      "name": "hourly-signal-scanner",
+      "enabled": true,
+      "schedule": "0 * * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
       "id": "c75559f9-b5b8-47aa-9c56-4653651aca51",
       "name": "capital-doctor-daily",
       "enabled": true,
@@ -46,6 +38,22 @@
       "name": "x-signal-monitor (03:00 UTC)",
       "enabled": true,
       "schedule": "0 3 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
+      "name": "polymarket-monitor",
+      "enabled": true,
+      "schedule": "0 18,0,6 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "dbc7bb5b-5ea3-41a1-9719-d6c93e255b2f",
+      "name": "kb-daily-consolidate",
+      "enabled": true,
+      "schedule": "45 7 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
