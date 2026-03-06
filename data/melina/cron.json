@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-06T17:06:53Z",
+  "lastUpdated": "2026-03-06T18:08:51Z",
   "jobs": [
     {
-      "id": "68e93ae0-aebe-4acf-b932-5223c63cd3e3",
-      "name": "market-wakeup-brief",
+      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
+      "name": "polymarket-monitor",
       "enabled": true,
-      "schedule": "0 18 * * 1-5",
+      "schedule": "0 18,0,6 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -14,14 +14,6 @@
       "name": "hourly-signal-scanner",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
-      "name": "polymarket-monitor",
-      "enabled": true,
-      "schedule": "0 18,0,6 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -134,6 +126,14 @@
       "name": "weekly-signal-digest",
       "enabled": true,
       "schedule": "0 20 * * 0",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "68e93ae0-aebe-4acf-b932-5223c63cd3e3",
+      "name": "market-wakeup-brief",
+      "enabled": true,
+      "schedule": "0 18 * * 1-5",
       "tz": "UTC",
       "workspace": "melina"
     },
