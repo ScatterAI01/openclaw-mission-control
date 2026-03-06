@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-06T22:05:36Z",
+  "lastUpdated": "2026-03-06T23:07:20Z",
   "kind": "kb-index",
   "primary": [
     {
@@ -133,6 +133,30 @@
       "timeliness": null,
       "relevance": null,
       "url": "https://fortune.com/2026/03/05/anthropic-openai-feud-pentagon-dispute-ai-safety-dilemma-personalities/"
+    },
+    {
+      "id": "ai-digest-2026-03-06-1c056987",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Pentagon's AI Tango with Anthropic: A Contract Clash Ignites Waves!",
+      "takeaway": "OpenTools.ai 汇总称：Pentagon 因 Anthropic 不愿放开 Claude 的军用限制/guardrails，而推动终止或重谈相关合同，并将其定性为供应链风险。事件把 AI safety 与 national security 的矛盾推到台前：政府希望更‘unfettered’的军用能力，公司则坚持限制 mass surveillance / autonomous weapons 等用例。若该趋势延续，DoD 采购可能更偏向愿意提供更少限制的供应商（例如 xAI/Google 等），从而改变 AI vendors 与政府合作的谈判筹码。与此同时也会加速监管与合规框架的讨论：到底由政府监管、还是市场自律来定义 AI 的军事边界。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://opentools.ai/news/pentagons-ai-tango-with-anthropic-a-contract-clash-ignites-waves"
+    },
+    {
+      "id": "ai-digest-2026-03-06-44ff5e2d",
+      "date": "2026-03-06",
+      "type": "article",
+      "domain": "ai",
+      "title": "Viral Deepfake Video Shows Billionaires Musk, Bezos, and Altman Powering AI with Human Labor",
+      "takeaway": "一支名为 ‘Energym’ 的 viral deepfake 用 Elon Musk、Jeff Bezos、Sam Altman 等形象做讽刺：在 AI 大规模替代工作后，人类被迫在健身房踩车发电给 AI 供能。它把两个现实焦虑打包传播：AI job displacement（尤其白领/初级岗位）与 AI 的 energy/compute appetite。内容本身更像文化信号，但对产品与政策层面有提醒意义——deepfake 的真实性越来越高，企业/政府在身份认证、媒体溯源（watermarking）与反欺诈上会被迫加速投入。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://opentools.ai/news/viral-deepfake-video-shows-billionaires-musk-bezos-and-altman-powering-ai-with-human-labor"
     },
     {
       "id": "ai-digest-2026-03-05-808d2667",
