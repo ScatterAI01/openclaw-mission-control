@@ -1,22 +1,6 @@
 {
-  "lastUpdated": "2026-03-06T00:07:05Z",
+  "lastUpdated": "2026-03-06T01:04:53Z",
   "jobs": [
-    {
-      "id": "b3993030-f014-41ee-989d-30287e0e79fc",
-      "name": "ws-capital-consistency-check",
-      "enabled": true,
-      "schedule": "5 0 * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "6503d05a-55d7-4469-8d67-6bc533ba1d55",
-      "name": "x-signal-monitor (01:00 UTC)",
-      "enabled": true,
-      "schedule": "0 1 * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
       "name": "hourly-signal-scanner",
@@ -126,6 +110,22 @@
       "name": "x-signal-monitor (23:00 UTC)",
       "enabled": true,
       "schedule": "0 23 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "b3993030-f014-41ee-989d-30287e0e79fc",
+      "name": "ws-capital-consistency-check",
+      "enabled": true,
+      "schedule": "5 0 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "6503d05a-55d7-4469-8d67-6bc533ba1d55",
+      "name": "x-signal-monitor (01:00 UTC)",
+      "enabled": true,
+      "schedule": "0 1 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
