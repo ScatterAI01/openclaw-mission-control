@@ -1,22 +1,6 @@
 {
-  "lastUpdated": "2026-03-06T02:04:58Z",
+  "lastUpdated": "2026-03-06T03:05:14Z",
   "jobs": [
-    {
-      "id": "c75559f9-b5b8-47aa-9c56-4653651aca51",
-      "name": "capital-doctor-daily",
-      "enabled": true,
-      "schedule": "20 2 * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "67477021-e127-4134-843d-ed8c1acda4dd",
-      "name": "x-signal-monitor (03:00 UTC)",
-      "enabled": true,
-      "schedule": "0 3 * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
       "name": "hourly-signal-scanner",
@@ -126,6 +110,22 @@
       "name": "x-signal-monitor (01:00 UTC)",
       "enabled": true,
       "schedule": "0 1 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "c75559f9-b5b8-47aa-9c56-4653651aca51",
+      "name": "capital-doctor-daily",
+      "enabled": true,
+      "schedule": "20 2 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "67477021-e127-4134-843d-ed8c1acda4dd",
+      "name": "x-signal-monitor (03:00 UTC)",
+      "enabled": true,
+      "schedule": "0 3 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
