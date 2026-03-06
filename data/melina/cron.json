@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-03-06T16:06:51Z",
+  "lastUpdated": "2026-03-06T17:06:53Z",
   "jobs": [
-    {
-      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
-      "name": "hourly-signal-scanner",
-      "enabled": true,
-      "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "68e93ae0-aebe-4acf-b932-5223c63cd3e3",
       "name": "market-wakeup-brief",
       "enabled": true,
       "schedule": "0 18 * * 1-5",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
+      "name": "hourly-signal-scanner",
+      "enabled": true,
+      "schedule": "0 * * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
