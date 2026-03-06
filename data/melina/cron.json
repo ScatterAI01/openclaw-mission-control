@@ -1,22 +1,6 @@
 {
-  "lastUpdated": "2026-03-06T19:06:39Z",
+  "lastUpdated": "2026-03-06T20:07:34Z",
   "jobs": [
-    {
-      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
-      "name": "hourly-signal-scanner",
-      "enabled": true,
-      "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "de5f901b-3f35-433d-9fc9-56574546902b",
-      "name": "daily-event-radar",
-      "enabled": true,
-      "schedule": "0 12 * * 1-5",
-      "tz": "America/Los_Angeles",
-      "workspace": "melina"
-    },
     {
       "id": "1f49c3ec-8cfd-447c-ae01-19187002e9b9",
       "name": "daily-catalyst-calendar",
@@ -38,6 +22,14 @@
       "name": "weekly-full-report",
       "enabled": true,
       "schedule": "0 21 * * 5",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
+      "name": "hourly-signal-scanner",
+      "enabled": true,
+      "schedule": "0 * * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -135,6 +127,14 @@
       "enabled": true,
       "schedule": "0 18 * * 1-5",
       "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "de5f901b-3f35-433d-9fc9-56574546902b",
+      "name": "daily-event-radar",
+      "enabled": true,
+      "schedule": "0 12 * * 1-5",
+      "tz": "America/Los_Angeles",
       "workspace": "melina"
     },
     {
