@@ -1,19 +1,11 @@
 {
-  "lastUpdated": "2026-03-06T05:05:13Z",
+  "lastUpdated": "2026-03-06T06:07:37Z",
   "jobs": [
     {
       "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
       "name": "hourly-signal-scanner",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
-      "name": "polymarket-monitor",
-      "enabled": true,
-      "schedule": "0 18,0,6 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -38,6 +30,14 @@
       "name": "market-wakeup-brief",
       "enabled": true,
       "schedule": "0 18 * * 1-5",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
+      "name": "polymarket-monitor",
+      "enabled": true,
+      "schedule": "0 18,0,6 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
