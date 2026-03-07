@@ -1,27 +1,11 @@
 {
-  "lastUpdated": "2026-03-07T01:05:42Z",
+  "lastUpdated": "2026-03-07T02:04:48Z",
   "jobs": [
-    {
-      "id": "d19ecc27-8d93-45fd-afad-96e1760072e6",
-      "name": "session-context-check",
-      "enabled": true,
-      "schedule": "0 11,14,17,23 * * *",
-      "tz": "America/Los_Angeles",
-      "workspace": "ranni"
-    },
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
       "name": "mission-control-sync",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "2706f048-7c9f-4ab2-bfeb-9865653c607d",
-      "name": "KB Doctor Daily",
-      "enabled": true,
-      "schedule": "0 2 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
@@ -82,6 +66,14 @@
       "workspace": "ranni"
     },
     {
+      "id": "d19ecc27-8d93-45fd-afad-96e1760072e6",
+      "name": "session-context-check",
+      "enabled": true,
+      "schedule": "0 11,14,17,23 * * *",
+      "tz": "America/Los_Angeles",
+      "workspace": "ranni"
+    },
+    {
       "id": "73633b75-f900-46d6-837a-e2d8f2410cab",
       "name": "morning-briefing",
       "enabled": true,
@@ -134,6 +126,14 @@
       "name": "ws-company-consistency-check",
       "enabled": true,
       "schedule": "10 0 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "2706f048-7c9f-4ab2-bfeb-9865653c607d",
+      "name": "KB Doctor Daily",
+      "enabled": true,
+      "schedule": "0 2 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
