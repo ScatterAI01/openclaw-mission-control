@@ -1,7 +1,31 @@
 {
-  "lastUpdated": "2026-03-07T04:05:06Z",
+  "lastUpdated": "2026-03-07T05:07:35Z",
   "kind": "kb-index",
   "primary": [
+    {
+      "id": "ai-digest-2026-03-07-fae700c7",
+      "date": "2026-03-07",
+      "type": "article",
+      "domain": "ai",
+      "title": "Pentagon Officially Designates Anthropic as Supply Chain Risk",
+      "takeaway": "The U.S. Department of Defense has formally labeled Anthropic a 'supply chain risk' after the company resisted granting unfettered access to its Claude models for military use. This rare designation, usually reserved for foreign adversaries, may prevent defense contractors from using Anthropic technology. The clash highlights growing tension between AI safety labs and government military requirements.",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.cnbc.com/2026/03/05/anthropic-pentagon-ai-claude-iran.html"
+    },
+    {
+      "id": "ai-digest-2026-03-07-00cdb739",
+      "date": "2026-03-07",
+      "type": "article",
+      "domain": "ai",
+      "title": "Oracle and OpenAI Scrap Plans for Flagship Texas Data Center Expansion",
+      "takeaway": "Oracle and OpenAI have abandoned plans to expand a major AI data center in Texas, part of the 'Stargate' infrastructure project. Negotiations reportedly stalled over financing terms and OpenAI's shifting technical requirements. This setback illustrates the logistical and financial friction points in building the massive infrastructure required for next-generation AI models.",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center"
+    },
     {
       "id": "ai-digest-2026-03-06-2050a940",
       "date": "2026-03-06",
