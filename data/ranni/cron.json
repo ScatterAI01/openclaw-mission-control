@@ -1,19 +1,11 @@
 {
-  "lastUpdated": "2026-03-07T03:04:49Z",
+  "lastUpdated": "2026-03-07T04:05:06Z",
   "jobs": [
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
       "name": "mission-control-sync",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "6d3ba255-04aa-438c-8333-0235bdecace5",
-      "name": "openclaw-community-picks",
-      "enabled": true,
-      "schedule": "0 4 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
@@ -134,6 +126,14 @@
       "name": "Ranni Doctor Daily",
       "enabled": true,
       "schedule": "10 2 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "6d3ba255-04aa-438c-8333-0235bdecace5",
+      "name": "openclaw-community-picks",
+      "enabled": true,
+      "schedule": "0 4 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
