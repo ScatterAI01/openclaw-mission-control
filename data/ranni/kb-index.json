@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T18:07:18Z",
+  "lastUpdated": "2026-03-07T19:05:16Z",
   "kind": "kb-index",
   "primary": [
     {
@@ -25,6 +25,42 @@
       "timeliness": null,
       "relevance": null,
       "url": "https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center"
+    },
+    {
+      "id": "ai-digest-2026-03-07-75f59173",
+      "date": "2026-03-07",
+      "type": "article",
+      "domain": "ai",
+      "title": "OpenAI Reaches Department of Defense Agreement After Anthropic Refuses",
+      "takeaway": "OpenAI 与美国国防部（DoD）达成协议，将在其机密网络中部署 AI 模型，此前 Anthropic 因担忧民主价值受损而拒绝签署类似协议。协议设立三条红线：禁止大规模国内监控、禁止控制自主武器系统、禁止高风险自动化决策。Anthropic CEO Dario Amodei 随后发表声明，澄清公司并未反对特定军事行动，但坚持认为 AI 在特定情形下可能损害民主价值。OpenAI 和 Google 内部分别有 60 名及 300 名员工联署信件，要求公司支持 Anthropic 的立场。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://avenuez.com/blog/openai-department-defense-agreement-anthropic/"
+    },
+    {
+      "id": "ai-digest-2026-03-07-7c7cc782",
+      "date": "2026-03-07",
+      "type": "article",
+      "domain": "ai",
+      "title": "China Announces Aggressive AI and Semiconductor Subsidy Program to Counter U.S. Export Controls",
+      "takeaway": "北京市宣布对国产 AI 芯片提供补贴，目标是在 2027 年前实现芯片自主可控，以应对美国持续收紧的出口管制。这是中国在 AI 与半导体领域加速去美化的最新举措，体现出中美科技脱钩已进入深水区。该计划将直接影响 AI 训练和推理基础设施的国产化节奏，并可能推动国产替代芯片（如华为昇腾、寒武纪等）加速出货。对全球 AI 供应链格局的重塑具有长期战略意义。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://yournews.com/2026/03/06/6602585/china-announces-aggressive-ai-and-semiconductor-subsidy-program-to-counter/"
+    },
+    {
+      "id": "ai-digest-2026-03-07-60c1fdc0",
+      "date": "2026-03-07",
+      "type": "article",
+      "domain": "ai",
+      "title": "Pentagon Taps Former DOGE Official to Lead Its AI Efforts",
+      "takeaway": "五角大楼任命一位前 DOGE（政府效率部）官员主导其 AI 战略，此举发生在 OpenAI 与国防部签署部署协议的同一周。这标志着美国军方加快将 AI 纳入国防核心业务的步伐，DOGE 系官员进入 DoD AI 体系也显示出特朗普政府将效率导向与 AI 军事化并轨推进的施政逻辑。此人事任命将影响未来 AI 采购决策和与科技公司的合作方式。",
+      "impact": null,
+      "timeliness": null,
+      "relevance": null,
+      "url": "https://www.reuters.com/technology/"
     },
     {
       "id": "ai-digest-2026-03-06-2050a940",
