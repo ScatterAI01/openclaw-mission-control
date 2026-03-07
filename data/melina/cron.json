@@ -1,22 +1,6 @@
 {
-  "lastUpdated": "2026-03-07T07:04:48Z",
+  "lastUpdated": "2026-03-07T08:04:48Z",
   "jobs": [
-    {
-      "id": "dbc7bb5b-5ea3-41a1-9719-d6c93e255b2f",
-      "name": "kb-daily-consolidate",
-      "enabled": true,
-      "schedule": "45 7 * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "d1cda221-f4eb-4ea7-9b8d-70d39817f1a7",
-      "name": "x-signal-monitor (08:00 UTC)",
-      "enabled": true,
-      "schedule": "0 8 * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
     {
       "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
       "name": "hourly-signal-scanner",
@@ -70,6 +54,22 @@
       "name": "x-signal-monitor (03:00 UTC)",
       "enabled": true,
       "schedule": "0 3 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "dbc7bb5b-5ea3-41a1-9719-d6c93e255b2f",
+      "name": "kb-daily-consolidate",
+      "enabled": true,
+      "schedule": "45 7 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "d1cda221-f4eb-4ea7-9b8d-70d39817f1a7",
+      "name": "x-signal-monitor (08:00 UTC)",
+      "enabled": true,
+      "schedule": "0 8 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
