@@ -1,19 +1,11 @@
 {
-  "lastUpdated": "2026-03-07T05:07:35Z",
+  "lastUpdated": "2026-03-07T06:06:49Z",
   "jobs": [
     {
       "id": "50c031ea-69bb-4fca-abd7-83548fec7eb6",
       "name": "hourly-signal-scanner",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "melina"
-    },
-    {
-      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
-      "name": "polymarket-monitor",
-      "enabled": true,
-      "schedule": "0 18,0,6 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
@@ -30,6 +22,14 @@
       "name": "x-signal-monitor (08:00 UTC)",
       "enabled": true,
       "schedule": "0 8 * * *",
+      "tz": "UTC",
+      "workspace": "melina"
+    },
+    {
+      "id": "e34b15ae-463c-478a-84e7-5ce580ff5565",
+      "name": "polymarket-monitor",
+      "enabled": true,
+      "schedule": "0 18,0,6 * * *",
       "tz": "UTC",
       "workspace": "melina"
     },
