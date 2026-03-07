@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T20:04:50Z",
+  "lastUpdated": "2026-03-07T21:04:48Z",
   "kind": "kb-index",
   "primary": [
     {
@@ -452,6 +452,23 @@
       ],
       "source": "Dario Amodei (Anthropic CEO)",
       "url": "https://www.youtube.com/watch?v=68ylaeBbdsg"
+    },
+    {
+      "id": "tweet-2030162301001593064",
+      "date": "2026-03-07",
+      "type": "tweet",
+      "domain": "ai",
+      "title": "Forbes: Cursor 为 AI 编程霸主地位而战",
+      "summary": "Cursor 进入战时状态：ARR 3个月从 $1B 翻至 $2B+，但 Claude Code ARR $2.5B 已超 Cursor。编辑器形态受到 agent 化趋势冲击，Cursor 内部指令「删掉产品」，正转型自研模型+押注企业合同+构建多agent工具。",
+      "score": 8,
+      "tags": [
+        "AI",
+        "Tech",
+        "Startup",
+        "Product"
+      ],
+      "source": "ranni",
+      "url": "https://x.com/dotey/status/2030162301001593064"
     },
     {
       "id": "youtube-henren778-hormuz-insurance",
