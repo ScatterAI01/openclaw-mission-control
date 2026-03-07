@@ -1,27 +1,11 @@
 {
-  "lastUpdated": "2026-03-07T02:04:48Z",
+  "lastUpdated": "2026-03-07T03:04:49Z",
   "jobs": [
     {
       "id": "aaf8ac1c-0025-4f45-8d01-25d3b9b6cd74",
       "name": "mission-control-sync",
       "enabled": true,
       "schedule": "0 * * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "83f1dd36-15fd-4965-a40e-30c9f8855e1d",
-      "name": "openclaw-version-check",
-      "enabled": true,
-      "schedule": "5 2 * * *",
-      "tz": "UTC",
-      "workspace": "ranni"
-    },
-    {
-      "id": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d",
-      "name": "Ranni Doctor Daily",
-      "enabled": true,
-      "schedule": "10 2 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
@@ -134,6 +118,22 @@
       "name": "KB Doctor Daily",
       "enabled": true,
       "schedule": "0 2 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "83f1dd36-15fd-4965-a40e-30c9f8855e1d",
+      "name": "openclaw-version-check",
+      "enabled": true,
+      "schedule": "5 2 * * *",
+      "tz": "UTC",
+      "workspace": "ranni"
+    },
+    {
+      "id": "d990ed40-6ba4-4ed0-bc6c-222c0ab3150d",
+      "name": "Ranni Doctor Daily",
+      "enabled": true,
+      "schedule": "10 2 * * *",
       "tz": "UTC",
       "workspace": "ranni"
     },
